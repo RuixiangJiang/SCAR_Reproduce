@@ -1,4 +1,5 @@
 import sys
+import csv
 from vcdvcd import VCDVCD
 
 import Dot_Preprocess
@@ -14,7 +15,7 @@ if __name__ == "__main__":
     dot_file = "../data/" + sys.argv[1] + ".dot"
     vcd_file = "../data/" + sys.argv[1] + ".vcd"
     v_file = "../data/" + sys.argv[1] + ".v"
-    graph, roots, nodes, node_attrs, indegree, outdegree = Dot_Preprocess.read_dot_file(dot_file)
+    graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2])
     vcd = VCDVCD(vcd_file, store_tvs=True)
     signal_keys = V_Preprocessing.extract_signals_with_pyverilog([v_file], vcd_file,
                                                                     include_scopes=["ibex_compressed_decoder_"],
@@ -35,8 +36,27 @@ if __name__ == "__main__":
         #     annotated = [f"{node}" for node in p]
         #     print(" -> ".join(annotated))
 
-    Features = Dot_Preprocess.extract_dot_features(nodes, indegree, outdegree, node_attrs)
+    Features = Dot_Preprocess.extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_nodes)
     Vcd_Preprocessing.extract_vcd_features(Features, node_attrs, vcd, signal_keys)
 
-    for node in nodes:
-        print(f"{node} features: {Features[node]}")
+    def dump_features_to_csv(Feature, out_csv="../out/features.csv"):
+        """
+        Write Feature dict to CSV.
+        Feature: dict[node] -> dict of features
+        """
+        fieldnames = set()
+        for feat in Feature.values():
+            fieldnames.update(feat.keys())
+        fieldnames = ["node"] + sorted(fieldnames)
+
+        with open(out_csv, "w", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            for node, feats in Feature.items():
+                row = {"node": node}
+                row.update(feats)
+                writer.writerow(row)
+
+        print(f"[INFO] Features written to {out_csv}")
+
+    dump_features_to_csv(Features)

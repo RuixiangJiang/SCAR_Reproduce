@@ -3,7 +3,7 @@ from collections import defaultdict
 import pydot
 
 
-def read_dot_file(dot_file):
+def read_dot_file(dot_file, key_register_name):
     graphs = pydot.graph_from_dot_file(dot_file)
     g = graphs[0]
 
@@ -14,6 +14,12 @@ def read_dot_file(dot_file):
             continue
         attrs = {k: v.strip('"') for k, v in node.get_attributes().items()}
         node_attrs[name] = attrs
+
+    key_nodes = set()
+    for node, attrs in node_attrs.items():
+        label = attrs.get("label", "")
+        if label and key_register_name in label:
+            key_nodes.add(node)
 
     indegree = defaultdict(int)
     outdegree = defaultdict(int)
@@ -40,7 +46,7 @@ def read_dot_file(dot_file):
 
     roots = list(parents - children)
     # print(f"{len(nodes)}, {len(g.get_edges())}, {len(g.get_nodes())}")
-    return graph, roots, nodes, node_attrs, indegree, outdegree
+    return graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes
 
 def find_paths(graph, root):
     paths = []
@@ -59,7 +65,7 @@ def find_paths(graph, root):
     dfs(root, [], set())
     return paths
 
-def extract_dot_features(nodes, indegree, outdegree, node_attrs):
+def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_nodes):
     def count_ops_in_label(label: str):
         counts = {"and": 0, "or": 0, "xor": 0, "mux": 0}
 
@@ -91,6 +97,29 @@ def extract_dot_features(nodes, indegree, outdegree, node_attrs):
             counts[k] = int(counts[k] > 0)
         return counts
 
+    def count_paths_to_targets(graph, key_nodes, u):
+        memo = {}
+        onstack = set()
+
+        def dfs(u):
+            if u in memo:
+                return memo[u]
+            if u in onstack:
+                return 0
+
+            onstack.add(u)
+
+            total = 1 if u in key_nodes else 0
+
+            for v in graph.get(u, []):
+                total += dfs(v)
+
+            onstack.remove(u)
+            memo[u] = total
+            return total
+
+        return dfs(u)
+
     Features = {}
     for node in nodes:
         label = node_attrs.get(node, {}).get("label", "")
@@ -98,7 +127,8 @@ def extract_dot_features(nodes, indegree, outdegree, node_attrs):
             "id": node,
             "label": label,
             "degree": indegree[node] + outdegree[node],
-            **count_ops_in_label(label)
+            **count_ops_in_label(label),
+            "paths_to_keys": count_paths_to_targets(graph, key_nodes, node),
         }
 
     return Features
