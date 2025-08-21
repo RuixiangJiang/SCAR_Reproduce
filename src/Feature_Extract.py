@@ -24,10 +24,6 @@ if __name__ == "__main__":
     for k, w, full in signal_keys:
         print(f"{k:<24} width={w:<4}  ->  {full}")
 
-    if not roots:
-        print("Root node not found！")
-        sys.exit(1)
-
     for root in roots:
         # print(f"Root: {root}")
         paths = Dot_Preprocess.find_paths(graph, root)

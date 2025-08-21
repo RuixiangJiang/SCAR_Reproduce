@@ -45,6 +45,8 @@ def read_dot_file(dot_file, key_register_name):
             outdegree[dst] = outdegree[dst]
 
     roots = list(parents - children)
+    if roots is None:
+        roots = [g.get_nodes()[0]]
     # print(f"{len(nodes)}, {len(g.get_edges())}, {len(g.get_nodes())}")
     return graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes
 
@@ -81,17 +83,12 @@ def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_node
         counts["xor"] += len(re.findall(r"\bxor\b", label, flags=re.IGNORECASE))
         counts["xor"] += len(re.findall(r"\^~|~\^|\^", label))
 
-        # mux
-        mux_count = 0
-        # 1. ?:
-        mux_count += len(re.findall(r"\?.*?:", label))
-        # 2. [N:M]
-        mux_count += len(re.findall(r"\[\s*\d+\s*:\s*\d+\s*\]", label))
-        # 3. case
-        mux_count += len(re.findall(r"\bcase\b.*?\bendcase\b", label,
+        # mux: "mux", "?:", "[:]", "case"
+        counts["mux"] += len(re.findall(r"\bmux\b", label, flags=re.IGNORECASE))
+        counts["mux"] += len(re.findall(r"\?.*?:", label))
+        counts["mux"] += len(re.findall(r"\[\s*\d+\s*:\s*\d+\s*\]", label))
+        counts["mux"] += len(re.findall(r"\bcase\b.*?\bendcase\b", label,
                                     flags=re.IGNORECASE | re.DOTALL))
-        # 4. explict "mux"
-        mux_count += len(re.findall(r"\bmux\b", label, flags=re.IGNORECASE))
 
         for k in counts:
             counts[k] = int(counts[k] > 0)
