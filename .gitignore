@@ -1,4 +1,5 @@
 .DS_Store
 .idea/
 src/parser.out
+src/parsetab.py
 out/
