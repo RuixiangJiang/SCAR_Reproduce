@@ -27,10 +27,12 @@ def read_dot_file(dot_file, key_register_name):
     children = set()
     parents = set()
     nodes = set()
+    edges = set()
 
     for edge in g.get_edges():
         src = edge.get_source().strip('"')
         dst = edge.get_destination().strip('"')
+        edges.add((src, dst))
         graph.setdefault(src, []).append(dst)
         parents.add(src)
         children.add(dst)
@@ -48,7 +50,7 @@ def read_dot_file(dot_file, key_register_name):
     if roots is None:
         roots = [g.get_nodes()[0]]
     # print(f"{len(nodes)}, {len(g.get_edges())}, {len(g.get_nodes())}")
-    return graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes
+    return graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes, edges
 
 def find_paths(graph, root):
     paths = []
@@ -69,7 +71,7 @@ def find_paths(graph, root):
 
 def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_nodes):
     def count_ops_in_label(label: str):
-        counts = {"and": 0, "or": 0, "xor": 0, "mux": 0}
+        counts = {"and": 0, "or": 0, "mux": 0, "xor": 0}
 
         # and: "and", "&", "&&"
         counts["and"] += len(re.findall(r"\band\b", label, flags=re.IGNORECASE))
@@ -118,14 +120,16 @@ def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_node
         return dfs(u)
 
     Features = {}
+    cnt = 0
     for node in nodes:
         label = node_attrs.get(node, {}).get("label", "")
         Features[node] = {
-            "id": node,
-            "label": label,
-            "degree": indegree[node] + outdegree[node],
+            "node_number": cnt,
+            "Node": label,
+            "Degree": indegree[node] + outdegree[node],
             **count_ops_in_label(label),
-            "paths_to_keys": count_paths_to_targets(graph, key_nodes, node),
+            "Paths": count_paths_to_targets(graph, key_nodes, node),
         }
+        cnt += 1
 
     return Features

@@ -15,7 +15,7 @@ if __name__ == "__main__":
     dot_file = "../data/" + sys.argv[1] + ".dot"
     vcd_file = "../data/" + sys.argv[1] + ".vcd"
     v_file = "../data/" + sys.argv[1] + ".v"
-    graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2])
+    graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes, edges = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2])
     vcd = VCDVCD(vcd_file, store_tvs=True)
     signal_keys = V_Preprocessing.extract_signals_with_pyverilog([v_file], vcd_file,
                                                                     include_scopes=["ibex_compressed_decoder_"],
@@ -56,3 +56,10 @@ if __name__ == "__main__":
         print(f"[INFO] Features written to {out_csv}")
 
     dump_features_to_csv(Features)
+
+    with open("../out/edges.csv", "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=["source", "target"])
+        writer.writeheader()
+        for src, dst in edges:
+            writer.writerow({"source": Features[src]["node_number"], "target": Features[dst]["node_number"]})
+        print("[INFO] Edges written to edges.csv")

@@ -159,7 +159,7 @@ def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
                     total += toggles[idx]
                     components.append((f"{base}[{hi}:{lo}]", bit, toggles[idx]))
 
-        Feature[node]["hamming"] = total
+        Feature[node]["Hamming distance"] = total
 
     # print(f"vcd.signals: {vcd.signals}")
 
