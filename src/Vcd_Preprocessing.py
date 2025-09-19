@@ -119,7 +119,7 @@ def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
 
         toggles = bit_toggles_per_signal(sig.tv, width)
         per_bit_toggles[sig_key] = toggles
-        print(f"HD Total for {sig_key}: {toggles}")
+        # print(f"HD Total for {sig_key}: {toggles}")
 
     for node in Feature.keys():
         label = node_attrs.get(node, {}).get("label", "") or ""

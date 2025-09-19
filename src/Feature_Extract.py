@@ -21,8 +21,8 @@ if __name__ == "__main__":
                                                                     include_scopes=["ibex_compressed_decoder_"],
                                                                     exclude_scopes=["bench", "tb", "test"],)
 
-    for k, w, full in signal_keys:
-        print(f"{k:<24} width={w:<4}  ->  {full}")
+    # for k, w, full in signal_keys:
+    #     print(f"{k:<24} width={w:<4}  ->  {full}")
 
     for root in roots:
         # print(f"Root: {root}")
@@ -55,11 +55,16 @@ if __name__ == "__main__":
 
         print(f"[INFO] Features written to {out_csv}")
 
-    dump_features_to_csv(Features)
+    if len(sys.argv) == 4:
+        dump_features_to_csv(Features, f"../test/{sys.argv[3]}_features.csv")
+        edge_file = f"../test/{sys.argv[3]}_edges.csv"
+    else:
+        dump_features_to_csv(Features)
+        edge_file = f"../out/edges.csv"
 
-    with open("../out/edges.csv", "w", newline="") as f:
+    with open(edge_file, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["source", "target"])
         writer.writeheader()
         for src, dst in edges:
             writer.writerow({"source": Features[src]["node_number"], "target": Features[dst]["node_number"]})
-        print("[INFO] Edges written to edges.csv")
+        print(f"[INFO] Edges written to {edge_file}")
