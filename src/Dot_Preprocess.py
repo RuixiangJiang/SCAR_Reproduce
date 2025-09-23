@@ -130,7 +130,6 @@ def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_node
             "Degree": indegree[node] + outdegree[node],
             **count_ops_in_label(label),
             "Paths": count_paths_to_targets(graph, key_nodes, node),
-            "Noise": random.randint(0, 1)
         }
         cnt += 1
 
