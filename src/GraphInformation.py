@@ -13,7 +13,7 @@ def graph_information(node_file, edge_file):
     nodeset["label"] = nodeset["label"].apply(lambda value: class_idx[value])
     nodeset.to_csv(node_file, index=False)
 
-    feature_names = set(nodeset.columns) - {"node_number", "Node", "node", "label"}
+    feature_names = {'Degree', 'Hamming distance', 'Paths', 'and', 'mux', 'or', 'xor'}
     num_features = len(feature_names)
     num_classes = len(class_idx)
 

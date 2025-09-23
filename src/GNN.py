@@ -15,7 +15,7 @@ def run_experiment(model, x_train, y_train):
         optimizer=keras.optimizers.Adam(learning_rate),
         loss=keras.losses.BinaryCrossentropy(from_logits=False),
         metrics=[keras.metrics.BinaryAccuracy(name="acc"),
-keras.metrics.Precision(), keras.metrics.Recall()],
+        keras.metrics.Precision(), keras.metrics.Recall()],
     )
     # Create an early stopping callback.
     early_stopping = keras.callbacks.EarlyStopping(

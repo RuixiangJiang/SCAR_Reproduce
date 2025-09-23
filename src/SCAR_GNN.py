@@ -19,9 +19,11 @@ test_data = nodeset.iloc[196:]
 graph_info, feature_names, num_features, num_classes = graph_information("../out/features.csv", "../out/edges.csv")
 
 print(f"num_features: {num_features}, num_classes: {num_classes}")
+print(f"feature_names: {feature_names}")
 
 # Create train and test features as a numpy array.
 x_train = train_data[list(feature_names)].to_numpy()
+print(f"x_train: {x_train}")
 x_test = test_data[list(feature_names)].to_numpy()
 # Create train and test targets as a numpy array.
 y_train = train_data["label"]
