@@ -1,34 +1,28 @@
-import os
-import pandas as pd
-import numpy as np
-import networkx as nx
-from sklearn.model_selection import train_test_split
-
 from GNN import *
 from GraphInformation import *
 
-nodeset = pd.read_csv(f"../out/features.csv")
-df = pd.read_csv(f"../out/edges.csv")
+feature_file = "../out/features.csv"
+edge_file = "../out/edges.csv"
 
+nodeset = pd.read_csv(feature_file)
 nodeset["label"] = nodeset["node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(bool) \
                    | nodeset["Node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(bool)
+nodeset.to_csv(feature_file, index=False)
+
+graph_info, feature_names, num_features, num_classes, nodeset = graph_information(feature_file, edge_file)
 
 train_data = nodeset.iloc[0:196]
 test_data = nodeset.iloc[196:]
-
-graph_info, feature_names, num_features, num_classes = graph_information("../out/features.csv", "../out/edges.csv")
 
 print(f"num_features: {num_features}, num_classes: {num_classes}")
 print(f"feature_names: {feature_names}")
 
 # Create train and test features as a numpy array.
 x_train = train_data[list(feature_names)].to_numpy()
-print(f"x_train: {x_train}")
 x_test = test_data[list(feature_names)].to_numpy()
 # Create train and test targets as a numpy array.
 y_train = train_data["label"]
 y_test = test_data["label"]
-
 
 baseline_model = create_baseline_model(hidden_units, num_classes, dropout_rate, num_features)
 history = run_experiment(baseline_model, x_train, y_train)
@@ -41,10 +35,8 @@ gnn_model = GNNNodeClassifier(
     name="gnn_model",
 )
 
-y_train1 = tf.keras.utils.to_categorical(
-    y_train, num_classes=2)
-y_test1 = tf.keras.utils.to_categorical(
-    y_test, num_classes=2)
+y_train1 = tf.keras.utils.to_categorical(y_train, num_classes=2)
+y_test1 = tf.keras.utils.to_categorical(y_test, num_classes=2)
 
 x_train = train_data.node_number.to_numpy()
 history = run_experiment(gnn_model, x_train, y_train1)

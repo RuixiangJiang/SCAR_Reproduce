@@ -14,16 +14,16 @@ def graph_information(node_file, edge_file):
     nodeset.to_csv(node_file, index=False)
 
     feature_names = {'Degree', 'Hamming distance', 'Paths', 'and', 'mux', 'or', 'xor'}
+    # feature_names = {'Hamming distance'}
     num_features = len(feature_names)
     num_classes = len(class_idx)
+    node_features = tf.cast(
+        nodeset.sort_values("node_number")[list(feature_names)].to_numpy(), dtype=tf.dtypes.float32
+    )
 
     df["source"] = df["source"].apply(lambda name: paper_idx[name])
     df["target"] = df["target"].apply(lambda name: paper_idx[name])
     edges = df[["source", "target"]].to_numpy().T
     edge_weights = tf.ones(shape=edges.shape[1])
 
-    node_features = tf.cast(
-        nodeset.sort_values("node_number")[list(feature_names)].to_numpy(), dtype=tf.dtypes.float32
-    )
-
-    return (node_features, edges, edge_weights), feature_names, num_features, num_classes
+    return (node_features, edges, edge_weights), feature_names, num_features, num_classes, nodeset
