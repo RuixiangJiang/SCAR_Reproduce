@@ -234,6 +234,3 @@ class GNNNodeClassifier(tf.keras.Model):
         print(node_embeddings)
         # Compute logits
         return self.compute_logits(node_embeddings)
-
-    def build(self, input_shape):
-        super().build(input_shape)

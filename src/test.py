@@ -31,15 +31,17 @@ leaky_module = {
 results = []
 
 for base, ffeat, fedge in paired:
+    print(f"Testing {base}")
     test_nodeset = pd.read_csv(ffeat)
     test_edge = pd.read_csv(fedge)
     keywords = leaky_module.get(base, [])
-    def contains_any(value, keywords):
-        return any(kw in str(value) for kw in keywords)
-    test_nodeset["label"] = test_nodeset["node"].apply(
-        lambda x: 1 if contains_any(x, keywords) else 0
-    )
-    test_nodeset.to_csv(ffeat, index=False)
+    if "label" not in test_nodeset.columns:
+        def contains_any(value, keywords):
+            return any(kw in str(value) for kw in keywords)
+        test_nodeset["label"] = test_nodeset["node"].apply(
+            lambda x: 1 if contains_any(x, keywords) else 0
+        )
+        test_nodeset.to_csv(ffeat, index=False)
 
     (X, edges, edges_weights), feature_names, num_features, num_classes, test_nodeset = graph_information(ffeat, fedge)
     Y = test_nodeset["label"]
@@ -51,12 +53,10 @@ for base, ffeat, fedge in paired:
         dropout_rate=dropout_rate,
         name="gnn_model",
     )
-
-    # model(tf.convert_to_tensor([0], dtype=tf.int32))
-
-    all_idx = tf.range(X.shape[0], dtype=tf.int32)
-    probs = model(all_idx).numpy()
+    _ = model.predict(tf.convert_to_tensor([0], dtype=tf.int32))
     model.load_weights("../out/gnn_weights.weights.h5")
+
+    probs = model.call(test_nodeset.node_number).numpy()
 
     if probs.shape[1] == 2:
         y_pred = probs.argmax(axis=1)
