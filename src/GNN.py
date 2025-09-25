@@ -214,7 +214,7 @@ class GNNNodeClassifier(tf.keras.Model):
         # Create a postprocess layer.
         self.postprocess = create_ffn(hidden_units, dropout_rate, name="postprocess")
         # Create a compute logits layer.
-        self.compute_logits = layers.Dense(units=num_classes,activation="softmax", name="logits")
+        self.compute_logits = layers.Dense(1, activation="sigmoid", name="logits")
 
     def call(self, input_node_indices):
         # Preprocess the node_features to produce node representations.

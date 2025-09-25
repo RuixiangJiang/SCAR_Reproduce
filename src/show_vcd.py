@@ -6,11 +6,10 @@ def parse_vcd(filename):
     signals = list(vcd.signals)
 
     for sig_key in vcd.signals:
-        if "key_in" in sig_key or "text_in" in sig_key or "text_out" in sig_key:
-            print(sig_key)
-            sig = vcd[sig_key]
-            for t, v in sig.tv:
-                print(" ", t, v)
+        print(sig_key)
+        sig = vcd[sig_key]
+        for t, v in sig.tv:
+            print(" ", t, v)
 
 
 if __name__ == "__main__":

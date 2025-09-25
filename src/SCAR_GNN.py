@@ -5,8 +5,7 @@ feature_file = "../out/features.csv"
 edge_file = "../out/edges.csv"
 
 nodeset = pd.read_csv(feature_file)
-nodeset["label"] = nodeset["node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(bool) \
-                   | nodeset["Node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(bool)
+nodeset["label"] = nodeset["node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(int)
 nodeset.to_csv(feature_file, index=False)
 
 graph_info, feature_names, num_features, num_classes, nodeset = graph_information(feature_file, edge_file)
@@ -35,8 +34,8 @@ gnn_model = GNNNodeClassifier(
     name="gnn_model",
 )
 
-y_train1 = tf.keras.utils.to_categorical(y_train, num_classes=2)
-y_test1 = tf.keras.utils.to_categorical(y_test, num_classes=2)
+y_train1 = y_train.to_numpy().astype("float32")
+y_test1  = y_test.to_numpy().astype("float32")
 
 x_train = train_data.node_number.to_numpy()
 history = run_experiment(gnn_model, x_train, y_train1)
@@ -44,7 +43,7 @@ history = run_experiment(gnn_model, x_train, y_train1)
 x_test = test_data.node_number.to_numpy()
 _, test_accuracy, precision, recall = gnn_model.evaluate(x=x_test, y=y_test1, verbose=0)
 print(f"Test accuracy: {round(test_accuracy * 100, 2)}%")
-print(f"Test precision: {(precision* 100)}%")
+print(f"Test precision: {(precision * 100)}%")
 print(f"Test recall: {(recall * 100)}%")
 
 gnn_model.save_weights("../out/gnn_weights.weights.h5")
