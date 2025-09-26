@@ -3,7 +3,8 @@ import tensorflow as tf
 
 def graph_information(node_file, edge_file):
     nodeset = pd.read_csv(node_file)
-    nodeset.drop(["node", "Node"], axis=1)
+    if "node" in nodeset.columns:
+        nodeset.drop(["node", "Node"], axis=1)
     nodeset = nodeset.reindex(columns=['node_number', 'Degree', 'Hamming distance', 'Paths', 'and', 'mux', 'or', 'xor', 'label'])
     nodeset.to_csv(node_file, index=False)
     df = pd.read_csv(edge_file)

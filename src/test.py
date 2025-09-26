@@ -23,10 +23,14 @@ else:
 results = []
 
 for base, ffeat, fedge in paired:
-    print(f"Testing {base}")
+    print(f"Testing {base}: read {ffeat} and {fedge}")
 
     (X, edges, edges_weights), feature_names, num_features, num_classes, test_nodeset = graph_information(ffeat, fedge)
     Y = test_nodeset["label"]
+
+    import pickle
+    with open("../out/train_graph_info.pkl", "rb") as f:
+        train_graph_info = pickle.load(f)
 
     model = GNNNodeClassifier(
         graph_info=(X, edges, edges_weights),
