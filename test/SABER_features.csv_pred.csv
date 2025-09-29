@@ -413,7 +413,7 @@ ax5 = a + { a[10:0], 2'b0 };",0,0,1,152,0,0,1,1
 PMULTs.sa201.748:AS,1,302770,"PMULTs.sa201.748:AS
 result = (s[3])? Ri - a_mul_s : Ri + a_mul_s;",0,0,1,153,0,0,1,1
 PLC.680:NS,2,2,"PLC.680:NS
-poly_load_delayed <= 0;",0,0,0,154,0,0,0,0
+poly_load_delayed <= 0;",0,0,0,154,0,0,0,1
 PMULTs.sa148.716:AS,1,1639,"PMULTs.sa148.716:AS
 ax5 = a + { a[10:0], 2'b0 };",0,0,1,155,0,0,1,1
 PMULTs.sa196.748:AS,1,302770,"PMULTs.sa196.748:AS

@@ -84,11 +84,11 @@ Dvld_tmp = Dvld_E & ~EncDec | Dvld_D & EncDec;",0,1,0,38,1,0,0,1
 AES_TBL.AES_TBL_ENC.254:BL,2,0,AES_TBL.AES_TBL_ENC.254:BL,1,0,0,39,0,0,0,0
 AES_TBL.77:BL,2,4,"AES_TBL.77:BL
 Dvld_reg <= 1'b0;
-Kvld_reg <= 1'b0;",0,0,0,40,0,0,0,0
+Kvld_reg <= 1'b0;",0,0,0,40,0,0,0,1
 AES_TBL.68:AS,2,2,"AES_TBL.68:AS
 Kvld = ((Kvld_reg == 1'b0) && (Kvld_tmp == 1'b1))? 1'b1 : 1'b0;",0,1,1,41,0,0,0,0
 AES_TBL.AES_TBL_ENC.252:AS,1,4,"AES_TBL.AES_TBL_ENC.252:AS
-BSY = BSYrg;",0,0,0,42,0,0,0,0
+BSY = BSYrg;",0,0,0,42,0,0,0,1
 AES_TBL.AES_TBL_ENC.EC.MX2.150:AS,3,250,"AES_TBL.AES_TBL_ENC.EC.MX2.150:AS
 b2 = a2 ^ a1;",0,0,0,43,0,1,1,1
 AES_TBL.Leaf_76:AL,4,0,AES_TBL.Leaf_76:AL,0,0,0,44,0,0,0,0

@@ -238,7 +238,7 @@ AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB
 y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,119,0,1,1,1
 AES_PPRM3.77:BL,2,4,"AES_PPRM3.77:BL
 Dvld_reg <= 1'b0;
-Kvld_reg <= 1'b0;",0,0,0,120,0,0,0,0
+Kvld_reg <= 1'b0;",0,0,0,120,0,0,0,1
 AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.135:AS
 y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,121,0,1,1,1
 AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.115:AS
@@ -248,7 +248,7 @@ y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ 
 AES_PPRM3.AES_PPRM3_ENC.EC.MX3.195:AS,3,250,"AES_PPRM3.AES_PPRM3_ENC.EC.MX3.195:AS
 b2 = a2 ^ a1;",0,0,0,124,0,1,1,1
 AES_PPRM3.AES_PPRM3_ENC.297:AS,1,4,"AES_PPRM3.AES_PPRM3_ENC.297:AS
-BSY = BSYrg;",0,0,0,125,0,0,0,0
+BSY = BSYrg;",0,0,0,125,0,0,0,1
 AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.129:AS
 d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,126,0,1,1,1
 AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.140:AS
