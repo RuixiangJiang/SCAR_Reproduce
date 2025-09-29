@@ -1,0 +1,836 @@
+node,Degree,Hamming distance,Node,Paths,and,mux,node_number,or,xor,label,prediction
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,0,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,1,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,2,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.308:BL,2,0,AES_PPRM3.AES_PPRM3_ENC.308:BL,1,0,0,3,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,4,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,5,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,6,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,7,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX2.192:AS,3,81,"AES_PPRM3.AES_PPRM3_ENC.EC.MX2.192:AS
+a2 = x[23:16];",0,0,1,8,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,9,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,10,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,11,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,12,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,13,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,14,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX1.193:AS,3,85,"AES_PPRM3.AES_PPRM3_ENC.EC.MX1.193:AS
+a0 = x[7:0];",0,0,1,15,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,16,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX2.196:AS,3,270,"AES_PPRM3.AES_PPRM3_ENC.EC.MX2.196:AS
+b0 = a0 ^ a3;",0,0,0,17,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,18,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,19,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,20,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,21,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,22,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,23,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,24,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,25,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,26,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,27,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,28,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,29,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,30,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,31,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,32,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,33,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,34,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,35,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.308:IF,2,0,AES_PPRM3.AES_PPRM3_ENC.308:IF,1,0,0,36,0,0,0,0
+AES_PPRM3.77:IF,3,0,AES_PPRM3.77:IF,0,0,0,37,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,38,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,39,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,40,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,41,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,42,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX3.198:AS,4,1189,"AES_PPRM3.AES_PPRM3_ENC.EC.MX3.198:AS
+y = { a2[7] ^ b1[7] ^ b3[6], a2[6] ^ b1[6] ^ b3[5], a2[5] ^ b1[5] ^ b3[4], a2[4] ^ b1[4] ^ b3[3] ^ b3[7], a2[3] ^ b1[3] ^ b3[2] ^ b3[7], a2[2] ^ b1[2] ^ b3[1], a2[1] ^ b1[1] ^ b3[0] ^ b3[7], a2[0] ^ b1[0] ^ b3[7], a3[7] ^ b1[7] ^ b2[6], a3[6] ^ b1[6] ^ b2[5], a3[5] ^ b1[5] ^ b2[4], a3[4] ^ b1[4] ^ b2[3] ^ b2[7], a3[3] ^ b1[3] ^ b2[2] ^ b2[7], a3[2] ^ b1[2] ^ b2[1], a3[1] ^ b1[1] ^ b2[0] ^ b2[7], a3[0] ^ b1[0] ^ b2[7], a0[7] ^ b3[7] ^ b1[6], a0[6] ^ b3[6] ^ b1[5], a0[5] ^ b3[5] ^ b1[4], a0[4] ^ b3[4] ^ b1[3] ^ b1[7], a0[3] ^ b3[3] ^ b1[2] ^ b1[7], a0[2] ^ b3[2] ^ b1[1], a0[1] ^ b3[1] ^ b1[0] ^ b1[7], a0[0] ^ b3[0] ^ b1[7], a1[7] ^ b3[7] ^ b0[6], a1[6] ^ b3[6] ^ b0[5], a1[5] ^ b3[5] ^ b0[4], a1[4] ^ b3[4] ^ b0[3] ^ b0[7], a1[3] ^ b3[3] ^ b0[2] ^ b0[7], a1[2] ^ b3[2] ^ b0[1], a1[1] ^ b3[1] ^ b0[0] ^ b0[7], a1[0] ^ b3[0] ^ b0[7] };",0,0,0,43,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.294:AS,1,1,"AES_PPRM3.AES_PPRM3_ENC.294:AS
+Kvld = Kvldrg;",0,0,0,44,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX0.195:AS,3,250,"AES_PPRM3.AES_PPRM3_ENC.EC.MX0.195:AS
+b2 = a2 ^ a1;",0,0,0,45,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,46,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,47,0,1,1,1
+77:NS,2,0,"77:NS
+#(CLOCK / 2) CLK <= ~CLK;",0,0,0,48,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,49,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,50,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,51,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,52,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,53,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,54,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,55,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,56,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,57,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,58,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX3.196:AS,3,270,"AES_PPRM3.AES_PPRM3_ENC.EC.MX3.196:AS
+b0 = a0 ^ a3;",0,0,0,59,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,60,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,61,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,62,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,63,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,64,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,65,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,66,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,67,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,68,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,69,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX0.196:AS,3,270,"AES_PPRM3.AES_PPRM3_ENC.EC.MX0.196:AS
+b0 = a0 ^ a3;",0,0,0,70,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,71,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,72,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,73,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,74,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,75,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,76,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,77,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,78,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,79,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,80,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,81,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,82,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,83,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.295:AS,1,3,"AES_PPRM3.AES_PPRM3_ENC.295:AS
+Dvld = Dvldrg;",0,0,0,84,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,85,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,86,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.331:BL,2,3160,"AES_PPRM3.AES_PPRM3_ENC.331:BL
+Rrg <= { Rrg[8:0], Rrg[9] };
+KrgX <= Knext;",1,0,1,87,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,88,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,89,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,90,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,91,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,92,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,93,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,94,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,95,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,96,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,97,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,98,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,99,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,100,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,101,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,102,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,103,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,104,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,105,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,106,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,107,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,108,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,109,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,110,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,111,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,112,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,113,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,114,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,115,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.299:AL,2,0,AES_PPRM3.AES_PPRM3_ENC.299:AL,1,0,0,116,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,117,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,118,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,119,0,1,1,1
+AES_PPRM3.77:BL,2,4,"AES_PPRM3.77:BL
+Dvld_reg <= 1'b0;
+Kvld_reg <= 1'b0;",0,0,0,120,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,121,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,122,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,123,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX3.195:AS,3,250,"AES_PPRM3.AES_PPRM3_ENC.EC.MX3.195:AS
+b2 = a2 ^ a1;",0,0,0,124,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.297:AS,1,4,"AES_PPRM3.AES_PPRM3_ENC.297:AS
+BSY = BSYrg;",0,0,0,125,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,126,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,127,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,128,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,129,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,130,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,131,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,132,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,133,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX1.192:AS,3,81,"AES_PPRM3.AES_PPRM3_ENC.EC.MX1.192:AS
+a2 = x[23:16];",0,0,1,134,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.326:BL,2,1559,"AES_PPRM3.AES_PPRM3_ENC.326:BL
+KrgX <= Krg;
+Dvldrg <= 1;
+BSYrg <= 0;",1,0,0,135,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,136,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,137,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,138,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,139,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,140,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,141,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,142,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,143,0,1,1,1
+AES_PPRM3.67:AS,2,6,"AES_PPRM3.67:AS
+Dvld = ((Dvld_reg == 1'b0) && (Dvld_tmp == 1'b1))? 1'b1 : 1'b0;",0,1,1,144,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,145,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,146,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,147,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,148,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,149,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,150,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,151,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,152,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,153,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.296:AS,1,1321,"AES_PPRM3.AES_PPRM3_ENC.296:AS
+Dout = Drg;",0,0,0,154,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,155,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,156,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,157,0,1,1,1
+AES_PPRM3.68:AS,2,2,"AES_PPRM3.68:AS
+Kvld = ((Kvld_reg == 1'b0) && (Kvld_tmp == 1'b1))? 1'b1 : 1'b0;",0,1,1,158,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,159,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,160,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,161,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,162,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,163,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,164,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,165,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,166,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,167,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,168,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,169,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,170,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,171,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,172,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,173,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,174,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,175,0,1,1,1
+Leaf_76:AL,2,0,Leaf_76:AL,0,0,0,176,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,177,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,178,0,1,1,1
+AES_PPRM3.Leaf_76:AL,4,0,AES_PPRM3.Leaf_76:AL,0,0,0,179,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.326:IF,3,0,AES_PPRM3.AES_PPRM3_ENC.326:IF,2,0,0,180,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,181,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,182,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,183,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,184,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,185,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,186,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,187,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,188,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,189,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,190,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,191,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,192,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,193,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,194,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,195,0,1,1,1
+AES_PPRM3.76:AL,3,0,AES_PPRM3.76:AL,0,0,0,196,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,197,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,198,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,199,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.Leaf_299:AL,10,0,AES_PPRM3.AES_PPRM3_ENC.Leaf_299:AL,1,0,0,200,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,201,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,202,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,203,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,204,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.310:IF,3,0,AES_PPRM3.AES_PPRM3_ENC.310:IF,1,0,0,205,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,206,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,207,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,208,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,209,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,210,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,211,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,212,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,213,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,214,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,215,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,216,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,217,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,218,0,1,1,1
+AES_PPRM3.65:AS,2,2,"AES_PPRM3.65:AS
+Kvld_tmp = Kvld_E & ~EncDec | Kvld_D & EncDec;",0,1,0,219,1,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,220,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,221,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.300:BL,2,1628,"AES_PPRM3.AES_PPRM3_ENC.300:BL
+Krg <= 128'h0000000000000000;
+KrgX <= 128'h0000000000000000;
+Rrg <= 10'b0000000001;
+Kvldrg <= 0;
+Dvldrg <= 0;
+BSYrg <= 0;",1,0,0,222,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,223,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,224,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,225,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,226,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,227,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,228,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,229,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,230,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,231,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,232,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,233,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,234,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,235,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,236,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,237,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,238,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,239,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,240,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,241,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.310:BL,2,1556,"AES_PPRM3.AES_PPRM3_ENC.310:BL
+Krg <= Kin;
+KrgX <= Kin;
+Kvldrg <= 1;
+Dvldrg <= 0;",1,0,0,242,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.309:IF,3,0,AES_PPRM3.AES_PPRM3_ENC.309:IF,1,0,0,243,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,244,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,245,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,246,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,247,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,248,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,249,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,250,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,251,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,252,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,253,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,254,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,255,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,256,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,257,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,258,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,259,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,260,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,261,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,262,0,1,1,1
+76:AL,2,0,76:AL,0,0,0,263,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,264,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,265,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,266,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.316:IF,2,0,AES_PPRM3.AES_PPRM3_ENC.316:IF,1,0,0,267,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,268,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,269,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,270,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,271,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,272,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,273,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,274,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX0.192:AS,3,81,"AES_PPRM3.AES_PPRM3_ENC.EC.MX0.192:AS
+a2 = x[23:16];",0,0,1,275,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,276,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,277,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,278,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,279,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,280,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX2.195:AS,3,250,"AES_PPRM3.AES_PPRM3_ENC.EC.MX2.195:AS
+b2 = a2 ^ a1;",0,0,0,281,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,282,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,283,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,284,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,285,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.324:BL,2,2687,"AES_PPRM3.AES_PPRM3_ENC.324:BL
+Drg <= Dnext;",2,0,0,286,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,287,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,288,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,289,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,290,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,291,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,292,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,293,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,294,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,295,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,296,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,297,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,298,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,299,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,300,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,301,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,302,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX0.193:AS,3,85,"AES_PPRM3.AES_PPRM3_ENC.EC.MX0.193:AS
+a0 = x[7:0];",0,0,1,303,0,0,1,1
+AES_PPRM3.81:BL,2,8,"AES_PPRM3.81:BL
+Dvld_reg <= Dvld_tmp;
+Kvld_reg <= Kvld_tmp;",0,0,0,304,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,305,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,306,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,307,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,308,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,309,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,310,0,1,1,1
+AES_PPRM3.76:BL,2,0,AES_PPRM3.76:BL,0,0,0,311,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,312,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,313,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,314,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.262:AS,2,419,"AES_PPRM3.AES_PPRM3_ENC.EC.262:AS
+ko = { ki[127:96] ^ { so[31:24] ^ rcon(Rrg), so[23:0] }, ki[95:64] ^ ko[127:96], ki[63:32] ^ ko[95:64], ki[31:0] ^ ko[63:32] };",0,0,1,315,0,1,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX0.198:AS,4,1189,"AES_PPRM3.AES_PPRM3_ENC.EC.MX0.198:AS
+y = { a2[7] ^ b1[7] ^ b3[6], a2[6] ^ b1[6] ^ b3[5], a2[5] ^ b1[5] ^ b3[4], a2[4] ^ b1[4] ^ b3[3] ^ b3[7], a2[3] ^ b1[3] ^ b3[2] ^ b3[7], a2[2] ^ b1[2] ^ b3[1], a2[1] ^ b1[1] ^ b3[0] ^ b3[7], a2[0] ^ b1[0] ^ b3[7], a3[7] ^ b1[7] ^ b2[6], a3[6] ^ b1[6] ^ b2[5], a3[5] ^ b1[5] ^ b2[4], a3[4] ^ b1[4] ^ b2[3] ^ b2[7], a3[3] ^ b1[3] ^ b2[2] ^ b2[7], a3[2] ^ b1[2] ^ b2[1], a3[1] ^ b1[1] ^ b2[0] ^ b2[7], a3[0] ^ b1[0] ^ b2[7], a0[7] ^ b3[7] ^ b1[6], a0[6] ^ b3[6] ^ b1[5], a0[5] ^ b3[5] ^ b1[4], a0[4] ^ b3[4] ^ b1[3] ^ b1[7], a0[3] ^ b3[3] ^ b1[2] ^ b1[7], a0[2] ^ b3[2] ^ b1[1], a0[1] ^ b3[1] ^ b1[0] ^ b1[7], a0[0] ^ b3[0] ^ b1[7], a1[7] ^ b3[7] ^ b0[6], a1[6] ^ b3[6] ^ b0[5], a1[5] ^ b3[5] ^ b0[4], a1[4] ^ b3[4] ^ b0[3] ^ b0[7], a1[3] ^ b3[3] ^ b0[2] ^ b0[7], a1[2] ^ b3[2] ^ b0[1], a1[1] ^ b3[1] ^ b0[0] ^ b0[7], a1[0] ^ b3[0] ^ b0[7] };",0,0,0,316,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX1.198:AS,4,1189,"AES_PPRM3.AES_PPRM3_ENC.EC.MX1.198:AS
+y = { a2[7] ^ b1[7] ^ b3[6], a2[6] ^ b1[6] ^ b3[5], a2[5] ^ b1[5] ^ b3[4], a2[4] ^ b1[4] ^ b3[3] ^ b3[7], a2[3] ^ b1[3] ^ b3[2] ^ b3[7], a2[2] ^ b1[2] ^ b3[1], a2[1] ^ b1[1] ^ b3[0] ^ b3[7], a2[0] ^ b1[0] ^ b3[7], a3[7] ^ b1[7] ^ b2[6], a3[6] ^ b1[6] ^ b2[5], a3[5] ^ b1[5] ^ b2[4], a3[4] ^ b1[4] ^ b2[3] ^ b2[7], a3[3] ^ b1[3] ^ b2[2] ^ b2[7], a3[2] ^ b1[2] ^ b2[1], a3[1] ^ b1[1] ^ b2[0] ^ b2[7], a3[0] ^ b1[0] ^ b2[7], a0[7] ^ b3[7] ^ b1[6], a0[6] ^ b3[6] ^ b1[5], a0[5] ^ b3[5] ^ b1[4], a0[4] ^ b3[4] ^ b1[3] ^ b1[7], a0[3] ^ b3[3] ^ b1[2] ^ b1[7], a0[2] ^ b3[2] ^ b1[1], a0[1] ^ b3[1] ^ b1[0] ^ b1[7], a0[0] ^ b3[0] ^ b1[7], a1[7] ^ b3[7] ^ b0[6], a1[6] ^ b3[6] ^ b0[5], a1[5] ^ b3[5] ^ b0[4], a1[4] ^ b3[4] ^ b0[3] ^ b0[7], a1[3] ^ b3[3] ^ b0[2] ^ b0[7], a1[2] ^ b3[2] ^ b0[1], a1[1] ^ b3[1] ^ b0[0] ^ b0[7], a1[0] ^ b3[0] ^ b0[7] };",0,0,0,317,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,318,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,319,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,320,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,321,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,322,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,323,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,324,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,325,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.234:AS,1,2624,"AES_PPRM3.AES_PPRM3_ENC.EC.234:AS
+sr = { sb[127:120], sb[87:80], sb[47:40], sb[7:0], sb[95:88], sb[55:48], sb[15:8], sb[103:96], sb[63:56], sb[23:16], sb[111:104], sb[71:64], sb[31:24], sb[119:112], sb[79:72], sb[39:32] };",0,0,1,326,0,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.244:AS,1,2652,"AES_PPRM3.AES_PPRM3_ENC.EC.244:AS
+do = ((Rrg[0] == 1)? sr : mx) ^ ki;",0,0,1,327,0,1,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,328,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,329,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,330,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX2.193:AS,3,85,"AES_PPRM3.AES_PPRM3_ENC.EC.MX2.193:AS
+a0 = x[7:0];",0,0,1,331,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,332,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,333,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,334,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,335,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,336,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,337,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,338,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,339,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.300:IF,3,0,AES_PPRM3.AES_PPRM3_ENC.300:IF,1,0,0,340,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,341,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,342,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,343,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,344,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,345,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.309:BL,2,0,AES_PPRM3.AES_PPRM3_ENC.309:BL,1,0,0,346,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,347,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX3.193:AS,3,85,"AES_PPRM3.AES_PPRM3_ENC.EC.MX3.193:AS
+a0 = x[7:0];",0,0,1,348,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,349,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,350,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,351,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,352,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX3.192:AS,3,81,"AES_PPRM3.AES_PPRM3_ENC.EC.MX3.192:AS
+a2 = x[23:16];",0,0,1,353,0,0,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,354,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,355,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.140:AS,5,272,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.140:AS
+y[6] = ~(a[0] & d[2]) ^ a[2] & d[0] ^ d[3] & a[3] ^ a[0] & d[1] ^ a[1] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ a[0] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,356,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,357,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,358,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox3.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,359,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,360,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,361,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX1.196:AS,3,270,"AES_PPRM3.AES_PPRM3_ENC.EC.MX1.196:AS
+b0 = a0 ^ a3;",0,0,0,362,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,363,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,364,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,365,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,366,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,367,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,368,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,369,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.127:AS,12,150,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.127:AS
+d[2] = c[3] & c[2] & c[0] ^ c[3] & c[0] ^ c[3] & c[2] & c[1] ^ c[2] & c[1] ^ c[2];",0,1,0,370,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,371,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,372,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,373,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,374,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox0.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,375,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,376,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.120:AS,4,12,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox2.120:AS
+c[0] = x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[6] & x[1] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[7] & x[6] ^ x[3] & x[4] ^ x[7] & x[4] ^ x[5] & x[3] ^ x[4] & x[1] ^ x[2] ^ x[3] & x[2] ^ x[4] & x[6] ^ x[6] ^ x[5] ^ x[3] ^ x[0];",0,1,0,377,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,378,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox1.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,379,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.299:BL,2,0,AES_PPRM3.AES_PPRM3_ENC.299:BL,1,0,0,380,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.97:AS,7,46,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.97:AS
+a = { x[7] ^ x[5], x[7] ^ x[6] ^ x[4] ^ x[3] ^ x[2] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[1] };",0,0,0,381,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.101:AS,7,45,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.101:AS
+b = { x[5] ^ x[6] ^ x[2] ^ x[1], x[6], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[4] ^ x[1], x[7] ^ x[5] ^ x[3] ^ x[2] ^ x[6] ^ x[0] };",0,0,0,382,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox2.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,383,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX2.198:AS,4,1189,"AES_PPRM3.AES_PPRM3_ENC.EC.MX2.198:AS
+y = { a2[7] ^ b1[7] ^ b3[6], a2[6] ^ b1[6] ^ b3[5], a2[5] ^ b1[5] ^ b3[4], a2[4] ^ b1[4] ^ b3[3] ^ b3[7], a2[3] ^ b1[3] ^ b3[2] ^ b3[7], a2[2] ^ b1[2] ^ b3[1], a2[1] ^ b1[1] ^ b3[0] ^ b3[7], a2[0] ^ b1[0] ^ b3[7], a3[7] ^ b1[7] ^ b2[6], a3[6] ^ b1[6] ^ b2[5], a3[5] ^ b1[5] ^ b2[4], a3[4] ^ b1[4] ^ b2[3] ^ b2[7], a3[3] ^ b1[3] ^ b2[2] ^ b2[7], a3[2] ^ b1[2] ^ b2[1], a3[1] ^ b1[1] ^ b2[0] ^ b2[7], a3[0] ^ b1[0] ^ b2[7], a0[7] ^ b3[7] ^ b1[6], a0[6] ^ b3[6] ^ b1[5], a0[5] ^ b3[5] ^ b1[4], a0[4] ^ b3[4] ^ b1[3] ^ b1[7], a0[3] ^ b3[3] ^ b1[2] ^ b1[7], a0[2] ^ b3[2] ^ b1[1], a0[1] ^ b3[1] ^ b1[0] ^ b1[7], a0[0] ^ b3[0] ^ b1[7], a1[7] ^ b3[7] ^ b0[6], a1[6] ^ b3[6] ^ b0[5], a1[5] ^ b3[5] ^ b0[4], a1[4] ^ b3[4] ^ b0[3] ^ b0[7], a1[3] ^ b3[3] ^ b0[2] ^ b0[7], a1[2] ^ b3[2] ^ b0[1], a1[1] ^ b3[1] ^ b0[0] ^ b0[7], a1[0] ^ b3[0] ^ b0[7] };",0,0,0,384,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,385,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,386,0,1,1,1
+AES_PPRM3.64:AS,2,6,"AES_PPRM3.64:AS
+Dvld_tmp = Dvld_E & ~EncDec | Dvld_D & EncDec;",0,1,0,387,1,0,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,388,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,389,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox0.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,390,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,391,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.151:AS,5,160,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.151:AS
+y[3] = b[0] & d[1] ^ b[1] & d[0] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ b[0] & d[0];",0,1,0,392,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.147:AS,6,297,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.147:AS
+y[4] = d[3] & a[1] ^ d[1] & a[3] ^ a[0] & d[0] ^ b[3] & d[3] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[1] & d[1] ^ b[2] & d[2] ^ b[0] & d[0];",0,1,0,393,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.316:BL,2,4520,"AES_PPRM3.AES_PPRM3_ENC.316:BL
+Rrg <= { Rrg[8:0], Rrg[9] };
+KrgX <= Knext;
+Drg <= Din ^ Krg;
+Dvldrg <= 0;
+BSYrg <= 1;",1,0,1,394,0,1,0,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.135:AS,6,408,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.135:AS
+y[7] = d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[2] & d[3] ^ b[3] & d[2] ^ b[2] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0];",0,1,0,395,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,396,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.105:AS,4,15,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.105:AS
+c[3] = x[5] & x[1] ^ x[7] & x[1] ^ x[5] & x[2] ^ x[5] & x[6] ^ x[5] & x[7] ^ x[5] & x[4] ^ x[7] & x[4] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[3] & x[1] ^ x[4] & x[1] ^ x[3] & x[2] ^ x[2] & x[4] ^ x[4] & x[6] ^ x[2] & x[1] ^ x[2] & x[6] ^ x[6] & x[1];",0,1,0,397,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,398,0,1,1,1
+AES_PPRM3.81:IF,2,0,AES_PPRM3.81:IF,0,0,0,399,0,0,0,0
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,400,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox0.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,401,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.131:AS,12,266,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox3.131:AS
+d[0] = c[3] & c[2] & c[0] ^ c[3] & c[1] & c[0] ^ c[3] & c[2] & c[1] ^ c[3] & c[1] ^ c[3] & c[0] ^ c[2] & c[1] & c[0] ^ c[2] ^ c[2] & c[1] ^ c[1] ^ c[0];",0,1,0,402,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox1.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,403,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SBK.Sbox0.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,404,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox3.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,405,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,406,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox3.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,407,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.162:AS,6,369,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.162:AS
+y[0] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ a[0] & d[2] ^ a[2] & d[0] ^ b[0] & d[1] ^ b[1] & d[0] ^ d[2] & a[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,408,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.110:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox2.110:AS
+c[2] = x[6] & x[1] ^ x[2] & x[6] ^ x[3] & x[6] ^ x[7] & x[6] ^ x[1] & x[0] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[4] & x[0] ^ x[6] & x[0] ^ x[7] & x[0] ^ x[5] & x[2] ^ x[5] & x[3] ^ x[2] & x[4] ^ x[3] & x[4] ^ x[5] & x[7] ^ x[7] & x[2] ^ x[5] & x[6] ^ x[3] & x[2] ^ x[7] & x[3];",0,1,0,409,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox2.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,410,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.MX1.195:AS,3,250,"AES_PPRM3.AES_PPRM3_ENC.EC.MX1.195:AS
+b2 = a2 ^ a1;",0,0,0,411,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.153:AS,6,386,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox2.153:AS
+y[2] = a[0] & d[2] ^ a[2] & d[0] ^ a[0] & d[1] ^ a[1] & d[0] ^ b[1] & d[1] ^ b[2] & d[2] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ a[0] & d[0] ^ b[0] & d[3] ^ b[1] & d[2] ^ b[2] & d[1] ^ b[3] & d[0] ^ b[0] & d[0];",0,1,0,412,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.143:AS,6,340,"AES_PPRM3.AES_PPRM3_ENC.EC.SB0.Sbox1.143:AS
+y[5] = ~(d[3] & a[3]) ^ d[3] & a[1] ^ d[1] & a[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[2] & d[2] ^ b[0] & d[2] ^ b[2] & d[0] ^ b[3] & d[3] ^ b[1] & d[3] ^ b[3] & d[1] ^ d[3] & a[0] ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3];",0,1,0,413,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.129:AS,12,148,"AES_PPRM3.AES_PPRM3_ENC.EC.SB1.Sbox1.129:AS
+d[1] = c[3] & c[2] & c[1] ^ c[3] & c[1] & c[0] ^ c[3] ^ c[2] & c[0] ^ c[2] ^ c[1];",0,1,0,414,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.126:AS,12,98,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox1.126:AS
+d[3] = c[3] & c[2] & c[1] ^ c[3] & c[0] ^ c[3] ^ c[2];",0,1,0,415,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.158:AS,6,317,"AES_PPRM3.AES_PPRM3_ENC.EC.SB2.Sbox3.158:AS
+y[1] = ~(d[3] & a[0]) ^ d[2] & a[1] ^ d[1] & a[2] ^ d[0] & a[3] ^ b[1] & d[1] ^ b[2] & d[3] ^ b[3] & d[2] ^ d[3] & a[3] ^ d[3] & a[1] ^ d[1] & a[3] ^ b[3] & d[3] ^ d[3] & a[2] ^ d[2] & a[3] ^ b[0] & d[0];",0,1,0,416,0,1,1,1
+AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.115:AS,4,11,"AES_PPRM3.AES_PPRM3_ENC.EC.SB3.Sbox0.115:AS
+c[1] = x[2] & x[1] ^ x[2] & x[4] ^ x[5] & x[4] ^ x[3] & x[6] ^ x[5] & x[6] ^ x[2] & x[0] ^ x[3] & x[0] ^ x[5] & x[0] ^ x[7] & x[0] ^ x[1] ^ x[5] & x[2] ^ x[7] & x[2] ^ x[5] & x[3] ^ x[5] & x[7] ^ x[7] ^ x[2] ^ x[3] & x[2] ^ x[4] ^ x[5];",0,1,0,417,0,1,1,1

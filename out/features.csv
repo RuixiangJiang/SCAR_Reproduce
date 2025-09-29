@@ -1,0 +1,410 @@
+node,Degree,Hamming distance,Node,Paths,and,mux,node_number,or,xor,label
+dut.SubBytes.455:AS,4,0,"dut.SubBytes.455:AS
+b01 = s_box(a01);",0,0,0,0,0,0,0
+dut.InvMixColumn1.730:AS,1,0,"dut.InvMixColumn1.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,0,1,0,1,1
+dut.132:NS,2,2,"dut.132:NS
+busy <= 1'b0;",31,0,0,2,0,0,0
+dut.255:BL,2,0,dut.255:BL,0,0,0,3,0,0,0
+dut.101:CA,2,0,dut.101:CA,102,0,0,4,0,0,0
+dut.InvSubBytes.553:AS,8,0,"dut.InvSubBytes.553:AS
+b13 = is_box(a13);",0,0,0,5,0,0,0
+dut.InvSubBytes.537:AS,8,0,"dut.InvSubBytes.537:AS
+b00 = is_box(a00);",0,0,0,6,0,0,0
+dut.InvMixColumn0.727:AS,1,0,"dut.InvMixColumn0.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,0,7,0,1,1
+dut.95:CA,2,0,dut.95:CA,255,0,0,8,0,0,0
+dut.187:AS,9,755,"dut.187:AS
+next_key[95:64] = w[1] ^ next_key[127:96];",1,0,1,9,0,1,0
+dut.214:IF,3,0,dut.214:IF,0,0,0,10,0,0,0
+dut.100:BS,2,8,"dut.100:BS
+next_state = 3'h0;",51,0,0,11,0,0,0
+dut.97:BS,2,8,"dut.97:BS
+next_state = 3'h1;",51,0,0,12,0,0,0
+dut.226:AS,2,456,"dut.226:AS
+irotword = { sword[23:0], sword[31:24] };",0,0,1,13,0,0,0
+dut.170:NS,2,1496,"dut.170:NS
+{ w[0], w[1], w[2], w[3] } <= next_key;",24,0,0,14,0,0,0
+dut.171:NS,2,0,"dut.171:NS
+{ w[0], w[1], w[2], w[3] } <= { w[0], w[1], w[2], w[3] };",24,0,0,15,0,0,0
+dut.SubWord.618:AS,2,0,"dut.SubWord.618:AS
+b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };",1,0,1,16,0,0,0
+dut.162:AL,9,0,dut.162:AL,1,0,0,17,0,0,0
+dut.119:BL,2,56,"dut.119:BL
+busy <= 1'b0;
+start_flag <= 1'b0;
+key_val <= 1'b0;
+round_n <= 4'h0;
+key_val <= 1'b0;
+text_val <= 1'b0;",31,0,0,18,0,0,0
+dut.263:BL,2,1471,"dut.263:BL
+{ state[0], state[1], state[2], state[3] } <= cipher_text;",0,0,0,19,0,0,0
+dut.349:IF,3,0,dut.349:IF,0,0,0,20,0,0,0
+dut.355:IF,3,0,dut.355:IF,0,0,0,21,0,0,0
+dut.InvMixColumn3.728:AS,1,0,"dut.InvMixColumn3.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,0,22,0,1,1
+dut.252:BL,2,0,"dut.252:BL
+{ state[0], state[1], state[2], state[3] } <= { 128{ 1'b0 } };",0,0,0,23,0,0,0
+dut.332:AS,6,384,"dut.332:AS
+cipher_text[95:64] = { s_row[0][1], s_row[1][1], s_row[2][1], s_row[3][1] } ^ w[1];",0,0,1,24,0,1,0
+dut.103:IF,3,0,dut.103:IF,102,0,0,25,0,0,0
+dut.405:AS,18,247,"dut.405:AS
+add_iroundkey[63:32] = { is_box[0][2], is_box[1][2], is_box[2][2], is_box[3][2] } ^ iw[2];",0,0,1,26,0,1,0
+dut.InvSubBytes.538:AS,8,0,"dut.InvSubBytes.538:AS
+b10 = is_box(a10);",0,0,0,27,0,0,0
+dut.170:IF,3,0,dut.170:IF,48,0,0,28,0,0,0
+dut.266:NS,2,0,"dut.266:NS
+{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };",0,0,0,29,0,0,0
+dut.344:IF,3,0,dut.344:IF,0,0,0,30,0,0,0
+dut.252:IF,3,0,dut.252:IF,0,0,0,31,0,0,0
+dut.263:IF,3,0,dut.263:IF,0,0,0,32,0,0,0
+dut.231:AS,2,279,"dut.231:AS
+next_ikey[63:32] = iw[2] ^ iw[1];",0,0,1,33,0,1,0
+dut.93:BL,2,0,dut.93:BL,510,0,0,34,0,0,0
+dut.InvSubBytes.545:AS,8,0,"dut.InvSubBytes.545:AS
+b31 = is_box(a31);",0,0,0,35,0,0,0
+dut.188:AS,9,779,"dut.188:AS
+next_key[63:32] = w[2] ^ next_key[95:64];",1,0,1,36,0,1,0
+dut.InvSubBytes.539:AS,8,0,"dut.InvSubBytes.539:AS
+b20 = is_box(a20);",0,0,0,37,0,0,0
+dut.SubBytes.451:AS,4,0,"dut.SubBytes.451:AS
+b10 = s_box(a10);",0,0,0,38,0,0,0
+dut.378:AS,20,0,"dut.378:AS
+{ is_row[0][0], is_row[0][1], is_row[0][2], is_row[0][3] } = { is_row_in[0][0], is_row_in[0][1], is_row_in[0][2], is_row_in[0][3] };",0,0,0,39,0,0,0
+dut.94:CS,5,0,dut.94:CS,510,0,0,40,0,0,0
+dut.352:IF,3,0,dut.352:IF,0,0,0,41,0,0,0
+dut.257:IF,3,0,dut.257:IF,0,0,0,42,0,0,0
+dut.295:AS,20,0,"dut.295:AS
+{ s_row[0][0], s_row[0][1], s_row[0][2], s_row[0][3] } = { s_box[0][0], s_box[0][1], s_box[0][2], s_box[0][3] };",0,0,0,43,0,0,0
+dut.275:AS,2,1493,"dut.275:AS
+add_roundkey0 = text_in ^ { w[0], w[1], w[2], w[3] };",0,0,0,44,0,1,0
+dut.192:AS,2,560,"dut.192:AS
+rcon = (round_n == 4'h0)? 8'h01 :
+(8'h00 | (round_n == 4'h1))? 8'h02 :
+(8'h00 | (round_n == 4'h2))? 8'h04 :
+(8'h00 | (round_n == 4'h3))? 8'h08 :
+(8'h00 | (round_n == 4'h4))? 8'h10 :
+(8'h00 | (round_n == 4'h5))? 8'h20 :
+(8'h00 | (round_n == 4'h6))? 8'h40 :
+(8'h00 | (round_n == 4'h7))? 8'h80 :
+(8'h00 | (round_n == 4'h8))? 8'h1b :
+(8'h00 | (round_n == 4'h9))? 8'h36 : 8'h00;",1,0,1,45,1,0,0
+dut.InvMixColumn2.728:AS,1,0,"dut.InvMixColumn2.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,0,46,0,1,1
+dut.349:BL,2,1034,"dut.349:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey0;",0,0,0,47,0,0,0
+dut.119:IF,3,0,dut.119:IF,496,0,0,48,0,0,0
+dut.130:IF,3,0,dut.130:IF,124,0,0,49,0,0,0
+dut.146:IF,3,0,dut.146:IF,62,0,0,50,0,0,0
+dut.348:BL,2,0,dut.348:BL,0,0,0,51,0,0,0
+dut.352:BL,2,0,"dut.352:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= { im_col[0], im_col[1], im_col[2], im_col[3] };",0,0,0,52,0,0,0
+dut.99:BS,2,8,"dut.99:BS
+next_state = 3'h2;",51,0,0,53,0,0,0
+dut.InvSubBytes.540:AS,8,0,"dut.InvSubBytes.540:AS
+b30 = is_box(a30);",0,0,0,54,0,0,0
+dut.150:NS,2,2,"dut.150:NS
+text_val <= 1'b1;",31,0,0,55,0,0,0
+dut.333:AS,6,382,"dut.333:AS
+cipher_text[63:32] = { s_row[0][2], s_row[1][2], s_row[2][2], s_row[3][2] } ^ w[2];",0,0,1,56,0,1,0
+dut.InvSubBytes.544:AS,8,0,"dut.InvSubBytes.544:AS
+b21 = is_box(a21);",0,0,0,57,0,0,0
+dut.Leaf_109:AL,8,0,dut.Leaf_109:AL,187,0,0,58,0,0,0
+dut.InvSubBytes.550:AS,8,0,"dut.InvSubBytes.550:AS
+b32 = is_box(a32);",0,0,0,59,0,0,0
+dut.209:BL,2,0,"dut.209:BL
+{ iw[0], iw[1], iw[2], iw[3] } <= { 128{ 1'b0 } };",0,0,0,60,0,0,0
+dut.Leaf_251:AL,8,0,dut.Leaf_251:AL,0,0,0,61,0,0,0
+dut.118:AL,4,0,dut.118:AL,496,0,0,62,0,0,0
+dut.268:NS,2,0,"dut.268:NS
+{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };",0,0,0,63,0,0,0
+dut.InvMixColumn1.729:AS,1,0,"dut.InvMixColumn1.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,0,64,0,1,1
+dut.167:BL,3,0,dut.167:BL,1,0,0,65,0,0,0
+dut.215:IF,3,0,dut.215:IF,0,0,0,66,0,0,0
+dut.138:NS,2,4,"dut.138:NS
+start_flag <= start_flag;",31,0,0,67,0,0,0
+dut.141:IF,3,0,dut.141:IF,62,0,0,68,0,0,0
+dut.257:BL,2,1493,"dut.257:BL
+{ state[0], state[1], state[2], state[3] } <= add_roundkey0;",0,0,0,69,0,0,0
+dut.InvSubBytes.555:AS,8,0,"dut.InvSubBytes.555:AS
+b33 = is_box(a33);",0,0,0,70,0,0,0
+dut.SubBytes.452:AS,4,0,"dut.SubBytes.452:AS
+b20 = s_box(a20);",0,0,0,71,0,0,0
+dut.324:AS,18,361,"dut.324:AS
+add_roundkey[127:96] = { m_col[0][0], m_col[1][0], m_col[2][0], m_col[3][0] } ^ w[0];",0,0,1,72,0,1,0
+dut.93:AL,3,0,dut.93:AL,510,0,0,73,0,0,0
+dut.162:BL,2,0,dut.162:BL,1,0,0,74,0,0,0
+dut.213:NS,2,0,"dut.213:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= { w[0], w[1], w[2], w[3] };",0,0,0,75,0,0,0
+dut.374:AS,5,0,"dut.374:AS
+{ is_row_in[0][1], is_row_in[1][1], is_row_in[2][1], is_row_in[3][1] } = istate[1];",0,0,0,76,0,0,0
+dut.343:AL,25,0,dut.343:AL,0,0,0,77,0,0,0
+dut.151:NS,2,2,"dut.151:NS
+text_val <= 1'b0;",31,0,0,78,0,0,0
+dut.InvSubBytes.543:AS,8,0,"dut.InvSubBytes.543:AS
+b11 = is_box(a11);",0,0,0,79,0,0,0
+dut.InvMixColumn2.730:AS,1,0,"dut.InvMixColumn2.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,0,80,0,1,1
+dut.404:AS,18,264,"dut.404:AS
+add_iroundkey[95:64] = { is_box[0][1], is_box[1][1], is_box[2][1], is_box[3][1] } ^ iw[1];",0,0,1,81,0,1,0
+dut.127:BL,6,0,dut.127:BL,465,0,0,82,0,0,0
+dut.234:AS,2,560,"dut.234:AS
+ircon = (round_n == 4'h9)? 8'h01 :
+(8'h00 | (round_n == 4'h8))? 8'h02 :
+(8'h00 | (round_n == 4'h7))? 8'h04 :
+(8'h00 | (round_n == 4'h6))? 8'h08 :
+(8'h00 | (round_n == 4'h5))? 8'h10 :
+(8'h00 | (round_n == 4'h4))? 8'h20 :
+(8'h00 | (round_n == 4'h3))? 8'h40 :
+(8'h00 | (round_n == 4'h2))? 8'h80 :
+(8'h00 | (round_n == 4'h1))? 8'h1b :
+(8'h00 | (round_n == 4'h0))? 8'h36 : 8'h00;",0,0,1,83,1,0,0
+dut.MixColumns3.681:AS,4,0,"dut.MixColumns3.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,0,84,0,1,1
+dut.403:AS,18,318,"dut.403:AS
+add_iroundkey[127:96] = { is_box[0][0], is_box[1][0], is_box[2][0], is_box[3][0] } ^ iw[0];",0,0,1,85,0,1,0
+dut.297:AS,20,0,"dut.297:AS
+{ s_row[2][0], s_row[2][1], s_row[2][2], s_row[2][3] } = { s_box[2][2], s_box[2][3], s_box[2][0], s_box[2][1] };",0,0,0,86,0,0,0
+dut.129:NS,2,2,"dut.129:NS
+busy <= 1'b0;",31,0,0,87,0,0,0
+dut.SubBytes.456:AS,4,0,"dut.SubBytes.456:AS
+b11 = s_box(a11);",0,0,0,88,0,0,0
+dut.209:IF,3,0,dut.209:IF,0,0,0,89,0,0,0
+dut.105:BS,2,8,"dut.105:BS
+next_state = 3'h0;",51,0,0,90,0,0,0
+dut.InvMixColumn3.729:AS,1,0,"dut.InvMixColumn3.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,0,91,0,1,1
+dut.102:BS,2,8,"dut.102:BS
+next_state = 3'h1;",51,0,0,92,0,0,0
+dut.SubBytes.468:AS,4,0,"dut.SubBytes.468:AS
+b33 = s_box(a33);",0,0,0,93,0,0,0
+dut.InvSubBytes.554:AS,8,0,"dut.InvSubBytes.554:AS
+b23 = is_box(a23);",0,0,0,94,0,0,0
+dut.130:NS,2,2,"dut.130:NS
+busy <= 1'b0;",31,0,0,95,0,0,0
+dut.142:NS,2,96,"dut.142:NS
+round_n <= round_n + 1'b1;",31,0,0,96,0,0,0
+dut.327:AS,18,350,"dut.327:AS
+add_roundkey[31:0] = { m_col[0][3], m_col[1][3], m_col[2][3], m_col[3][3] } ^ w[3];",0,0,1,97,0,1,0
+dut.347:BL,2,0,dut.347:BL,0,0,0,98,0,0,0
+dut.MixColumns0.679:AS,4,0,"dut.MixColumns0.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,99,0,1,1
+dut.InvSubBytes.547:AS,8,0,"dut.InvSubBytes.547:AS
+b02 = is_box(a02);",0,0,0,100,0,0,0
+dut.109:AL,2,0,dut.109:AL,374,0,0,101,0,0,0
+dut.178:AS,1,120,"dut.178:AS
+r10_key = round10_key;",0,0,0,102,0,0,0
+dut.229:AS,4,632,"dut.229:AS
+next_ikey[127:96] = { iw[0][31:24] ^ irotword[31:24] ^ ircon, iw[0][23:0] ^ irotword[23:0] };",0,0,1,103,0,1,0
+dut.136:NS,2,2,"dut.136:NS
+start_flag <= 1'b1;",31,0,0,104,0,0,0
+dut.131:NS,2,2,"dut.131:NS
+busy <= 1'b1;",31,0,0,105,0,0,0
+dut.163:BL,2,60,"dut.163:BL
+{ w[0], w[1], w[2], w[3] } <= { 128{ 1'b0 } };
+round10_key <= { 128{ 1'b0 } };",24,0,0,106,0,0,0
+dut.136:IF,3,0,dut.136:IF,93,0,0,107,0,0,0
+dut.InvMixColumn3.727:AS,1,0,"dut.InvMixColumn3.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,0,108,0,1,1
+dut.232:AS,2,224,"dut.232:AS
+next_ikey[31:0] = iw[3] ^ iw[2];",0,0,1,109,0,1,0
+dut.331:AS,6,367,"dut.331:AS
+cipher_text[127:96] = { s_row[0][0], s_row[1][0], s_row[2][0], s_row[3][0] } ^ w[0];",0,0,1,110,0,1,0
+dut.MixColumns2.681:AS,4,0,"dut.MixColumns2.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,0,111,0,1,1
+dut.MixColumns2.678:AS,4,0,"dut.MixColumns2.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,112,0,1,1
+dut.373:AS,5,0,"dut.373:AS
+{ is_row_in[0][0], is_row_in[1][0], is_row_in[2][0], is_row_in[3][0] } = istate[0];",0,0,0,113,0,0,0
+dut.SubBytes.463:AS,4,0,"dut.SubBytes.463:AS
+b32 = s_box(a32);",0,0,0,114,0,0,0
+dut.InvMixColumn1.728:AS,1,0,"dut.InvMixColumn1.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,0,115,0,1,1
+dut.InvMixColumn0.729:AS,1,0,"dut.InvMixColumn0.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,0,116,0,1,1
+dut.147:NS,2,2,"dut.147:NS
+key_val <= key_val;",31,0,0,117,0,0,0
+dut.186:AS,7,820,"dut.186:AS
+next_key[127:96] = w[0] ^ { temp[31:24] ^ rcon, temp[23:0] };",1,0,1,118,0,1,0
+dut.InvMixColumn0.730:AS,1,0,"dut.InvMixColumn0.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,0,119,0,1,1
+dut.212:BL,2,0,dut.212:BL,0,0,0,120,0,0,0
+dut.InvMixColumn2.727:AS,1,0,"dut.InvMixColumn2.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,0,121,0,1,1
+dut.95:IF,3,0,dut.95:IF,255,0,0,122,0,0,0
+dut.131:IF,3,0,dut.131:IF,93,0,0,123,0,0,0
+dut.110:NS,2,8,"dut.110:NS
+now_state <= 3'h0;",187,0,0,124,0,0,0
+dut.Leaf_162:AL,23,0,dut.Leaf_162:AL,24,0,0,125,0,0,0
+dut.220:AS,2,224,"dut.220:AS
+itemp = iw[3] ^ iw[2];",0,0,0,126,0,1,0
+dut.110:IF,3,0,dut.110:IF,374,0,0,127,0,0,0
+dut.326:AS,18,372,"dut.326:AS
+add_roundkey[63:32] = { m_col[0][2], m_col[1][2], m_col[2][2], m_col[3][2] } ^ w[2];",0,0,1,128,0,1,0
+dut.SubBytes.457:AS,4,0,"dut.SubBytes.457:AS
+b21 = s_box(a21);",0,0,0,129,0,0,0
+dut.379:AS,20,0,"dut.379:AS
+{ is_row[1][1], is_row[1][2], is_row[1][3], is_row[1][0] } = { is_row_in[1][0], is_row_in[1][1], is_row_in[1][2], is_row_in[1][3] };",0,0,0,130,0,0,0
+dut.169:IF,3,0,dut.169:IF,1,0,0,131,0,0,0
+dut.97:IF,3,0,dut.97:IF,102,0,0,132,0,0,0
+dut.325:AS,18,368,"dut.325:AS
+add_roundkey[95:64] = { m_col[0][1], m_col[1][1], m_col[2][1], m_col[3][1] } ^ w[1];",0,0,1,133,0,1,0
+dut.SubBytes.462:AS,4,0,"dut.SubBytes.462:AS
+b22 = s_box(a22);",0,0,0,134,0,0,0
+dut.MixColumns0.680:AS,4,0,"dut.MixColumns0.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,0,135,0,1,1
+dut.141:NS,2,48,"dut.141:NS
+round_n <= 4'h0;",31,0,0,136,0,0,0
+dut.SubBytes.465:AS,4,0,"dut.SubBytes.465:AS
+b03 = s_box(a03);",0,0,0,137,0,0,0
+dut.137:NS,2,2,"dut.137:NS
+start_flag <= 1'b0;",31,0,0,138,0,0,0
+dut.230:AS,2,284,"dut.230:AS
+next_ikey[95:64] = iw[1] ^ iw[0];",0,0,1,139,0,1,0
+dut.348:IF,3,0,dut.348:IF,0,0,0,140,0,0,0
+dut.174:NS,2,60,"dut.174:NS
+round10_key <= { w[0], w[1], w[2], w[3] };",24,0,0,141,0,0,0
+dut.SubBytes.458:AS,4,0,"dut.SubBytes.458:AS
+b31 = s_box(a31);",0,0,0,142,0,0,0
+dut.MixColumns3.680:AS,4,0,"dut.MixColumns3.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,0,143,0,1,1
+dut.98:BS,2,8,"dut.98:BS
+next_state = 3'h2;",51,0,0,144,0,0,0
+dut.133:NS,2,4,"dut.133:NS
+busy <= busy;",31,0,0,145,0,0,0
+dut.213:IF,3,0,dut.213:IF,0,0,0,146,0,0,0
+dut.174:IF,3,0,dut.174:IF,48,0,0,147,0,0,0
+dut.334:AS,6,338,"dut.334:AS
+cipher_text[31:0] = { s_row[0][3], s_row[1][3], s_row[2][3], s_row[3][3] } ^ w[3];",0,0,1,148,0,1,0
+dut.InvMixColumn2.729:AS,1,0,"dut.InvMixColumn2.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,0,149,0,1,1
+dut.Leaf_118:AL,24,0,dut.Leaf_118:AL,31,0,0,150,0,0,0
+dut.137:IF,3,0,dut.137:IF,62,0,0,151,0,0,0
+dut.380:AS,20,0,"dut.380:AS
+{ is_row[2][2], is_row[2][3], is_row[2][0], is_row[2][1] } = { is_row_in[2][0], is_row_in[2][1], is_row_in[2][2], is_row_in[2][3] };",0,0,0,152,0,0,0
+dut.360:NS,2,0,"dut.360:NS
+{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };",0,0,0,153,0,0,0
+dut.181:AS,2,357,"dut.181:AS
+rotword = { w[3][23:0], w[3][31:24] };",1,0,1,154,0,0,0
+dut.111:NS,2,16,"dut.111:NS
+now_state <= next_state;",187,0,0,155,0,0,0
+dut.150:IF,3,0,dut.150:IF,62,0,0,156,0,0,0
+dut.101:BS,2,8,"dut.101:BS
+next_state = 3'h0;",51,0,0,157,0,0,0
+dut.iSubWord.618:AS,2,0,"dut.iSubWord.618:AS
+b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };",0,0,1,158,0,0,0
+dut.343:BL,2,0,dut.343:BL,0,0,0,159,0,0,0
+dut.InvSubBytes.548:AS,8,0,"dut.InvSubBytes.548:AS
+b12 = is_box(a12);",0,0,0,160,0,0,0
+dut.256:IF,3,0,dut.256:IF,0,0,0,161,0,0,0
+dut.105:CA,2,0,dut.105:CA,51,0,0,162,0,0,0
+dut.132:IF,3,0,dut.132:IF,62,0,0,163,0,0,0
+dut.SubBytes.453:AS,4,0,"dut.SubBytes.453:AS
+b30 = s_box(a30);",0,0,0,164,0,0,0
+dut.Leaf_208:AL,16,0,dut.Leaf_208:AL,0,0,0,165,0,0,0
+dut.MixColumns2.679:AS,4,0,"dut.MixColumns2.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,166,0,1,1
+dut.381:AS,20,0,"dut.381:AS
+{ is_row[3][3], is_row[3][0], is_row[3][1], is_row[3][2] } = { is_row_in[3][0], is_row_in[3][1], is_row_in[3][2], is_row_in[3][3] };",0,0,0,167,0,0,0
+dut.355:BL,2,1034,"dut.355:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey;",0,0,0,168,0,0,0
+dut.129:IF,3,0,dut.129:IF,155,0,0,169,0,0,0
+dut.376:AS,5,0,"dut.376:AS
+{ is_row_in[0][3], is_row_in[1][3], is_row_in[2][3], is_row_in[3][3] } = istate[3];",0,0,0,170,0,0,0
+dut.145:IF,3,0,dut.145:IF,93,0,0,171,0,0,0
+dut.260:BL,2,1451,"dut.260:BL
+{ state[0], state[1], state[2], state[3] } <= add_roundkey;",0,0,0,172,0,0,0
+dut.Leaf_343:AL,12,0,dut.Leaf_343:AL,0,0,0,173,0,0,0
+dut.MixColumns1.681:AS,4,0,"dut.MixColumns1.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,0,174,0,1,1
+dut.MixColumns1.678:AS,4,0,"dut.MixColumns1.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,175,0,1,1
+dut.406:AS,18,205,"dut.406:AS
+add_iroundkey[31:0] = { is_box[0][3], is_box[1][3], is_box[2][3], is_box[3][3] } ^ iw[3];",0,0,1,176,0,1,0
+dut.Leaf_93:AL,14,0,dut.Leaf_93:AL,51,0,0,177,0,0,0
+dut.MixColumns3.679:AS,4,0,"dut.MixColumns3.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,178,0,1,1
+dut.InvMixColumn1.727:AS,1,0,"dut.InvMixColumn1.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,0,179,0,1,1
+dut.99:IF,3,0,dut.99:IF,102,0,0,180,0,0,0
+dut.96:IF,3,0,dut.96:IF,204,0,0,181,0,0,0
+dut.95:BS,2,8,"dut.95:BS
+next_state = 3'h1;",51,0,0,182,0,0,0
+dut.260:IF,3,0,dut.260:IF,0,0,0,183,0,0,0
+dut.118:BL,2,0,dut.118:BL,496,0,0,184,0,0,0
+dut.298:AS,20,0,"dut.298:AS
+{ s_row[3][0], s_row[3][1], s_row[3][2], s_row[3][3] } = { s_box[3][3], s_box[3][0], s_box[3][1], s_box[3][2] };",0,0,0,185,0,0,0
+dut.MixColumns1.679:AS,4,0,"dut.MixColumns1.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,186,0,1,1
+dut.103:BS,2,8,"dut.103:BS
+next_state = 3'h0;",51,0,0,187,0,0,0
+dut.296:AS,20,0,"dut.296:AS
+{ s_row[1][0], s_row[1][1], s_row[1][2], s_row[1][3] } = { s_box[1][1], s_box[1][2], s_box[1][3], s_box[1][0] };",0,0,0,188,0,0,0
+dut.InvSubBytes.552:AS,8,0,"dut.InvSubBytes.552:AS
+b03 = is_box(a03);",0,0,0,189,0,0,0
+dut.146:NS,2,1,"dut.146:NS
+key_val <= 1'b1;",31,0,0,190,0,0,0
+dut.163:IF,3,0,dut.163:IF,1,0,0,191,0,0,0
+dut.SubBytes.460:AS,4,0,"dut.SubBytes.460:AS
+b02 = s_box(a02);",0,0,0,192,0,0,0
+dut.156:AS,2,0,"dut.156:AS
+text_out = (enc_dec == 1'b0)? { state[0], state[1], state[2], state[3] } : { istate[0], istate[1], istate[2], istate[3] };",0,0,1,193,0,0,0
+dut.208:BL,2,0,dut.208:BL,0,0,0,194,0,0,0
+dut.SubBytes.467:AS,4,0,"dut.SubBytes.467:AS
+b23 = s_box(a23);",0,0,0,195,0,0,0
+dut.MixColumns3.678:AS,4,0,"dut.MixColumns3.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,196,0,1,1
+dut.145:NS,2,1,"dut.145:NS
+key_val <= 1'b0;",31,0,0,197,0,0,0
+dut.InvMixColumn0.728:AS,1,0,"dut.InvMixColumn0.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,0,198,0,1,1
+dut.103:CA,2,0,dut.103:CA,102,0,0,199,0,0,0
+dut.101:IF,3,0,dut.101:IF,102,0,0,200,0,0,0
+dut.375:AS,5,0,"dut.375:AS
+{ is_row_in[0][2], is_row_in[1][2], is_row_in[2][2], is_row_in[3][2] } = istate[2];",0,0,0,201,0,0,0
+dut.189:AS,9,741,"dut.189:AS
+next_key[31:0] = w[3] ^ next_key[63:32];",1,0,1,202,0,1,0
+dut.MixColumns2.680:AS,4,0,"dut.MixColumns2.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,0,203,0,1,1
+dut.215:NS,2,1111,"dut.215:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= next_ikey;",0,0,0,204,0,0,0
+dut.256:BL,2,0,dut.256:BL,0,0,0,205,0,0,0
+dut.344:BL,2,0,"dut.344:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= { 128{ 1'b0 } };",0,0,0,206,0,0,0
+dut.SubBytes.466:AS,4,0,"dut.SubBytes.466:AS
+b13 = s_box(a13);",0,0,0,207,0,0,0
+dut.216:NS,2,0,"dut.216:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= { iw[0], iw[1], iw[2], iw[3] };",0,0,0,208,0,0,0
+dut.169:NS,2,0,"dut.169:NS
+{ w[0], w[1], w[2], w[3] } <= key_in;",1,0,0,209,0,0,0
+dut.251:BL,2,0,dut.251:BL,0,0,0,210,0,0,0
+dut.InvSubBytes.542:AS,8,0,"dut.InvSubBytes.542:AS
+b01 = is_box(a01);",0,0,0,211,0,0,0
+dut.214:NS,2,60,"dut.214:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= round10_key;",0,0,0,212,0,0,0
+dut.SubBytes.461:AS,4,0,"dut.SubBytes.461:AS
+b12 = s_box(a12);",0,0,0,213,0,0,0
+dut.104:BS,2,8,"dut.104:BS
+next_state = 3'h2;",51,0,0,214,0,0,0
+dut.MixColumns1.680:AS,4,0,"dut.MixColumns1.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,0,215,0,1,1
+dut.SubBytes.450:AS,4,0,"dut.SubBytes.450:AS
+b00 = s_box(a00);",0,0,0,216,0,0,0
+dut.208:AL,10,0,dut.208:AL,0,0,0,217,0,0,0
+dut.367:AS,2,1034,"dut.367:AS
+add_iroundkey0 = text_in ^ { iw[0], iw[1], iw[2], iw[3] };",0,0,0,218,0,1,0
+dut.175:NS,2,120,"dut.175:NS
+round10_key <= round10_key;",24,0,0,219,0,0,0
+dut.MixColumns0.678:AS,4,0,"dut.MixColumns0.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,0,220,0,1,1
+dut.InvSubBytes.549:AS,8,0,"dut.InvSubBytes.549:AS
+b22 = is_box(a22);",0,0,0,221,0,0,0
+dut.MixColumns0.681:AS,4,0,"dut.MixColumns0.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,0,222,0,1,1
+dut.251:AL,13,0,dut.251:AL,0,0,0,223,0,0,0
+dut.358:NS,2,0,"dut.358:NS
+{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };",0,0,0,224,0,0,0
+dut.InvMixColumn3.730:AS,1,0,"dut.InvMixColumn3.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,0,225,0,1,1
+dut.109:BL,2,0,dut.109:BL,374,0,0,226,0,0,0

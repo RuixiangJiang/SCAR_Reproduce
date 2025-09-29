@@ -12,11 +12,12 @@ df = pd.read_csv(f"../out/edges.csv")
 
 nodeset["label"] = nodeset["node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(bool) \
                    | nodeset["Node"].str.contains(r"(sbox|mixcolumn)",case=False, na=False).astype(bool)
+nodeset.to_csv("../out/features.csv", index=False)
 
 train_data = nodeset.iloc[0:196]
 test_data = nodeset.iloc[196:]
 
-graph_info, feature_names, num_features, num_classes = graph_information("../out/features.csv", "../out/edges.csv")
+graph_info, feature_names, num_features, num_classes = graph_information("../out/features.csv", "../out/edges.csv", "train")
 
 print(f"num_features: {num_features}, num_classes: {num_classes}")
 print(f"feature_names: {feature_names}")

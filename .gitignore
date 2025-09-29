@@ -2,4 +2,3 @@
 .idea/
 src/parser.out
 src/parsetab.py
-out/
