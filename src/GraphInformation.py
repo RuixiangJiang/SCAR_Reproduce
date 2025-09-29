@@ -14,11 +14,11 @@ def graph_information(node_file, edge_file, mode):
     nodeset["label"] = nodeset["label"].apply(lambda value: class_idx[value])
     nodeset.to_csv(node_file, index=False)
 
-    # feature_names = {'Degree', 'Hamming distance', 'Paths', 'and', 'mux', 'or', 'xor'}
-    if mode == "train":
-        feature_names = ['Degree', 'mux', 'xor', 'Paths', 'or', 'Hamming distance', 'and']
-    else:
-        feature_names = ['or', 'Degree', 'and', 'mux', 'xor', 'Paths', 'Hamming distance']
+    feature_names = ['Degree', 'Hamming distance', 'Paths', 'and', 'mux', 'or', 'xor']
+    # if mode == "train":
+    #     feature_names = ['Degree', 'mux', 'xor', 'Paths', 'or', 'Hamming distance', 'and']
+    # else:
+    #     feature_names = ['or', 'Degree', 'and', 'mux', 'xor', 'Paths', 'Hamming distance']
     print("feature names:", feature_names)
     num_features = len(feature_names)
     num_classes = len(class_idx)
