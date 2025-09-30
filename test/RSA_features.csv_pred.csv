@@ -1,7 +1,7 @@
 node_number,Node,Degree,Hamming distance,Paths,and,mux,or,xor,label,prediction
 0,SEQ_BLK.START_O.428:BL,2,0,0,0,0,0,0,0,0
 1,"124:AS
-MemCon0 = mux3_1_9(MemCon_m, MemCon_s, MemCon_i, MemCon_o, { MemSel, InOutMem });",2,197674,0,0,0,0,0,0,0
+MemCon0 = mux3_1_9(MemCon_m, MemCon_s, MemCon_i, MemCon_o, { MemSel, InOutMem });",2,197674,0,0,0,0,0,0,1
 2,SEQ_BLK.253:CA,2,0,0,0,0,0,0,0,0
 3,"SEQ_BLK.287:NS
 count <= count + 1;",2,0,0,0,0,0,0,0,0
@@ -23,7 +23,7 @@ rgt <= 1'b0;",2,2,0,0,0,0,0,0,0
 15,SEQ_BLK.LOOP_CON.874:IF,2,0,0,0,0,0,0,0,0
 16,SEQ_BLK.MODEXP_SEQ.475:IF,3,0,0,0,0,0,0,1,0
 17,SEQ_BLK.MODEXP_SEQ.474:IF,3,0,0,0,0,0,0,1,0
-18,SEQ_BLK.MODEXP_SEQ.Leaf_455:AL,17,0,0,0,0,0,0,1,0
+18,SEQ_BLK.MODEXP_SEQ.Leaf_455:AL,17,0,0,0,0,0,0,1,1
 19,"SEQ_BLK.MODEXP_SEQ.464:NS
 pc <= { pc[10:0], 1'b0 };",2,0,0,0,1,0,0,1,0
 20,SEQ_BLK.MONTREDC_SEQ.652:BL,2,0,0,0,0,0,0,0,0
@@ -39,14 +39,14 @@ jj <= 5'b00000;",2,0,0,0,0,0,0,0,0
 26,"73:NS
 Krg <= { Krg[1022:0], Krg[1023] };",2,8400,1,0,1,0,0,0,1
 27,"SEQ_BLK.MONTREDC_SEQ.686:AS
-Con = Contmp[30:0];",1,402446,0,0,1,0,0,0,0
+Con = Contmp[30:0];",1,402446,0,0,1,0,0,0,1
 28,MEM0.154:BL,2,0,0,0,0,0,0,0,0
 29,SEQ_BLK.MODEXP_SEQ.460:IF,3,0,0,0,0,0,0,1,0
 30,"SEQ_BLK.START_IN.430:NS
 rgt <= 1'b0;",2,2,0,0,0,0,0,0,0
 31,SEQ_BLK.LOOP_CON.887:BL,2,0,0,0,0,0,0,0,0
 32,"115:AS
-w_data = mux3_1_32(d_out, r_data_m, d_in, DSel);",2,468372,0,0,0,0,0,0,0
+w_data = mux3_1_32(d_out, r_data_m, d_in, DSel);",2,468372,0,0,0,0,0,0,1
 33,SEQ_BLK.290:CA,2,0,0,0,0,0,0,0,0
 34,"SEQ_BLK.MONTMULT_SEQ.543:NS
 pc <= 28'b0000010000000000000000000000;",2,0,0,0,0,0,0,0,0
@@ -98,7 +98,7 @@ rgt <= 1'b0;",2,2,0,0,0,0,0,0,0
 62,"SEQ_BLK.ONE_SEQ.790:NS
 pc <= 5'b00001;",2,0,0,0,0,0,0,0,0
 63,"126:AS
-r_data_m = mux2_1_32(r_data0, r_data1, MemSel);",2,173324,0,0,0,0,0,0,0
+r_data_m = mux2_1_32(r_data0, r_data1, MemSel);",2,173324,0,0,0,0,0,0,1
 64,MULT_BLK.REG_Z.1054:BL,2,0,0,0,0,0,0,1,0
 65,"SEQ_BLK.MONTREDC_SEQ.648:NS
 pc <= 11'b10000000000;",2,0,0,0,0,0,0,0,0
@@ -142,7 +142,7 @@ i_me <= 10'b0000000000;",2,0,0,0,0,0,0,0,0
 pc <= 12'b000010000000;",2,0,0,0,0,0,0,1,0
 92,MULT_BLK.REG_Y.1059:IF,2,0,0,0,0,0,0,1,0
 93,"MEM0.151:AS
-MemW = (WEN == 0) & (CEN == 0);",1,80061,0,1,0,0,0,0,0
+MemW = (WEN == 0) & (CEN == 0);",1,80061,0,1,0,0,0,0,1
 94,MULT_BLK.REG_Z.1054:AL,1,0,0,0,0,0,0,1,0
 95,"SEQ_BLK.346:NS
 s <= 1'b0;",2,0,0,0,0,0,0,0,0
@@ -173,7 +173,7 @@ rgt <= 1'b0;",2,0,0,0,0,0,0,0,0
 112,MULT_BLK.REG_Z.1059:IF,2,0,0,0,0,0,0,1,0
 113,"SEQ_BLK.MONTMULT_SEQ.524:NS
 pc <= { pc[26:0], 1'b0 };",2,0,0,0,1,0,0,0,0
-114,SEQ_BLK.MONTREDC_SEQ.Leaf_625:AL,16,0,0,0,0,0,0,0,0
+114,SEQ_BLK.MONTREDC_SEQ.Leaf_625:AL,16,0,0,0,0,0,0,0,1
 115,MEM1.Leaf_154:AL,3,0,0,0,0,0,0,0,0
 116,"SEQ_BLK.276:BL
 Dvldrg <= 1'b0;
@@ -247,7 +247,7 @@ pc <= 28'b0000000000000000100000000000;",2,0,0,0,0,0,0,0,0
 158,MULT_BLK.REG_Z.1055:IF,3,0,0,0,0,0,0,1,0
 159,SEQ_BLK.MODEXP_SEQ.467:IF,3,0,0,0,0,0,0,1,0
 160,"127:AS
-r_data_s = mux2_1_32(r_data1, r_data0, MemSel);",1,176056,0,0,0,0,0,0,0
+r_data_s = mux2_1_32(r_data1, r_data0, MemSel);",1,176056,0,0,0,0,0,0,1
 161,"SEQ_BLK.358:NS
 exp <= 1'b0;",2,0,0,0,0,0,0,0,0
 162,SEQ_BLK.START_O.429:IF,3,0,0,0,0,0,0,0,0
@@ -290,9 +290,9 @@ Start <= 1'b0;",2,6,0,0,0,0,0,0,0
 182,"MULT_BLK.REG_Y.1056:NS
 q <= 32'h00000000;",2,0,0,0,0,0,0,1,0
 183,"MEM1.152:AS
-MemR = (WEN == 1) & (CEN == 0);",1,79998,0,1,0,0,0,0,0
+MemR = (WEN == 1) & (CEN == 0);",1,79998,0,1,0,0,0,0,1
 184,"78:AS
-Dout = r_data_m;",1,56864,0,0,0,0,0,0,0
+Dout = r_data_m;",1,56864,0,0,0,0,0,0,1
 185,"SEQ_BLK.366:NS
 msb <= 1'b0;",2,0,0,0,0,0,0,0,0
 186,SEQ_BLK.MONTREDC_SEQ.637:BL,2,0,0,0,0,0,0,0,0
@@ -310,12 +310,12 @@ pc <= 28'b0000000000000000000001000000;",2,0,0,0,0,0,0,0,0
 195,"SEQ_BLK.LOOP_CON.854:AS
 Cy_r = q[5];",1,0,0,0,0,0,0,0,0
 196,"SEQ_BLK.LOOP_CON.852:AS
-q = add_in + 10'b0000000001;",8,33688,0,0,0,0,0,0,0
+q = add_in + 10'b0000000001;",8,33688,0,0,0,0,0,0,1
 197,"SEQ_BLK.LOOP_CON.850:AS
-add_in = mux3_1(j, i, i_me, { Pc[1], Con[0] });",4,33688,0,0,0,0,0,0,0
+add_in = mux3_1(j, i, i_me, { Pc[1], Con[0] });",4,33688,0,0,0,0,0,0,1
 198,SEQ_BLK.343:IF,3,0,0,0,0,0,0,0,0
 199,"125:AS
-MemCon1 = mux3_1_9(MemCon_s, MemCon_m, MemCon_i, MemCon_o, { MemSel, InOutMem });",2,109318,0,0,0,0,0,0,0
+MemCon1 = mux3_1_9(MemCon_s, MemCon_m, MemCon_i, MemCon_o, { MemSel, InOutMem });",2,109318,0,0,0,0,0,0,1
 200,SEQ_BLK.221:IF,2,0,0,0,0,0,0,0,0
 201,"SEQ_BLK.START_C.436:NS
 rgt <= rgt | Pc;",2,0,0,0,0,1,0,0,0
@@ -419,7 +419,7 @@ pc <= 10'b0000000100;",2,0,0,0,0,0,0,0,0
 267,SEQ_BLK.LOOP_CON.879:AL,2,0,0,0,0,0,0,0,0
 268,SEQ_BLK.START_O.431:IF,3,0,0,0,0,0,0,0,0
 269,SEQ_BLK.START_C.429:IF,3,0,0,0,0,0,0,0,0
-270,SEQ_BLK.Leaf_208:AL,25,0,0,0,0,0,0,0,0
+270,SEQ_BLK.Leaf_208:AL,25,0,0,0,0,0,0,0,1
 271,70:IF,3,0,1,0,0,0,0,0,0
 272,SEQ_BLK.INVN_SEQ.704:IF,3,0,0,0,0,0,0,0,0
 273,"SEQ_BLK.MONTREDC_SEQ.636:NS
@@ -553,7 +553,7 @@ Pc_MM = Pc[5] | Pc[6] | Pc[10];",1,0,0,0,0,1,0,0,0
 355,"SEQ_BLK.MONTMULT_SEQ.545:NS
 pc <= { pc[26:0], 1'b0 };",2,0,0,0,1,0,0,0,0
 356,"SEQ_BLK.389:AS
-Con = mux5_1(Con_MM, Con_MR, Con_IN, Con_C, Con_O, { Pc[9], Pc[3], Pc[1], Pc[2], Pc_MM });",4,403066,0,0,0,0,0,0,0
+Con = mux5_1(Con_MM, Con_MR, Con_IN, Con_C, Con_O, { Pc[9], Pc[3], Pc[1], Pc[2], Pc_MM });",4,403066,0,0,0,0,0,0,1
 357,SEQ_BLK.357:IF,3,0,0,0,0,0,0,0,0
 358,"MEM1.155:BL
 mem[A] <= D;",2,0,0,0,0,0,0,0,0
@@ -574,7 +574,7 @@ Rst <= 1'b0;",2,4,0,0,0,0,0,0,0
 365,SEQ_BLK.MODEXP_SEQ.466:IF,3,0,0,0,0,0,0,1,0
 366,SEQ_BLK.354:AL,1,0,0,0,0,0,0,0,0
 367,"MEM0.152:AS
-MemR = (WEN == 1) & (CEN == 0);",1,79998,0,1,0,0,0,0,0
+MemR = (WEN == 1) & (CEN == 0);",1,79998,0,1,0,0,0,0,1
 368,"SEQ_BLK.MONTMULT_SEQ.509:NS
 pc <= 28'b0000000000000000000000001000;",2,0,0,0,0,0,0,0,0
 369,SEQ_BLK.290:BL,2,0,0,0,0,0,0,0,0
@@ -631,11 +631,11 @@ pc <= 11'b00000000100;",2,0,0,0,0,0,0,0,0
 Mvld = Mvldrg_tmp;",1,2,0,0,0,0,0,0,0
 405,SEQ_BLK.MONTREDC_SEQ.Leaf_616:AL,5,0,0,0,0,0,0,0,0
 406,"SEQ_BLK.MONTREDC_SEQ.685:AS
-Contmp = decoder(pc, a);",4,403272,0,0,0,0,0,0,0
+Contmp = decoder(pc, a);",4,403272,0,0,0,0,0,0,1
 407,SEQ_BLK.Cp_SEQ.749:IF,3,0,0,0,0,0,0,0,0
 408,"SEQ_BLK.START_IN.434:NS
 rgt <= 1'b0;",2,2,0,0,0,0,0,0,0
-409,SEQ_BLK.MONTMULT_SEQ.Leaf_503:AL,21,0,0,0,0,0,0,0,0
+409,SEQ_BLK.MONTMULT_SEQ.Leaf_503:AL,21,0,0,0,0,0,0,0,1
 410,"SEQ_BLK.351:AS
 MemSel = s | Pc[3];",1,0,0,0,0,1,0,0,0
 411,SEQ_BLK.LOOP_CON.864:IF,2,0,0,0,0,0,0,0,0
@@ -658,7 +658,7 @@ Kvldrg_tmp <= 1'b0;
 Mvldrg_tmp <= 1'b0;
 Rst <= 1'b0;",2,4,0,0,0,0,0,0,0
 423,"MEM1.151:AS
-MemW = (WEN == 0) & (CEN == 0);",1,80061,0,1,0,0,0,0,0
+MemW = (WEN == 0) & (CEN == 0);",1,80061,0,1,0,0,0,0,1
 424,"SEQ_BLK.265:BL
 state <= DATA_OUT;
 Dvldrg <= 1'b1;

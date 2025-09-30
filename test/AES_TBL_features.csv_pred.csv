@@ -109,4 +109,4 @@ Dvld = ((Dvld_reg == 1'b0) && (Dvld_tmp == 1'b1))? 1'b1 : 1'b0;",2,6,0,1,1,0,0,0
 53,AES_TBL_ENC.263:BL,2,0,1,0,0,0,0,0,0
 54,"81:BL
 Dvld_reg <= Dvld_tmp;
-Kvld_reg <= Kvld_tmp;",2,8,0,0,0,0,0,0,0
+Kvld_reg <= Kvld_tmp;",2,8,0,0,0,0,0,0,1
