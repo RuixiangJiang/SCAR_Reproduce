@@ -1,3 +1,5 @@
+from sklearn.model_selection import train_test_split
+
 from GNN import *
 from GraphInformation import *
 
@@ -15,11 +17,22 @@ import pickle
 with open("../out/train_graph_info.pkl", "wb") as f:
     pickle.dump(graph_info, f)
 
-train_data = nodeset.iloc[0:196]
-test_data = nodeset.iloc[196:]
+train_data, test_data = train_test_split(
+    nodeset,
+    test_size=0.2,
+    random_state=42,
+    shuffle=True,
+    stratify=nodeset["label"]
+)
 
 print(f"num_features: {num_features}, num_classes: {num_classes}")
 print(f"feature_names: {feature_names}")
+
+print("Train label distribution:")
+print(train_data["label"].value_counts())
+
+print("\nTest label distribution:")
+print(test_data["label"].value_counts())
 
 # Create train and test features as a numpy array.
 x_train = train_data[list(feature_names)].to_numpy()
