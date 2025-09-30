@@ -1,8 +1,8 @@
 leaky_module = {
     "train": [" s_box", "subbytes", "sb", "MixColumn"],
-    "AES_PPRM1": ["SBOX", "Mixcolumns", "MX"],
-    "AES_PPRM3": ["Sbox", "Mixcolumns", "MX"],
-    "AES_TBL": ["SBOX", "Mixcolumns", "MX"],
+    "AES_PPRM1": ["SBOX", "Mixcolumn", "MX"],
+    "AES_PPRM3": ["Sbox", "Mixcolumn", "MX"],
+    "AES_TBL": ["SBOX", "Mixcolumn", "MX"],
     "RSA": ["MODEXP_SEQ", "MULT_BLK"],
     "SABER": ["PMULTs"]
 }
