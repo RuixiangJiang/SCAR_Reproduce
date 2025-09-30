@@ -5,108 +5,79 @@ from pyverilog.vparser.parser import parse
 from pyverilog.vparser import ast as vast
 from vcdvcd import VCDVCD
 
-# ---------- Utilities: evaluate ints & width ----------
-def _eval_int(node) -> Optional[int]:
-    if node is None:
-        return None
-    if isinstance(node, vast.IntConst):
-        s = node.value
-        try:
-            return int(s, 0)
-        except Exception:
-            try:
-                if "'" in s:
-                    _, base_val = s.split("'", 1)
-                    base_char = base_val[0].lower()
-                    val = base_val[1:].replace("_", "")
-                    base = {"d":10, "h":16, "b":2, "o":8}.get(base_char, 10)
-                    return int(val, base)
-            except Exception:
-                return None
-            return None
-    if isinstance(node, vast.UnaryOperator):
-        v = _eval_int(node.right)
-        if v is None: return None
-        if node.__class__.__name__ == 'Uminus': return -v
-        return v
-    if isinstance(node, vast.Plus):
-        l = _eval_int(node.left); r = _eval_int(node.right)
-        return None if l is None or r is None else l + r
-    if isinstance(node, vast.Minus):
-        l = _eval_int(node.left); r = _eval_int(node.right)
-        return None if l is None or r is None else l - r
-    if isinstance(node, vast.Times):
-        l = _eval_int(node.left); r = _eval_int(node.right)
-        return None if l is None or r is None else l * r
-    if isinstance(node, vast.Divide):
-        l = _eval_int(node.left); r = _eval_int(node.right)
-        try:
-            return None if l is None or r is None else l // r
-        except Exception:
-            return None
-    return None
 
-def _width_from_widthnode(widthnode) -> Optional[int]:
-    if widthnode is None:
+class ManualASTVisitor:
+    """
+    A manual AST visitor that tracks module scope to produce 'module.variable' names.
+    """
+
+    def __init__(self):
+        self.signals: Dict[str, Optional[int]] = {}
+        self.current_module: Optional[str] = None  # State to track the current module
+
+    def visit(self, node):
+        """
+        Recursively visits AST nodes to find signal declarations.
+        """
+        if node is None:
+            return
+
+        # --- Dispatcher: Act on specific node types ---
+        node_type = type(node)
+
+        # **MODIFICATION**: When a ModuleDef node is found, update the current scope.
+        if node_type is vast.ModuleDef:
+            self.current_module = node.name
+
+        # Handle declaration nodes (Input, Output, Reg, etc.)
+        if node_type in (vast.Input, vast.Output, vast.Inout, vast.Reg, vast.Wire, vast.Variable, vast.Parameter):
+            self._handle_declaration(node)
+
+        # --- Traversal: Recursively visit all children ---
+        for child in node.children():
+            self.visit(child)
+
+    def _handle_declaration(self, node):
+        """Extracts name and width from a declaration node."""
+        if not hasattr(node, 'name') or not node.name:
+            return
+
+        # **MODIFICATION**: Prepend the module name if we are in a module's scope.
+        if self.current_module:
+            full_name = f"{self.current_module}.{node.name}"
+        else:
+            full_name = node.name  # Fallback for variables declared outside a module
+
+        width_node = getattr(node, 'width', None)
+        width = self._calculate_width(width_node)
+
+        # Use the new full name as the dictionary key
+        self.signals[full_name] = width
+
+    def _calculate_width(self, width_node: Optional[vast.Width]) -> Optional[int]:
+        """Calculates the bit width from a Width AST node."""
+        if width_node:
+            try:
+                msb_str = width_node.msb.value
+                lsb_str = width_node.lsb.value
+                msb = int(msb_str)
+                lsb = int(lsb_str)
+                return abs(msb - lsb) + 1
+            except (AttributeError, ValueError, TypeError):
+                return None
         return 1
-    msb = _eval_int(widthnode.msb)
-    lsb = _eval_int(widthnode.lsb)
-    if msb is None or lsb is None:
-        return None
-    return abs(msb - lsb) + 1
 
 # ---------- Build HDL name->width from Verilog (PyVerilog) ----------
 def _hdl_name_widths(verilog_files: List[str]) -> List[Tuple[str, Optional[int]]]:
-    files = [os.path.abspath(f) for f in verilog_files]
-    ast, _ = parse(files)
-
-    name2width: Dict[str, Optional[int]] = {}
-
-    def record(name: str, widthnode):
-        width = _width_from_widthnode(widthnode)
-        if name not in name2width:
-            name2width[name] = width
-        else:
-            old = name2width[name]
-            if old is None and width is not None:
-                name2width[name] = width
-            elif old is not None and width is not None:
-                name2width[name] = max(old, width)
-
-    def visit(node):
-        for c in node.children():
-            # Port: Ioport -> Input/Output/Inout with optional width
-            if isinstance(c, vast.Ioport):
-                decl = c.first
-                widthnode = getattr(decl, "width", None)
-                second = c.second
-                if isinstance(second, (list, tuple)):
-                    for s in second:
-                        n = getattr(s, "name", None)
-                        if n: record(n, widthnode)
-                else:
-                    n = getattr(second, "name", None)
-                    if n: record(n, widthnode)
-
-            # Decl: Wire/Reg/Integer (PyVerilog is Verilog-2005; no 'Logic')
-            if isinstance(c, vast.Decl):
-                for item in c.list:
-                    if isinstance(item, (vast.Wire, vast.Reg, vast.Integer)):
-                        widthnode = getattr(item, "width", None)
-                        if hasattr(item, "name") and item.name:
-                            names = [item]
-                        elif hasattr(item, "names"):
-                            names = item.names
-                        else:
-                            names = [item]
-                        for n in names:
-                            nm = getattr(n, "name", None)
-                            if nm: record(nm, widthnode)
-
-            visit(c)
-
-    visit(ast)
-    return sorted(name2width.items(), key=lambda x: x[0])
+    try:
+        ast, _ = parse(verilog_files, debug=False)
+        visitor = ManualASTVisitor()
+        visitor.visit(ast)
+        results = sorted(list(visitor.signals.items()))
+        return results
+    except Exception as e:
+        print(f"An error occurred during parsing: {e}")
+        return []
 
 # ---------- Build VCD index ----------
 def _load_vcd_index(vcd_path: str):
@@ -124,28 +95,34 @@ def _load_vcd_index(vcd_path: str):
         widths[full] = int(w) if w is not None else None
     return vcd, list(vcd.signals), widths
 
-def _base_of(full: str) -> str:
-    base = full.split(".")[-1]
-    return re.sub(r"\[.*\]$", "", base)
+# --- HELPER FUNCTIONS FOR MATCHING ---
+def _normalize_module_path_part(name: str) -> str:
+    """
+    Normalizes a name for comparison by lowercasing, removing underscores,
+    and stripping trailing digits.
+    e.g., "Inv_MixColumn0" -> "invmixcolumn"
+    """
+    # Remove trailing digits
+    name = re.sub(r'\d+$', '', name)
+    # Lowercase and remove underscores
+    return name.lower().replace('_', '')
 
-def _score_candidate(
-    key: str, width: Optional[int], full: str, full_width: Optional[int],
-    include_scopes: List[str], exclude_scopes: List[str]
-) -> int:
-    s = 0
-    if width is not None and full_width is not None and width == full_width:
-        s += 5
-    if full.endswith("." + key) or full == key:
-        s += 3
-    elif _base_of(full) == key:
-        s += 1
-    lname = full.lower()
-    if any(inc.lower() in lname for inc in include_scopes):
-        s += 4
-    if any(exc.lower() in lname for exc in exclude_scopes):
-        s -= 4
-    s += full.count(".")
-    return s
+def _normalize_variable_name(name: str) -> str:
+    """
+    Normalizes a variable name for comparison.
+    Lowercases and removes underscores, but DOES NOT strip digits.
+    e.g., "a33" -> "a33"
+    """
+    return name.lower().replace('_', '')
+
+def _get_vcd_parts(vcd_signal: str) -> Tuple[List[str], str]:
+    """
+    Splits a VCD signal into its hierarchy path and base variable name.
+    e.g., "top.dut.mod.var[7:0]" -> (['top', 'dut', 'mod'], 'var')
+    """
+    parts = vcd_signal.split('.')
+    base_var = re.sub(r'\[[^\]]+\]$', '', parts[-1]).strip()
+    return parts[:-1], base_var
 
 # ---------- Public: extract (hdl_key, width, vcd_full_name) ----------
 def extract_signals_with_pyverilog(
@@ -158,16 +135,6 @@ def extract_signals_with_pyverilog(
     Parse HDL (.v) to get (hdl_key, width), and map each key to the best-matching
     VCD hierarchical signal. Returns a list of triples:
         (hdl_key, width, vcd_full_name or None)
-
-    Args:
-        verilog_files: a path or a list of paths to Verilog files.
-        vcd_path: path to the VCD file.
-        include_scopes: prefer VCD signals whose hierarchical name contains any of these substrings (e.g., DUT name).
-        exclude_scopes: penalize VCD signals whose hierarchical name contains any of these substrings (e.g., 'bench','tb').
-
-    Notes:
-        - Requires 'iverilog' available for PyVerilog preprocessing (or set env PYVERILOG_IVERILOG=/path/to/iverilog).
-        - PyVerilog parses Verilog-2005; SystemVerilog 'logic' is not recognized.
     """
     include_scopes = include_scopes or []
     exclude_scopes = exclude_scopes or []
@@ -177,24 +144,69 @@ def extract_signals_with_pyverilog(
 
     # 2) VCD index
     _, vcd_signals, vcd_widths = _load_vcd_index(vcd_path)
-
-    # Pre-index VCD by base name
-    by_base: Dict[str, List[str]] = {}
+    # print("VCD signals:")
     for full in vcd_signals:
-        b = _base_of(full)
-        by_base.setdefault(b, []).append(full)
+        # print(f"{full}")
 
-    # 3) Map each HDL key -> best VCD signal
-    triples: List[Tuple[str, Optional[int], Optional[str]]] = []
-    for key, width in hdl_kws:
-        cands = by_base.get(key, [])
-        if not cands:
-            cands = [full for full in vcd_signals if full.endswith("." + key)]
-        best_full, best_score = None, -10**9
-        for full in cands:
-            sc = _score_candidate(key, width, full, vcd_widths.get(full),
-                                  include_scopes, exclude_scopes)
-            if sc > best_score:
-                best_score, best_full = sc, full
-        triples.append((key, width, best_full))
-    return triples
+        # Pre-process VCD signals for efficient lookup
+        vcd_candidates_map: Dict[str, List[Dict]] = {}
+        for signal_path in vcd_signals:
+            path_parts, var_name = _get_vcd_parts(signal_path)
+            # Use the correct normalization for the variable name (no digit stripping)
+            norm_var = _normalize_variable_name(var_name)
+
+            candidate_info = {
+                "full_path": signal_path,
+                # Use module-specific normalization for the path parts
+                "norm_path_parts": [_normalize_module_path_part(p) for p in path_parts],
+                "width": vcd_widths.get(signal_path)
+            }
+
+            if norm_var not in vcd_candidates_map:
+                vcd_candidates_map[norm_var] = []
+            vcd_candidates_map[norm_var].append(candidate_info)
+
+        # Iterate through HDL signals and find the best VCD match
+        triples: List[Tuple[str, Optional[int], Optional[str]]] = []
+        for hdl_key, hdl_width in hdl_kws:
+
+            try:
+                hdl_module_name, hdl_var_name = hdl_key.split('.', 1)
+                # Use the correct normalization for each part
+                norm_hdl_module = _normalize_module_path_part(hdl_module_name)
+                norm_hdl_var = _normalize_variable_name(hdl_var_name)
+            except ValueError:
+                norm_hdl_module = ""
+                norm_hdl_var = _normalize_variable_name(hdl_key)
+
+            best_match_path: Optional[str] = None
+            highest_score = -float('inf')
+
+            # This lookup now works correctly because norm_hdl_var is distinct (e.g., 'a00', 'a33')
+            candidates = vcd_candidates_map.get(norm_hdl_var, [])
+
+            for cand in candidates:
+                score = 0
+
+                if norm_hdl_module and norm_hdl_module in cand["norm_path_parts"]:
+                    score += 10
+
+                if hdl_width is not None and hdl_width == cand["width"]:
+                    score += 5
+
+                for scope in include_scopes:
+                    if scope in cand["full_path"]:
+                        score += 2
+                for scope in exclude_scopes:
+                    if scope in cand["full_path"]:
+                        score -= 4
+
+                score -= len(cand["norm_path_parts"]) * 0.1
+
+                if score > highest_score:
+                    highest_score = score
+                    best_match_path = cand["full_path"]
+
+            triples.append((hdl_key, hdl_width, best_match_path))
+
+        return triples

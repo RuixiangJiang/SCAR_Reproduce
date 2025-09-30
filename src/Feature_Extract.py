@@ -22,8 +22,8 @@ if __name__ == "__main__":
     graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes, edges = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2])
     vcd = VCDVCD(vcd_file, store_tvs=True)
     signal_keys = V_Preprocessing.extract_signals_with_pyverilog(v_files, vcd_file,
-                                                                    include_scopes=["tb_aes128_table_ecb_"],
-                                                                    exclude_scopes=["bench", "tb", "test"],)
+                                                                    include_scopes=["aes128_table_ecb_bench"],
+                                                                    exclude_scopes=[],)
 
     # for k, w, full in signal_keys:
     #     print(f"{k:<24} width={w:<4}  ->  {full}")

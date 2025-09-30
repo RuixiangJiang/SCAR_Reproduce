@@ -2,14 +2,12 @@ from vcdvcd import VCDVCD
 
 def parse_vcd(filename):
     vcd = VCDVCD(filename)
-
-    signals = list(vcd.signals)
-
-    for sig_key in vcd.signals:
-        print(sig_key)
-        sig = vcd[sig_key]
-        for t, v in sig.tv:
-            print(" ", t, v)
+    with open("../out/train_vcd_signals.txt", "w") as f:
+        for sig_key in vcd.signals:
+            f.write(f"{sig_key}\n")
+            sig = vcd[sig_key]
+            for t, v in sig.tv:
+                f.write(f" {t} {v}\n")
 
 
 if __name__ == "__main__":

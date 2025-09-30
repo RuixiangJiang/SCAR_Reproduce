@@ -1,8 +1,11 @@
 import re
+from typing import Dict, Any, List, Tuple, Optional
 from collections import defaultdict
 import os
 import pydot
 from vcdvcd import VCDVCD
+
+from V_Preprocessing import _normalize_module_path_part, _normalize_variable_name
 
 
 def norm_bits(val: str, width: int):
@@ -92,14 +95,84 @@ def parse_label_slices(label: str):
 
     return results
 
-def resolve_signal_key(signal_keys, base):
+
+def resolve_signal_key(
+        signal_keys: List[Tuple[str, Optional[int], Optional[str]]],
+        base_name: str,
+        module_context: str
+) -> Optional[str]:
     """
-    map the register name in label to signal key in VCDVCD.
+    Finds the best matching VCD signal path for a given variable and its module context.
+
+    Args:
+        signal_keys: The master list of resolved signals.
+                     Format: [('module.variable', width, 'vcd.path'), ...].
+        base_name: The variable name from the CFG label slice (e.g., 'b03', 'next_key').
+        module_context: The module name from the CFG label (e.g., 'InvSubBytes').
+
+    Returns:
+        The best matching VCD path string (e.g., 'top.dut.mod.var[7:0]') or None.
     """
+    norm_base = _normalize_variable_name(base_name)
+
+    # --- STRATEGY 1: Use the module context for a precise match ---
+    if module_context:
+        norm_module_context = _normalize_module_path_part(module_context)
+
+        for hdl_key, _, vcd_full in signal_keys:
+            try:
+                mod_part, var_part = hdl_key.split('.', 1)
+            except ValueError:
+                continue
+
+            if (_normalize_variable_name(var_part) == norm_base and
+                    _normalize_module_path_part(mod_part) == norm_module_context):
+                # Perfect match found, return the VCD path string.
+                return vcd_full
+
+    # --- STRATEGY 2: Fallback if no module context or no match was found above ---
+    # This is less reliable as it can be ambiguous.
+    candidates = []
     for hdl_key, _, vcd_full in signal_keys:
-        if hdl_key == base:
-            return vcd_full
+        try:
+            _, var_part = hdl_key.split('.', 1)
+        except ValueError:
+            var_part = hdl_key
+
+        if _normalize_variable_name(var_part) == norm_base:
+            candidates.append(vcd_full)
+
+    # If we found exactly one possible candidate across all modules, return it.
+    if len(candidates) == 1:
+        return candidates[0]
+
+    # If there are 0 or >1 candidates, the result is ambiguous. Return None.
     return None
+
+def get_module_from_label(label: str) -> str:
+    """
+    Extracts the module name from a graph node label string.
+
+    The function looks for labels that start with the pattern 'ModuleName.LineNumber:',
+    which is common in control flow graphs generated from HDL code.
+
+    Args:
+        label: The label string of the graph node.
+
+    Returns:
+        The extracted module name as a string, or an empty string "" if
+        the pattern is not found.
+    """
+    # This regex matches from the start of the string (^) a group of characters (.+?)
+    # followed by a literal period (\.), one or more digits (\d+), and a colon (:).
+    match = re.match(r"^(.+?)\.\d+:", label)
+
+    if match:
+        # If a match is found, the first captured group is the module name.
+        return match.group(1)
+
+    # If the pattern does not match, return an empty string.
+    return ""
 
 def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
     per_bit_toggles = {}
@@ -124,15 +197,15 @@ def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
     for node in Feature.keys():
         label = node_attrs.get(node, {}).get("label", "") or ""
         specs = parse_label_slices(label)
-
-        # print(f"label: {label}\nspecs: {specs}")
+        module_context = get_module_from_label(label)
+        # print(f"label = {label}, specs = {specs}")
 
         total = 0
         components = []
 
         for base, hi, lo in specs:
-            sig_key = resolve_signal_key(signal_keys, base)
-            # print(f"sig_key: {sig_key}")
+            # print(f"base = {base}, hi = {hi}, lo = {lo}")
+            sig_key = resolve_signal_key(signal_keys, base, module_context)
             if sig_key is None:
                 continue
 
