@@ -25,8 +25,8 @@ if __name__ == "__main__":
                                                                     include_scopes=["aes128_table_ecb_bench"],
                                                                     exclude_scopes=[],)
 
-    # for k, w, full in signal_keys:
-    #     print(f"{k:<24} width={w:<4}  ->  {full}")
+    for k, w, full in signal_keys:
+        print(f"{k:<24} width={w:<4}  ->  {full}")
 
     for root in roots:
         paths = Dot_Preprocess.find_paths(graph, root)

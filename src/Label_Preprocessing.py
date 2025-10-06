@@ -9,6 +9,7 @@ leaky_module = {
         ("SBOX",),
         ("Mixcolumn",),
         ("MX",),
+        ("sb",)
     ],
     "AES_PPRM3": [
         ("Sbox",),
@@ -19,6 +20,10 @@ leaky_module = {
         ("SBOX",),
         ("Mixcolumn",),
         ("MX",),
+        ("EC", "sb",),
+        ("EC", "di",),
+        ("EC", "ki"),
+        ("EC", "so"),
     ],
     "RSA": [
         ("MODEXP_SEQ",),
