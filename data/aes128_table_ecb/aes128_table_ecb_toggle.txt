@@ -1,0 +1,260 @@
+sig_key,width,toggles
+aes128_table_ecb_bench.text_val,1,2
+aes128_table_ecb_bench.text_out[127:0],128,5 7 4 1 5 6 5 7 2 5 9 5 5 6 8 3 7 4 8 3 6 5 5 9 7 4 5 6 3 5 6 8 5 6 8 3 3 6 4 5 5 5 6 3 7 6 3 6 7 8 6 4 4 6 4 5 6 6 8 5 5 4 3 4 6 7 4 8 7 4 3 4 6 6 6 6 7 7 7 8 7 8 4 4 4 8 4 7 5 4 5 5 8 3 7 2 5 7 5 4 5 5 3 4 4 8 5 5 5 6 4 6 6 7 5 4 6 5 5 3 4 4 2 6 3 5 5 8
+aes128_table_ecb_bench.r10_key[127:0],128,1 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 1 0 1 0 1 0 0 0 1 1 0 0 1 0 0 1 1 1 1 0 1 1 1 0 0 0 1 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 1 0 0 1 1 1 1 1 1 0 0 0 0 1 1 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 1 1 0 0 1 1 0 0 0 1 1 0 0 0 0 1 1 0 0 1 0 1 0 0 1 1 0
+aes128_table_ecb_bench.key_val,1,1
+aes128_table_ecb_bench.busy,1,2
+aes128_table_ecb_bench.clock,1,53
+aes128_table_ecb_bench.enc_dec,1,0
+aes128_table_ecb_bench.key_exp,1,2
+aes128_table_ecb_bench.key_in[127:0],128,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.resetn,1,1
+aes128_table_ecb_bench.start,1,2
+aes128_table_ecb_bench.text_in[127:0],128,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.add_iroundkey0[127:0],128,9 13 12 11 10 6 14 12 10 12 10 7 8 7 10 10 9 15 13 7 7 6 12 13 7 8 11 8 9 8 12 12 9 11 10 8 9 8 6 7 7 11 5 8 3 5 7 6 10 12 11 8 4 9 12 11 5 10 12 8 7 6 10 9 5 9 7 8 10 6 6 9 8 8 5 7 7 7 11 7 8 6 8 10 11 7 6 8 7 9 10 8 5 4 8 12 7 6 7 9 8 5 7 8 6 5 11 6 4 4 7 9 4 6 8 4 7 7 6 8 5 8 7 6 6 3 5 6
+aes128_table_ecb_bench.dut.add_roundkey0[127:0],128,12 12 13 12 13 8 17 13 12 13 9 9 9 13 9 8 12 16 12 9 8 13 12 13 12 8 12 13 12 13 13 12 16 16 17 8 13 12 8 8 13 16 5 12 5 9 9 4 17 17 16 13 4 16 17 16 9 12 17 12 12 9 13 12 9 12 9 12 17 8 9 13 13 13 5 13 12 13 17 9 12 8 12 17 20 13 8 13 13 12 12 12 9 8 12 16 12 8 12 12 13 8 12 13 13 9 20 12 9 9 13 17 8 9 12 8 13 13 9 13 8 12 13 13 13 5 8 8
+aes128_table_ecb_bench.dut.clock,1,53
+aes128_table_ecb_bench.dut.enc_dec,1,0
+aes128_table_ecb_bench.dut.itemp[31:0],32,8 5 8 9 8 5 7 7 8 7 12 7 3 5 8 10 6 6 8 8 8 6 6 8 4 9 9 8 7 3 5 6
+aes128_table_ecb_bench.dut.key_exp,1,2
+aes128_table_ecb_bench.dut.key_in[127:0],128,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.r10_key[127:0],128,1 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 1 0 1 0 1 0 0 0 1 1 0 0 1 0 0 1 1 1 1 0 1 1 1 0 0 0 1 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 1 0 0 1 1 1 1 1 1 0 0 0 0 1 1 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 1 1 0 0 1 1 0 0 0 1 1 0 0 0 0 1 1 0 0 1 0 1 0 0 1 1 0
+aes128_table_ecb_bench.dut.resetn,1,1
+aes128_table_ecb_bench.dut.start,1,2
+aes128_table_ecb_bench.dut.text_in[127:0],128,0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.text_out[127:0],128,5 7 4 1 5 6 5 7 2 5 9 5 5 6 8 3 7 4 8 3 6 5 5 9 7 4 5 6 3 5 6 8 5 6 8 3 3 6 4 5 5 5 6 3 7 6 3 6 7 8 6 4 4 6 4 5 6 6 8 5 5 4 3 4 6 7 4 8 7 4 3 4 6 6 6 6 7 7 7 8 7 8 4 4 4 8 4 7 5 4 5 5 8 3 7 2 5 7 5 4 5 5 3 4 4 8 5 5 5 6 4 6 6 7 5 4 6 5 5 3 4 4 2 6 3 5 5 8
+aes128_table_ecb_bench.dut.temp[31:0],32,13 13 13 20 9 4 12 17 13 13 9 12 12 13 13 9 17 4 8 12 9 4 8 12 12 13 13 12 12 12 13 16
+aes128_table_ecb_bench.dut.sword[31:0],32,8 10 11 9 9 6 6 12 8 8 5 10 7 6 6 9 8 8 6 8 8 8 6 4 7 3 5 9 5 3 4 6
+aes128_table_ecb_bench.dut.rotword[31:0],32,13 9 20 12 9 9 13 17 8 9 12 8 13 13 9 13 8 12 13 13 13 5 8 8 12 8 12 12 13 8 12 13
+aes128_table_ecb_bench.dut.rcon[7:0],8,8 8 12 12 12 12 8 8
+aes128_table_ecb_bench.dut.next_key[127:0],128,13 13 12 12 12 8 17 12 13 12 8 13 9 12 8 9 9 12 12 9 5 13 12 13 12 13 13 13 12 13 12 12 13 17 17 8 17 12 13 8 12 16 5 13 4 9 9 5 16 17 12 12 5 17 13 17 13 17 16 13 12 8 13 8 8 13 12 12 12 8 8 13 13 9 4 12 12 12 16 8 16 13 12 17 21 12 9 12 12 13 12 13 13 12 17 16 12 9 8 12 13 8 12 12 8 8 20 16 9 9 13 17 12 8 12 9 12 17 8 9 8 13 13 8 8 9 9 8
+aes128_table_ecb_bench.dut.next_ikey[127:0],128,11 11 11 9 11 8 14 13 12 10 10 9 8 9 10 10 10 14 12 8 8 7 12 11 7 8 10 9 10 10 12 10 8 10 12 7 11 10 10 9 9 11 7 9 7 4 9 6 9 9 10 9 5 9 12 12 6 10 11 10 6 6 10 11 6 8 9 8 11 6 6 10 9 7 6 9 8 6 12 7 10 10 9 10 13 6 10 7 8 9 12 8 6 8 12 13 8 5 8 9 8 5 7 7 8 7 12 7 3 5 8 10 6 6 8 8 8 6 6 8 4 9 9 8 7 3 5 6
+aes128_table_ecb_bench.dut.irotword[31:0],32,8 8 5 10 7 6 6 9 8 8 6 8 8 8 6 4 7 3 5 9 5 3 4 6 8 10 11 9 9 6 6 12
+aes128_table_ecb_bench.dut.ircon[7:0],8,8 8 12 12 12 12 8 8
+aes128_table_ecb_bench.dut.cipher_text[127:0],128,9 11 9 11 12 10 12 17 12 15 12 10 11 10 9 10 12 15 9 11 11 10 13 14 11 9 10 13 13 9 15 12 13 14 13 10 10 11 12 9 12 15 9 12 14 11 11 10 18 16 13 11 8 13 18 14 8 11 12 11 12 11 12 10 12 12 10 13 13 9 11 14 13 16 10 15 12 12 15 9 11 9 9 15 17 15 11 10 12 11 12 10 9 10 12 13 12 11 10 10 14 10 11 12 12 12 12 11 9 6 11 14 8 10 9 6 10 12 12 10 10 12 12 13 12 8 8 9
+aes128_table_ecb_bench.dut.add_roundkey[127:0],128,12 11 11 7 11 11 15 13 9 10 15 9 8 13 10 7 12 13 13 8 12 13 11 14 13 10 11 13 10 12 11 13 10 13 17 7 11 13 11 10 12 11 7 10 9 10 9 7 16 15 14 12 7 13 12 13 11 15 17 11 13 12 11 9 10 11 10 13 15 7 10 12 12 13 9 12 15 13 16 13 12 11 10 15 14 14 8 13 12 9 10 11 11 8 13 10 9 12 11 11 11 10 12 11 11 14 15 12 9 12 12 15 10 9 13 7 11 12 10 12 8 12 8 12 8 8 10 13
+aes128_table_ecb_bench.dut.add_iroundkey[127:0],128,9 13 12 11 10 6 14 12 10 12 10 7 8 7 10 10 9 15 13 7 7 6 12 13 7 8 11 8 9 8 12 12 9 11 10 8 9 8 6 7 7 11 5 8 3 5 7 6 10 12 11 8 4 9 12 11 5 10 12 8 7 6 10 9 5 9 7 8 10 6 6 9 8 8 5 7 7 7 11 7 8 6 8 10 11 7 6 8 7 9 10 8 5 4 8 12 7 6 7 9 8 5 7 8 6 5 11 6 4 4 7 9 4 6 8 4 7 7 6 8 5 8 7 6 6 3 5 6
+aes128_table_ecb_bench.dut.busy,1,2
+aes128_table_ecb_bench.dut.key_val,1,1
+aes128_table_ecb_bench.dut.next_state[2:0],3,2 4 2
+aes128_table_ecb_bench.dut.now_state[2:0],3,2 4 2
+aes128_table_ecb_bench.dut.round10_key[127:0],128,1 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 1 0 1 0 1 0 0 0 1 1 0 0 1 0 0 1 1 1 1 0 1 1 1 0 0 0 1 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 1 0 0 1 1 1 1 1 1 0 0 0 0 1 1 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 1 1 0 0 1 1 0 0 0 1 1 0 0 0 0 1 1 0 0 1 0 1 0 0 1 1 0
+aes128_table_ecb_bench.dut.round_n[3:0],4,8 8 12 20
+aes128_table_ecb_bench.dut.start_flag,1,2
+aes128_table_ecb_bench.dut.text_val,1,2
+aes128_table_ecb_bench.dut.InvMixColumn0.m0c[7:0],8,11 8 9 11 10 9 11 8
+aes128_table_ecb_bench.dut.InvMixColumn0.m1c[7:0],8,8 9 8 12 12 8 11 10
+aes128_table_ecb_bench.dut.InvMixColumn0.m2c[7:0],8,11 8 9 10 9 11 9 8
+aes128_table_ecb_bench.dut.InvMixColumn0.m3c[7:0],8,9 7 8 8 13 7 7 9
+aes128_table_ecb_bench.dut.InvMixColumn0.s0c[7:0],8,9 13 12 11 10 6 14 12
+aes128_table_ecb_bench.dut.InvMixColumn0.s1c[7:0],8,10 12 10 7 8 7 10 10
+aes128_table_ecb_bench.dut.InvMixColumn0.s2c[7:0],8,9 15 13 7 7 6 12 13
+aes128_table_ecb_bench.dut.InvMixColumn0.s3c[7:0],8,7 8 11 8 9 8 12 12
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.c0[7:0],8,0 0 0 10 10 0 10 10
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.c1[7:0],8,0 0 10 10 0 10 10 0
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.c2[7:0],8,0 9 9 0 9 9 0 0
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.sc[7:0],8,9 13 12 11 10 6 14 12
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.sxm0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.sxm1[7:0],8,9 13 12 11 10 6 14 12
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.sxm2[7:0],8,9 13 12 11 10 6 14 12
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.sxm3[7:0],8,9 13 12 11 10 6 14 12
+aes128_table_ecb_bench.dut.InvMixColumn0.mul4x8.temp[10:0],11,9 10 10 12 13 9 10 10 6 12 0
+aes128_table_ecb_bench.dut.InvMixColumn1.m0c[7:0],8,5 8 9 10 12 9 8 5
+aes128_table_ecb_bench.dut.InvMixColumn1.m1c[7:0],8,8 9 8 9 9 8 9 9
+aes128_table_ecb_bench.dut.InvMixColumn1.m2c[7:0],8,6 9 6 8 10 7 10 4
+aes128_table_ecb_bench.dut.InvMixColumn1.m3c[7:0],8,8 12 7 11 8 8 12 11
+aes128_table_ecb_bench.dut.InvMixColumn1.s0c[7:0],8,9 11 10 8 9 8 6 7
+aes128_table_ecb_bench.dut.InvMixColumn1.s1c[7:0],8,7 11 5 8 3 5 7 6
+aes128_table_ecb_bench.dut.InvMixColumn1.s2c[7:0],8,10 12 11 8 4 9 12 11
+aes128_table_ecb_bench.dut.InvMixColumn1.s3c[7:0],8,5 10 12 8 7 6 10 9
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.c0[7:0],8,0 0 0 10 10 0 10 10
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.c1[7:0],8,0 0 8 8 0 8 8 0
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.c2[7:0],8,0 9 9 0 9 9 0 0
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.sc[7:0],8,9 11 10 8 9 8 6 7
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.sxm0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.sxm1[7:0],8,9 11 10 8 9 8 6 7
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.sxm2[7:0],8,9 11 10 8 9 8 6 7
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.sxm3[7:0],8,9 11 10 8 9 8 6 7
+aes128_table_ecb_bench.dut.InvMixColumn1.mul4x8.temp[10:0],11,9 8 10 7 7 7 7 7 7 7 0
+aes128_table_ecb_bench.dut.InvMixColumn2.m0c[7:0],8,10 8 8 9 8 5 10 7
+aes128_table_ecb_bench.dut.InvMixColumn2.m1c[7:0],8,4 7 7 10 8 6 11 10
+aes128_table_ecb_bench.dut.InvMixColumn2.m2c[7:0],8,11 9 6 8 5 7 6 6
+aes128_table_ecb_bench.dut.InvMixColumn2.m3c[7:0],8,7 6 7 10 8 8 8 9
+aes128_table_ecb_bench.dut.InvMixColumn2.s0c[7:0],8,5 9 7 8 10 6 6 9
+aes128_table_ecb_bench.dut.InvMixColumn2.s1c[7:0],8,8 8 5 7 7 7 11 7
+aes128_table_ecb_bench.dut.InvMixColumn2.s2c[7:0],8,8 6 8 10 11 7 6 8
+aes128_table_ecb_bench.dut.InvMixColumn2.s3c[7:0],8,7 9 10 8 5 4 8 12
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.c0[7:0],8,0 0 0 7 7 0 7 7
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.c1[7:0],8,0 0 12 12 0 12 12 0
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.c2[7:0],8,0 5 5 0 5 5 0 0
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.sc[7:0],8,5 9 7 8 10 6 6 9
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.sxm0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.sxm1[7:0],8,5 9 7 8 10 6 6 9
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.sxm2[7:0],8,5 9 7 8 10 6 6 9
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.sxm3[7:0],8,5 9 7 8 10 6 6 9
+aes128_table_ecb_bench.dut.InvMixColumn2.mul4x8.temp[10:0],11,5 12 7 12 7 10 10 9 7 9 0
+aes128_table_ecb_bench.dut.InvMixColumn3.m0c[7:0],8,10 3 9 9 6 6 5 3
+aes128_table_ecb_bench.dut.InvMixColumn3.m1c[7:0],8,4 6 9 6 7 3 5 8
+aes128_table_ecb_bench.dut.InvMixColumn3.m2c[7:0],8,10 8 11 7 10 7 5 3
+aes128_table_ecb_bench.dut.InvMixColumn3.m3c[7:0],8,8 8 8 7 8 5 6 5
+aes128_table_ecb_bench.dut.InvMixColumn3.s0c[7:0],8,7 6 7 9 8 5 7 8
+aes128_table_ecb_bench.dut.InvMixColumn3.s1c[7:0],8,6 5 11 6 4 4 7 9
+aes128_table_ecb_bench.dut.InvMixColumn3.s2c[7:0],8,4 6 8 4 7 7 6 8
+aes128_table_ecb_bench.dut.InvMixColumn3.s3c[7:0],8,5 8 7 6 6 3 5 6
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.c0[7:0],8,0 0 0 8 8 0 8 8
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.c1[7:0],8,0 0 5 5 0 5 5 0
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.c2[7:0],8,0 7 7 0 7 7 0 0
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.sc[7:0],8,7 6 7 9 8 5 7 8
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.sxm0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.sxm1[7:0],8,7 6 7 9 8 5 7 8
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.sxm2[7:0],8,7 6 7 9 8 5 7 8
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.sxm3[7:0],8,7 6 7 9 8 5 7 8
+aes128_table_ecb_bench.dut.InvMixColumn3.mul4x8.temp[10:0],11,7 5 8 6 4 8 8 6 7 8 0
+aes128_table_ecb_bench.dut.InvSubBytes.a00[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a01[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a02[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a03[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a10[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a11[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a12[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a13[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a20[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a21[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a22[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a23[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a30[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a31[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a32[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.a33[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b33[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b32[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b31[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b30[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b23[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b22[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b21[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b20[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b13[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b12[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b11[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b10[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b03[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b02[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b01[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.b00[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.InvSubBytes.is_box.aij[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.m0c[7:0],8,8 7 6 7 6 5 2 6
+aes128_table_ecb_bench.dut.MixColumns0.m1c[7:0],8,5 3 6 4 5 4 7 5
+aes128_table_ecb_bench.dut.MixColumns0.m2c[7:0],8,6 7 7 3 4 6 5 7
+aes128_table_ecb_bench.dut.MixColumns0.m3c[7:0],8,5 6 3 6 4 3 4 7
+aes128_table_ecb_bench.dut.MixColumns0.s0c[7:0],8,9 5 6 7 5 6 7 6
+aes128_table_ecb_bench.dut.MixColumns0.s1c[7:0],8,6 8 7 7 6 5 4 4
+aes128_table_ecb_bench.dut.MixColumns0.s2c[7:0],8,6 5 5 6 9 5 7 5
+aes128_table_ecb_bench.dut.MixColumns0.s3c[7:0],8,1 7 6 8 7 8 4 6
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.c0[7:0],8,0 0 0 9 9 0 9 9
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.c1[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.c2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.sc[7:0],8,9 5 6 7 5 6 7 6
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.sxm0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.sxm1[7:0],8,9 5 6 7 5 6 7 6
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.sxm2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.sxm3[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns0.mul4x8.temp[10:0],11,0 0 9 5 6 7 5 6 7 6 0
+aes128_table_ecb_bench.dut.MixColumns1.m0c[7:0],8,8 5 6 5 6 5 7 6
+aes128_table_ecb_bench.dut.MixColumns1.m1c[7:0],8,7 7 4 8 6 5 6 5
+aes128_table_ecb_bench.dut.MixColumns1.m2c[7:0],8,7 6 6 3 5 7 5 5
+aes128_table_ecb_bench.dut.MixColumns1.m3c[7:0],8,8 5 6 7 5 5 6 7
+aes128_table_ecb_bench.dut.MixColumns1.s0c[7:0],8,9 2 6 8 5 5 8 5
+aes128_table_ecb_bench.dut.MixColumns1.s1c[7:0],8,9 5 4 4 9 8 6 8
+aes128_table_ecb_bench.dut.MixColumns1.s2c[7:0],8,5 1 7 4 4 7 3 6
+aes128_table_ecb_bench.dut.MixColumns1.s3c[7:0],8,5 5 5 7 4 6 3 4
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.c0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.c1[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.c2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.sc[7:0],8,5 5 5 7 4 6 3 4
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.sxm0[7:0],8,5 5 5 7 4 6 3 4
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.sxm1[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.sxm2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.sxm3[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns1.mul4x8.temp[10:0],11,0 0 0 5 5 5 7 4 6 3 4
+aes128_table_ecb_bench.dut.MixColumns2.m0c[7:0],8,7 5 7 3 6 5 5 7
+aes128_table_ecb_bench.dut.MixColumns2.m1c[7:0],8,5 6 6 3 5 4 7 6
+aes128_table_ecb_bench.dut.MixColumns2.m2c[7:0],8,4 3 10 8 6 7 4 4
+aes128_table_ecb_bench.dut.MixColumns2.m3c[7:0],8,5 3 6 5 4 6 5 8
+aes128_table_ecb_bench.dut.MixColumns2.s0c[7:0],8,7 8 5 5 6 9 6 5
+aes128_table_ecb_bench.dut.MixColumns2.s1c[7:0],8,4 3 5 6 2 7 8 4
+aes128_table_ecb_bench.dut.MixColumns2.s2c[7:0],8,3 3 5 4 5 8 5 5
+aes128_table_ecb_bench.dut.MixColumns2.s3c[7:0],8,5 5 2 6 4 6 4 3
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.c0[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.c1[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.c2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.sc[7:0],8,3 3 5 4 5 8 5 5
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.sxm0[7:0],8,3 3 5 4 5 8 5 5
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.sxm1[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.sxm2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.sxm3[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns2.mul4x8.temp[10:0],11,0 0 0 3 3 5 4 5 8 5 5
+aes128_table_ecb_bench.dut.MixColumns3.m0c[7:0],8,5 4 7 3 6 8 8 8
+aes128_table_ecb_bench.dut.MixColumns3.m1c[7:0],8,6 7 7 8 4 7 5 4
+aes128_table_ecb_bench.dut.MixColumns3.m2c[7:0],8,6 8 7 7 2 5 5 7
+aes128_table_ecb_bench.dut.MixColumns3.m3c[7:0],8,6 6 7 7 5 5 6 9
+aes128_table_ecb_bench.dut.MixColumns3.s0c[7:0],8,4 5 4 10 3 6 7 5
+aes128_table_ecb_bench.dut.MixColumns3.s1c[7:0],8,5 5 10 7 6 5 2 5
+aes128_table_ecb_bench.dut.MixColumns3.s2c[7:0],8,4 7 7 6 5 7 7 7
+aes128_table_ecb_bench.dut.MixColumns3.s3c[7:0],8,8 6 7 6 7 5 8 7
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.c0[7:0],8,0 0 0 5 5 0 5 5
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.c1[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.c2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.mx[3:0],4,0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.sc[7:0],8,5 5 10 7 6 5 2 5
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.sxm0[7:0],8,5 5 10 7 6 5 2 5
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.sxm1[7:0],8,5 5 10 7 6 5 2 5
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.sxm2[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.sxm3[7:0],8,0 0 0 0 0 0 0 0
+aes128_table_ecb_bench.dut.MixColumns3.mul4x8.temp[10:0],11,0 0 5 6 5 5 5 5 7 5 5
+aes128_table_ecb_bench.dut.SubBytes.a00[7:0],8,5 7 4 1 5 6 5 7
+aes128_table_ecb_bench.dut.SubBytes.a01[7:0],8,5 6 8 3 3 6 4 5
+aes128_table_ecb_bench.dut.SubBytes.a02[7:0],8,6 7 4 8 7 4 3 4
+aes128_table_ecb_bench.dut.SubBytes.a03[7:0],8,5 7 5 4 5 5 3 4
+aes128_table_ecb_bench.dut.SubBytes.a10[7:0],8,2 5 9 5 5 6 8 3
+aes128_table_ecb_bench.dut.SubBytes.a11[7:0],8,5 5 6 3 7 6 3 6
+aes128_table_ecb_bench.dut.SubBytes.a12[7:0],8,6 6 6 6 7 7 7 8
+aes128_table_ecb_bench.dut.SubBytes.a13[7:0],8,4 8 5 5 5 6 4 6
+aes128_table_ecb_bench.dut.SubBytes.a20[7:0],8,7 4 8 3 6 5 5 9
+aes128_table_ecb_bench.dut.SubBytes.a21[7:0],8,7 8 6 4 4 6 4 5
+aes128_table_ecb_bench.dut.SubBytes.a22[7:0],8,7 8 4 4 4 8 4 7
+aes128_table_ecb_bench.dut.SubBytes.a23[7:0],8,6 7 5 4 6 5 5 3
+aes128_table_ecb_bench.dut.SubBytes.a30[7:0],8,7 4 5 6 3 5 6 8
+aes128_table_ecb_bench.dut.SubBytes.a31[7:0],8,6 6 8 5 5 4 3 4
+aes128_table_ecb_bench.dut.SubBytes.a32[7:0],8,5 4 5 5 8 3 7 2
+aes128_table_ecb_bench.dut.SubBytes.a33[7:0],8,6 4 2 4 5 5 7 8
+aes128_table_ecb_bench.dut.SubBytes.b33[7:0],8,1 7 6 8 7 8 4 6
+aes128_table_ecb_bench.dut.SubBytes.b32[7:0],8,8 6 7 6 7 5 8 7
+aes128_table_ecb_bench.dut.SubBytes.b31[7:0],8,5 5 2 6 4 6 4 3
+aes128_table_ecb_bench.dut.SubBytes.b30[7:0],8,5 5 5 7 4 6 3 4
+aes128_table_ecb_bench.dut.SubBytes.b23[7:0],8,5 1 7 4 4 7 3 6
+aes128_table_ecb_bench.dut.SubBytes.b22[7:0],8,6 5 5 6 9 5 7 5
+aes128_table_ecb_bench.dut.SubBytes.b21[7:0],8,4 7 7 6 5 7 7 7
+aes128_table_ecb_bench.dut.SubBytes.b20[7:0],8,3 3 5 4 5 8 5 5
+aes128_table_ecb_bench.dut.SubBytes.b13[7:0],8,4 3 5 6 2 7 8 4
+aes128_table_ecb_bench.dut.SubBytes.b12[7:0],8,9 5 4 4 9 8 6 8
+aes128_table_ecb_bench.dut.SubBytes.b11[7:0],8,6 8 7 7 6 5 4 4
+aes128_table_ecb_bench.dut.SubBytes.b10[7:0],8,5 5 10 7 6 5 2 5
+aes128_table_ecb_bench.dut.SubBytes.b03[7:0],8,4 5 4 10 3 6 7 5
+aes128_table_ecb_bench.dut.SubBytes.b02[7:0],8,7 8 5 5 6 9 6 5
+aes128_table_ecb_bench.dut.SubBytes.b01[7:0],8,9 2 6 8 5 5 8 5
+aes128_table_ecb_bench.dut.SubBytes.b00[7:0],8,9 5 6 7 5 6 7 6
+aes128_table_ecb_bench.dut.SubBytes.s_box.aij[7:0],8,5 7 4 1 5 6 5 7
+aes128_table_ecb_bench.dut.SubWord.a[31:0],32,13 9 20 12 9 9 13 17 8 9 12 8 13 13 9 13 8 12 13 13 13 5 8 8 12 8 12 12 13 8 12 13
+aes128_table_ecb_bench.dut.SubWord.b[31:0],32,13 13 13 20 9 4 12 17 13 13 9 12 12 13 13 9 17 4 8 12 9 4 8 12 12 13 13 12 12 12 13 16
+aes128_table_ecb_bench.dut.SubWord.s_box.aij[7:0],8,13 9 20 12 9 9 13 17
+aes128_table_ecb_bench.dut.iSubWord.a[31:0],32,8 5 8 9 8 5 7 7 8 7 12 7 3 5 8 10 6 6 8 8 8 6 6 8 4 9 9 8 7 3 5 6
+aes128_table_ecb_bench.dut.iSubWord.b[31:0],32,8 10 11 9 9 6 6 12 8 8 5 10 7 6 6 9 8 8 6 8 8 8 6 4 7 3 5 9 5 3 4 6
+aes128_table_ecb_bench.dut.iSubWord.s_box.aij[7:0],8,8 5 8 9 8 5 7 7
