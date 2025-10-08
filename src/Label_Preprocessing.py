@@ -30,7 +30,8 @@ leaky_module = {
         ("MULT_BLK",),
     ],
     "SABER": [
-        ("PMULTs",),
+        ("sa",),
+        (":",),
     ],
     "PRESENT": [
         ("SBOX",),
