@@ -17,7 +17,7 @@ import pickle
 with open("../out/train_graph_info.pkl", "wb") as f:
     pickle.dump(graph_info, f)
 
-mode_pick_train = 1
+mode_pick_train = 3
 if mode_pick_train == 1:
     majority = nodeset[nodeset["label"] == 0]
     minority = nodeset[nodeset["label"] == 1]
