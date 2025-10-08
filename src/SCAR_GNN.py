@@ -17,6 +17,18 @@ import pickle
 with open("../out/train_graph_info.pkl", "wb") as f:
     pickle.dump(graph_info, f)
 
+# majority = nodeset[nodeset["label"] == 0]
+# minority = nodeset[nodeset["label"] == 1]
+# majority_downsampled = majority.sample(n=len(minority), random_state=42)
+# balanced = pd.concat([majority_downsampled, minority])
+# train_data, test_data = train_test_split(
+#     nodeset,
+#     test_size=0.2,
+#     random_state=42,
+#     shuffle=True
+# )
+# train_data = balanced.sample(frac=1, random_state=42)
+
 train_data, test_data = train_test_split(
     nodeset,
     test_size=0.2,

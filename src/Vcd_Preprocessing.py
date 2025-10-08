@@ -1,8 +1,13 @@
+import ast
 import re
 from typing import Dict, Any, List, Tuple, Optional
 from collections import defaultdict
 import os
 import pydot
+import csv
+import requests
+import json
+import re
 from vcdvcd import VCDVCD
 
 from V_Preprocessing import _normalize_module_path_part, _normalize_variable_name, _get_vcd_parts
@@ -47,198 +52,188 @@ def bit_toggles_per_signal(tv, width):
         prev = bs
     return toggles
 
-_SIG_SLICE_RE = re.compile(r"\b([A-Za-z_]\w*)\s*(?:\[\s*(\d+)(?::\s*(\d+))?\s*\])?")
-_LITERAL_RE = re.compile(r"\b\d+'\s*[bBoOdDhH]\s*[0-9a-fA-FxXzZ_]+\b")
-_REPL_COUNT_RE = re.compile(r"\{\s*\d+\s*\{")
-_BLACKLIST = {
-    "assign","case","endcase","if","else","begin","end","always",
-    "wire","reg","logic","OPCODE_JAL"
-}
-def parse_label_slices(label: str):
-    """
-    Parse registers in the label.
-    """
-    if not label:
-        return []
 
-    lines = label.splitlines()
-    if lines and re.match(r"^\s*\d+:[A-Za-z_]\w*\s*$", lines[0]):
-        label_body = "\n".join(lines[1:])
-    else:
-        label_body = label
+def _parse_node_string_for_llm(node_str: str) -> tuple[str, str]:
+    """Parses the Node string into (module_path, code) for the prompt."""
+    if '\n' not in node_str:
+        return "", node_str
 
-    s = _LITERAL_RE.sub(" ", label_body)
-    s = _REPL_COUNT_RE.sub("{ {", s)
-    s = s.replace("{", " ").replace("}", " ")
-    s = s.replace("~", " ")
-    s = s.replace(",", " ")
-    # print(f"s = {s}")
+    first_line, code = node_str.split('\n', 1)
 
-    results = []
-    for m in _SIG_SLICE_RE.finditer(s):
-        base = m.group(1)
-        if not base or base.lower() in _BLACKLIST:
-            continue
-
-        hi = m.group(2)
-        lo = m.group(3)
-        # print(f"{base}:{hi}:{lo}")
-
-        if hi is not None and lo is None:
-            hi_i = int(hi)
-            lo_i = int(hi)
-            results.append((base, hi_i, lo_i))
-        elif hi is not None and lo is not None:
-            results.append((base, int(hi), int(lo)))
-        else:
-            results.append((base, None, None))
-
-    return results
-
-
-def resolve_signal_key(
-        signal_keys: List[Tuple[str, Optional[int], Optional[str]]],
-        base_name: str,
-        module_context: str
-) -> Optional[str]:
-    """
-    Finds the best matching VCD signal path for a given variable and its module context.
-
-    Args:
-        signal_keys: The master list of resolved signals.
-                     Format: [('module.variable', width, 'vcd.path'), ...].
-        base_name: The variable name from the CFG label slice (e.g., 'b03', 'next_key').
-        module_context: The module name from the CFG label (e.g., 'InvSubBytes').
-
-    Returns:
-        The best matching VCD path string (e.g., 'top.dut.mod.var[7:0]') or None.
-    """
-    norm_base = _normalize_variable_name(base_name)
-    context_parts = [_normalize_module_path_part(p) for p in module_context.split('.')] if module_context else []
-
-    best_match_vcd_path: Optional[str] = None
-    highest_score = -float('inf')
-
-    for _, _, vcd_full in signal_keys:
-        if vcd_full is None:
-            continue
-
-        vcd_path_parts, vcd_var_name = _get_vcd_parts(vcd_full)
-        norm_vcd_var = _normalize_variable_name(vcd_var_name)
-
-        if norm_vcd_var != norm_base:
-            continue
-
-        score = 0
-        norm_vcd_path = [_normalize_module_path_part(p) for p in vcd_path_parts]
-
-        if context_parts:
-            is_match = False
-            for i in range(len(norm_vcd_path) - len(context_parts) + 1):
-                if norm_vcd_path[i:i + len(context_parts)] == context_parts:
-                    is_match = True
-                    break
-
-            if is_match:
-                score += 10
-            else:
-                continue  # If context is given but sequence not found, this is not a valid candidate.
-
-            # Proximity bonus if the context is the direct parent hierarchy.
-            if norm_vcd_path and norm_vcd_path[-len(context_parts):] == context_parts:
-                score += 5
-
-        score -= len(norm_vcd_path) * 0.1
-
-        if score > highest_score:
-            highest_score = score
-            best_match_vcd_path = vcd_full
-
-    return best_match_vcd_path
-
-def get_module_from_label(label: str) -> str:
-    """
-    Extracts the module name from a graph node label string.
-
-    The function looks for labels that start with the pattern 'ModuleName.LineNumber:',
-    which is common in control flow graphs generated from HDL code.
-
-    Args:
-        label: The label string of the graph node.
-
-    Returns:
-        The extracted module name as a string, or an empty string "" if
-        the pattern is not found.
-    """
-    # This regex matches from the start of the string (^) a group of characters (.+?)
-    # followed by a literal period (\.), one or more digits (\d+), and a colon (:).
-    match = re.match(r"^(.+?)\.\d+:", label)
-
+    match = re.match(r'^(.+?)\.\d+:', first_line)
     if match:
-        # If a match is found, the first captured group is the module name.
-        return match.group(1)
+        return match.group(1), code
 
-    # If the pattern does not match, return an empty string.
-    return ""
+    return "", code
 
-def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
+
+def _extract_variables_from_code_for_llm(code: str) -> list[str]:
+    """Extracts potential variable names from a line of Verilog code."""
+    keywords = {'module', 'endmodule', 'input', 'output', 'reg', 'wire', 'assign', 'always', 'if', 'else', 'case',
+                'endcase'}
+    variables = re.findall(r'\b([a-zA-Z_][a-zA-Z0-9_]*)\b', code)
+    return sorted(list(set([v for v in variables if v not in keywords])))
+
+
+def get_mapping_for_node_with_llm(node_line: str, all_vcd_signals_str: str) -> Tuple[
+    str, List[Tuple[str, Optional[str], int, int]]]:
+    """
+    Invokes a local LLM to map all variables in a single Node line to their
+    corresponding VCD signals and determine the bit ranges.
+
+    Args:
+        node_line: A single string from the 'Node' column (e.g., "SEQ_BLK.START_MR.439:AS\nStart = ~rgt & Pc;").
+        all_vcd_signals_str: A single string containing all VCD signals, separated by newlines.
+
+    Returns:
+        A tuple in the format: (Node_Line, [(variable, vcd_signal, hi, lo), ...])
+    """
+    ollama_url = "http://98.225.176.62:11434/api/chat"
+    model_name = "gemma3:12b"
+
+    # --- 1. Construct the Prompt ---
+    system_prompt = (
+        "You are an expert hardware verification engineer specializing in data correlation. Your task is to analyze a line of Verilog code from a control-flow graph and map every variable in it to its corresponding hierarchical signal from a VCD trace file. You must also determine the exact bit range being accessed.\n\n"
+        "**Reasoning Guide:**\n"
+        "1.  **Context is Key:** The `Node` string contains a module path (e.g., `SEQ_BLK.START_MR`). This is your primary clue. A variable from the code MUST belong to an instance matching this path in the VCD.\n"
+        "2.  **Abbreviations:** VCD instance names (`SEQ_BLK`) are often abbreviations of Verilog module names (`SequencerBlock`).\n"
+        "3.  **Bit Ranges:** If the code uses `pc[10]`, `hi` and `lo` are both `10`. If it uses `pc[10:0]`, `hi` is `10` and `lo` is `0`. For a whole variable access like `Start`, `hi` and `lo` correspond to its full width (e.g., `0` and `0` for a 1-bit signal).\n\n"
+        "**Common Mistakes to Avoid:**\n"
+        "- **DO NOT** identify parts of the Node's name (e.g., `SEQ_BLK`, `START_MR`, `439`, `AS`, `IF`) as variables. Only identify variables from the actual Verilog code snippet.\n"
+        "- **DO NOT** treat constant values (e.g., `32'h00000000`, `1'b0`) as variables.\n"
+        "- The `vcd_signal` you choose **MUST** be an exact string from the provided candidate list. Do not invent or modify a VCD path. If no candidate is a good match, the value for `vcd_signal` must be `null`."
+    )
+
+    user_prompt = (
+        f"# VCD Signal Candidates\n"
+        f"This is the complete list of available signals from the VCD trace:\n"
+        f"```\n{all_vcd_signals_str}\n```\n\n"
+        f"# Task: Analyze and Map the following Node\n\n"
+        f"**Node:**\n"
+        f"```\n{node_line}\n```\n\n"
+        f"For the Verilog code in the `Node` above, perform the following steps for every valid variable you find:\n"
+        f"1.  Identify the variable name and any bit-slicing used (e.g., `[10]`, `[63:32]`).\n"
+        f"2.  Using the module context from the `Node` and the reasoning guide in your system prompt, find the single best hierarchical match from the VCD signal list.\n"
+        f"3.  Determine the `hi` and `lo` bit indices for the access.\n"
+        f"4.  Adhere strictly to the 'Common Mistakes to Avoid' list.\n\n"
+        f"# OUTPUT FORMAT\n"
+        f"Your response MUST be a single valid JSON object with one key, 'mappings'. The value must be a list of objects. Each object must have four keys: 'variable' (the name from the code), 'vcd_signal' (the best match from the list, or null), 'hi' (an integer), and 'lo' (an integer)."
+    )
+
+    payload = {
+        "model": model_name,
+        "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
+        "format": "json",
+        "stream": False
+    }
+
+    # --- 2. Call the API and Parse the Response ---
+    try:
+        response = requests.post(ollama_url, json=payload, timeout=120)  # Generous 2-minute timeout
+        response.raise_for_status()
+
+        api_response_data = response.json()
+        llm_content_str = api_response_data.get("message", {}).get("content", "")
+
+        if not llm_content_str:
+            print(f"Warning: LLM returned empty content for node: {node_line}")
+            return (node_line, [])
+
+        # Parse the JSON response and format it into the final tuple
+        llm_json_data = json.loads(llm_content_str)
+        mappings = llm_json_data.get("mappings", [])
+
+        # Convert list of dicts to list of tuples
+        result_tuples = [
+            (m.get('variable'), m.get('vcd_signal'), m.get('hi', 0), m.get('lo', 0))
+            for m in mappings
+        ]
+
+        return (node_line, result_tuples)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error connecting to Ollama API for node '{node_line}'. Error: {e}")
+        return (node_line, [])
+    except (json.JSONDecodeError, KeyError) as e:
+        print(f"Error parsing LLM JSON response for node '{node_line}'. Error: {e}")
+        return (node_line, [])
+
+def extract_vcd_features(Feature, node_attrs, vcd, design_name, sig_key_str):
     per_bit_toggles = {}
     widths = {}
+    toggle_cache_path = os.path.join(f"../data/{design_name}/{design_name}_toggle.txt")
+    if os.path.exists(toggle_cache_path):
+        print(f"Loading toggle counts from cache: {toggle_cache_path}")
+        with open(toggle_cache_path, 'r', newline='') as f_cache:
+            reader = csv.reader(f_cache)
+            next(reader, None)
+            for row in reader:
+                sig_key, width_str, toggles_str = row
+                width = int(width_str)
+                toggles = [int(t) for t in toggles_str.split(' ')]
+                widths[sig_key] = width
+                per_bit_toggles[sig_key] = toggles
+        print("Successfully loaded toggle counts from cache.")
+    else:
+        print("Calculating toggle counts (this may take a while)...")
+        for sig_key in vcd.signals:
+            sig = vcd[sig_key]
+            width = getattr(sig, "size", None)
+            if width is None:
+                try:
+                    ref = sig.references[0]
+                    width = vcd.data[ref]["nets"][0].get("size", 1)
+                except Exception:
+                    width = 1
+            width = int(width) if width else 1
+            widths[sig_key] = width
+            toggles = bit_toggles_per_signal(sig.tv, width)
+            per_bit_toggles[sig_key] = toggles
+            # print(f"HD Total for {sig_key}: {toggles}")
+        print(f"Saving toggle counts to cache: {toggle_cache_path}")
+        with open(toggle_cache_path, 'w', newline='') as f_cache:
+            writer = csv.writer(f_cache)
+            writer.writerow(['sig_key', 'width', 'toggles'])
+            for sig_key, toggles_list in per_bit_toggles.items():
+                width = widths[sig_key]
+                toggles_str = ' '.join(map(str, toggles_list))
+                writer.writerow([sig_key, width, toggles_str])
+        print("Cache saved successfully.")
 
-    for sig_key in vcd.signals:
-        sig = vcd[sig_key]
-        width = getattr(sig, "size", None)
-        if width is None:
-            try:
-                ref = sig.references[0]
-                width = vcd.data[ref]["nets"][0].get("size", 1)
-            except Exception:
-                width = 1
-        width = int(width) if width else 1
-        widths[sig_key] = width
-
-        toggles = bit_toggles_per_signal(sig.tv, width)
-        per_bit_toggles[sig_key] = toggles
-        print(f"HD Total for {sig_key}: {toggles}")
+    node_match_path = os.path.join('../data', design_name, f'{design_name}_node_matches.csv')
+    matches_dict = {}
+    if not os.path.exists(node_match_path):
+        raise FileNotFoundError(f"Mapping file not found. Please ensure it exists at: {os.path.abspath(node_match_path)}")
+    else:
+        with open(node_match_path, 'r', newline='') as f:
+            reader = csv.reader(f)
+            next(reader, None)
+            for row in reader:
+                if not row or len(row) < 2:
+                    continue
+                node_str, mappings_str = row
+                try:
+                    mappings_list = eval(mappings_str)
+                except Exception as e:
+                    print(f"Warning: Could not parse mappings for node: {node_str} with value: {mappings_str} because of {e}")
+                    mappings_list = []
+                matches_dict[node_str] = mappings_list
 
     for node in Feature.keys():
         label = node_attrs.get(node, {}).get("label", "") or ""
-        specs = parse_label_slices(label)
-        module_context = get_module_from_label(label)
-        # print(f"label = {label}, specs = {specs}, module_context = {module_context}")
-
+        print(f"Processing node: {label} with dict {matches_dict[label]}")
         total = 0
-        components = []
-
-        for base, hi, lo in specs:
-            # print(f"base = {base}, hi = {hi}, lo = {lo}")
-            sig_key = resolve_signal_key(signal_keys, base, module_context)
-            if sig_key is None:
-                continue
-
+        for sig_key, hi, lo in matches_dict[label]:
             width = widths.get(sig_key, 1)
-            toggles = per_bit_toggles[sig_key]  # MSB..LSB
-            # print(f"sigkey = {sig_key}, width: {width}, toggles: {toggles}")
-
-            if hi is None:
-                hi = width - 1
-            if lo is None:
-                lo = 0
-
-            hi_, lo_ = (hi, lo) if hi >= lo else (lo, hi)
-            hi_ = min(hi_, width - 1)
-            lo_ = max(lo_, 0)
-            if lo_ > hi_:
-                continue
-
-            for bit in range(lo_, hi_ + 1):
+            toggles = per_bit_toggles[sig_key]
+            print(f"    sigkey = {sig_key}, hi = {hi}, lo = {lo}, width: {width}, toggles: {toggles}")
+            for bit in range(lo, hi + 1):
                 idx = width - 1 - bit
                 if 0 <= idx < len(toggles):
                     total += toggles[idx]
-                    components.append((f"{base}[{hi}:{lo}]", bit, toggles[idx]))
 
         Feature[node]["Hamming distance"] = total
-
+    #
     # print(f"vcd.signals: {vcd.signals}")
 
     return per_bit_toggles, widths

@@ -1,3 +1,4 @@
+import pickle
 import sys
 import csv
 import glob
@@ -18,21 +19,36 @@ if __name__ == "__main__":
 
     dot_file = f"../data/{sys.argv[1]}/{sys.argv[1]}.dot"
     vcd_file = f"../data/{sys.argv[1]}/{sys.argv[1]}.vcd"
+    vcd_pkl_file = f"../data/{sys.argv[1]}/{sys.argv[1]}_vcd.pkl"
     v_files = glob.glob(os.path.join("../data/" + sys.argv[1], "*.v"))
     graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes, edges = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2])
-    vcd = VCDVCD(vcd_file, store_tvs=True)
-    signal_keys = V_Preprocessing.extract_signals_with_pyverilog(v_files, vcd_file,
-                                                                    include_scopes=["aes128_table_ecb_bench"],
-                                                                    exclude_scopes=[],)
+    # signal_keys = V_Preprocessing.extract_signals_with_pyverilog(v_files, vcd_file, sys.argv[1])
 
-    for k, w, full in signal_keys:
-        print(f"{k:<24} width={w:<4}  ->  {full}")
+    # for k, w, full in signal_keys:
+    #     print(f"{k:<24} width={w:<4}  ->  {full}")
 
     for root in roots:
         paths = Dot_Preprocess.find_paths(graph, root)
 
     Features = Dot_Preprocess.extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_nodes)
-    Vcd_Preprocessing.extract_vcd_features(Features, node_attrs, vcd, signal_keys)
+
+    sig_key_str = ''
+    if os.path.exists(vcd_pkl_file):
+        print(f"Loading cached VCD object from: {vcd_pkl_file}")
+        with open(vcd_pkl_file, 'rb') as f_cache:
+            vcd = pickle.load(f_cache)
+    else:
+        print(f"Parsing VCD file: {vcd_file} (this may take a while)...")
+        vcd = VCDVCD(vcd_file, store_tvs=True)
+        with open(f"../data/{sys.argv[1]}/{sys.argv[1]}_vcd_signals.txt", "w") as f:
+            for sig_key in vcd.signals:
+                f.write(f"{sig_key}\n")
+                sig_key_str += f"{sig_key}\n"
+        with open(vcd_pkl_file, 'wb') as f_cache:
+            pickle.dump(vcd, f_cache)
+        print(f"Saving parsed VCD object to cache: {vcd_pkl_file}")
+
+    Vcd_Preprocessing.extract_vcd_features(Features, node_attrs, vcd, sys.argv[1], sig_key_str)
 
     def dump_features_to_csv(Feature, out_csv="../out/features.csv"):
         """
