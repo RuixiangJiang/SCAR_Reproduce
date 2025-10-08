@@ -1,0 +1,410 @@
+"Node","Matches"
+"257:IF","[]"
+"358:NS
+{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };","[]"
+"208:AL","[]"
+"InvMixColumn1.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn1.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s3c[7:0]', 7, 0)]"
+"97:BS
+next_state = 3'h1;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"169:NS
+{ w[0], w[1], w[2], w[3] } <= key_in;","[('aes128_table_ecb_bench.key_in[127:0]', 127, 0)]"
+"268:NS
+{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };","[]"
+"SubBytes.457:AS
+b21 = s_box(a21);","[('aes128_table_ecb_bench.dut.SubBytes.b21[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a21[7:0]', 7, 0)]"
+"105:CA","[]"
+"170:NS
+{ w[0], w[1], w[2], w[3] } <= next_key;","[('aes128_table_ecb_bench.dut.next_key[127:0]', 127, 0)]"
+"252:BL
+{ state[0], state[1], state[2], state[3] } <= { 128{ 1'b0 } };","[]"
+"187:AS
+next_key[95:64] = w[1] ^ next_key[127:96];","[('aes128_table_ecb_bench.dut.next_key[127:0]', 95, 64), ('aes128_table_ecb_bench.dut.next_key[127:0]', 127, 96)]"
+"208:BL","[]"
+"136:IF","[]"
+"SubBytes.452:AS
+b20 = s_box(a20);","[('aes128_table_ecb_bench.dut.SubBytes.b20[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a20[7:0]', 7, 0)]"
+"141:IF","[]"
+"96:IF","[]"
+"375:AS
+{ is_row_in[0][2], is_row_in[1][2], is_row_in[2][2], is_row_in[3][2] } = istate[2];","[]"
+"InvMixColumn3.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn3.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s3c[7:0]', 7, 0)]"
+"SubBytes.460:AS
+b02 = s_box(a02);","[('aes128_table_ecb_bench.dut.SubBytes.b02[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a02[7:0]', 7, 0)]"
+"347:BL","[]"
+"94:CS","[]"
+"103:BS
+next_state = 3'h0;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"147:NS
+key_val <= key_val;","[('aes128_table_ecb_bench.key_val', 0, 0)]"
+"102:BS
+next_state = 3'h1;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"SubBytes.455:AS
+b01 = s_box(a01);","[('aes128_table_ecb_bench.dut.SubBytes.b01[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a01[7:0]', 7, 0)]"
+"95:CA","[]"
+"355:IF","[]"
+"404:AS
+add_iroundkey[95:64] = { is_box[0][1], is_box[1][1], is_box[2][1], is_box[3][1] } ^ iw[1];","[('aes128_table_ecb_bench.dut.add_iroundkey[127:0]', 95, 64)]"
+"110:IF","[]"
+"175:NS
+round10_key <= round10_key;","[('aes128_table_ecb_bench.dut.round10_key[127:0]', 127, 0)]"
+"381:AS
+{ is_row[3][3], is_row[3][0], is_row[3][1], is_row[3][2] } = { is_row_in[3][0], is_row_in[3][1], is_row_in[3][2], is_row_in[3][3] };","[]"
+"InvMixColumn1.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn1.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s3c[7:0]', 7, 0)]"
+"InvSubBytes.548:AS
+b12 = is_box(a12);","[('aes128_table_ecb_bench.dut.InvSubBytes.b12[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a12[7:0]', 7, 0)]"
+"343:AL","[]"
+"InvSubBytes.542:AS
+b01 = is_box(a01);","[('aes128_table_ecb_bench.dut.InvSubBytes.b01[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a01[7:0]', 7, 0)]"
+"137:NS
+start_flag <= 1'b0;","[('aes128_table_ecb_bench.dut.start_flag', 0, 0)]"
+"162:BL","[]"
+"InvSubBytes.552:AS
+b03 = is_box(a03);","[('aes128_table_ecb_bench.dut.InvSubBytes.b03[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a03[7:0]', 7, 0)]"
+"119:BL
+busy <= 1'b0;
+start_flag <= 1'b0;
+key_val <= 1'b0;
+round_n <= 4'h0;
+key_val <= 1'b0;
+text_val <= 1'b0;","[('aes128_table_ecb_bench.busy', 0, 0), ('aes128_table_ecb_bench.dut.start_flag', 0, 0), ('aes128_table_ecb_bench.key_val', 0, 0), ('aes128_table_ecb_bench.dut.round_n[3:0]', 3, 0), ('aes128_table_ecb_bench.key_val', 0, 0), ('aes128_table_ecb_bench.text_val', 0, 0)]"
+"97:IF","[]"
+"InvSubBytes.549:AS
+b22 = is_box(a22);","[('aes128_table_ecb_bench.dut.InvSubBytes.b22[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a22[7:0]', 7, 0)]"
+"MixColumns1.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns1.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s3c[7:0]', 7, 0)]"
+"344:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= { 128{ 1'b0 } };","[]"
+"343:BL","[]"
+"146:IF","[]"
+"213:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= { w[0], w[1], w[2], w[3] };","[]"
+"95:IF","[]"
+"209:IF","[]"
+"263:BL
+{ state[0], state[1], state[2], state[3] } <= cipher_text;","[('aes128_table_ecb_bench.dut.cipher_text[127:0]', 127, 0)]"
+"373:AS
+{ is_row_in[0][0], is_row_in[1][0], is_row_in[2][0], is_row_in[3][0] } = istate[0];","[]"
+"189:AS
+next_key[31:0] = w[3] ^ next_key[63:32];","[('aes128_table_ecb_bench.dut.next_key[127:0]', 31, 0), ('aes128_table_ecb_bench.dut.next_key[127:0]', 63, 32)]"
+"95:BS
+next_state = 3'h1;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"InvSubBytes.539:AS
+b20 = is_box(a20);","[('aes128_table_ecb_bench.dut.InvSubBytes.b20[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a20[7:0]', 7, 0)]"
+"326:AS
+add_roundkey[63:32] = { m_col[0][2], m_col[1][2], m_col[2][2], m_col[3][2] } ^ w[2];","[('aes128_table_ecb_bench.dut.add_roundkey[127:0]', 63, 32)]"
+"104:BS
+next_state = 3'h2;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"141:NS
+round_n <= 4'h0;","[('aes128_table_ecb_bench.dut.round_n[3:0]', 3, 0)]"
+"266:NS
+{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };","[]"
+"InvSubBytes.555:AS
+b33 = is_box(a33);","[('aes128_table_ecb_bench.dut.InvSubBytes.b33[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a33[7:0]', 7, 0)]"
+"403:AS
+add_iroundkey[127:96] = { is_box[0][0], is_box[1][0], is_box[2][0], is_box[3][0] } ^ iw[0];","[('aes128_table_ecb_bench.dut.add_iroundkey[127:0]', 127, 96)]"
+"260:IF","[]"
+"374:AS
+{ is_row_in[0][1], is_row_in[1][1], is_row_in[2][1], is_row_in[3][1] } = istate[1];","[]"
+"216:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= { iw[0], iw[1], iw[2], iw[3] };","[]"
+"SubBytes.462:AS
+b22 = s_box(a22);","[('aes128_table_ecb_bench.dut.SubBytes.b22[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a22[7:0]', 7, 0)]"
+"379:AS
+{ is_row[1][1], is_row[1][2], is_row[1][3], is_row[1][0] } = { is_row_in[1][0], is_row_in[1][1], is_row_in[1][2], is_row_in[1][3] };","[]"
+"378:AS
+{ is_row[0][0], is_row[0][1], is_row[0][2], is_row[0][3] } = { is_row_in[0][0], is_row_in[0][1], is_row_in[0][2], is_row_in[0][3] };","[]"
+"226:AS
+irotword = { sword[23:0], sword[31:24] };","[('aes128_table_ecb_bench.dut.irotword[31:0]', 31, 0), ('aes128_table_ecb_bench.dut.sword[31:0]', 23, 0), ('aes128_table_ecb_bench.dut.sword[31:0]', 31, 24)]"
+"214:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= round10_key;","[('aes128_table_ecb_bench.dut.round10_key[127:0]', 127, 0)]"
+"131:IF","[]"
+"131:NS
+busy <= 1'b1;","[('aes128_table_ecb_bench.busy', 0, 0)]"
+"InvMixColumn0.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn0.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s3c[7:0]', 7, 0)]"
+"325:AS
+add_roundkey[95:64] = { m_col[0][1], m_col[1][1], m_col[2][1], m_col[3][1] } ^ w[1];","[('aes128_table_ecb_bench.dut.add_roundkey[127:0]', 95, 64)]"
+"171:NS
+{ w[0], w[1], w[2], w[3] } <= { w[0], w[1], w[2], w[3] };","[]"
+"InvMixColumn2.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn2.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s3c[7:0]', 7, 0)]"
+"348:BL","[]"
+"332:AS
+cipher_text[95:64] = { s_row[0][1], s_row[1][1], s_row[2][1], s_row[3][1] } ^ w[1];","[('aes128_table_ecb_bench.dut.cipher_text[127:0]', 95, 64)]"
+"InvMixColumn3.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn3.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s3c[7:0]', 7, 0)]"
+"257:BL
+{ state[0], state[1], state[2], state[3] } <= add_roundkey0;","[('aes128_table_ecb_bench.dut.add_roundkey0[127:0]', 127, 0)]"
+"256:BL","[]"
+"InvSubBytes.545:AS
+b31 = is_box(a31);","[('aes128_table_ecb_bench.dut.InvSubBytes.b31[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a31[7:0]', 7, 0)]"
+"SubBytes.453:AS
+b30 = s_box(a30);","[('aes128_table_ecb_bench.dut.SubBytes.b30[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a30[7:0]', 7, 0)]"
+"101:CA","[]"
+"InvMixColumn3.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn3.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s3c[7:0]', 7, 0)]"
+"188:AS
+next_key[63:32] = w[2] ^ next_key[95:64];","[('aes128_table_ecb_bench.dut.next_key[127:0]', 63, 32), ('aes128_table_ecb_bench.dut.next_key[127:0]', 95, 64)]"
+"297:AS
+{ s_row[2][0], s_row[2][1], s_row[2][2], s_row[2][3] } = { s_box[2][2], s_box[2][3], s_box[2][0], s_box[2][1] };","[]"
+"162:AL","[]"
+"MixColumns3.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns3.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s3c[7:0]', 7, 0)]"
+"InvSubBytes.543:AS
+b11 = is_box(a11);","[('aes128_table_ecb_bench.dut.InvSubBytes.b11[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a11[7:0]', 7, 0)]"
+"119:IF","[]"
+"129:IF","[]"
+"150:NS
+text_val <= 1'b1;","[('aes128_table_ecb_bench.text_val', 0, 0)]"
+"151:NS
+text_val <= 1'b0;","[('aes128_table_ecb_bench.text_val', 0, 0)]"
+"360:NS
+{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };","[]"
+"130:IF","[]"
+"130:NS
+busy <= 1'b0;","[('aes128_table_ecb_bench.busy', 0, 0)]"
+"MixColumns0.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns0.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s3c[7:0]', 7, 0)]"
+"MixColumns0.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns0.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s3c[7:0]', 7, 0)]"
+"MixColumns1.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns1.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s3c[7:0]', 7, 0)]"
+"145:NS
+key_val <= 1'b0;","[('aes128_table_ecb_bench.key_val', 0, 0)]"
+"174:IF","[]"
+"105:BS
+next_state = 3'h0;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"260:BL
+{ state[0], state[1], state[2], state[3] } <= add_roundkey;","[('aes128_table_ecb_bench.dut.add_roundkey[127:0]', 127, 0)]"
+"355:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey;","[('aes128_table_ecb_bench.dut.add_iroundkey[127:0]', 127, 0)]"
+"InvMixColumn1.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn1.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s3c[7:0]', 7, 0)]"
+"136:NS
+start_flag <= 1'b1;","[('aes128_table_ecb_bench.dut.start_flag', 0, 0)]"
+"118:BL","[]"
+"132:IF","[]"
+"111:NS
+now_state <= next_state;","[('aes128_table_ecb_bench.dut.now_state[2:0]', 2, 0), ('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"InvMixColumn0.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn0.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s3c[7:0]', 7, 0)]"
+"SubBytes.465:AS
+b03 = s_box(a03);","[('aes128_table_ecb_bench.dut.SubBytes.b03[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a03[7:0]', 7, 0)]"
+"167:BL","[]"
+"142:NS
+round_n <= round_n + 1'b1;","[('aes128_table_ecb_bench.dut.round_n[3:0]', 3, 0)]"
+"98:BS
+next_state = 3'h2;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"InvSubBytes.540:AS
+b30 = is_box(a30);","[('aes128_table_ecb_bench.dut.InvSubBytes.b30[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a30[7:0]', 7, 0)]"
+"110:NS
+now_state <= 3'h0;","[('aes128_table_ecb_bench.dut.now_state[2:0]', 2, 0)]"
+"214:IF","[]"
+"SubBytes.451:AS
+b10 = s_box(a10);","[('aes128_table_ecb_bench.dut.SubBytes.b10[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a10[7:0]', 7, 0)]"
+"InvMixColumn1.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn1.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn1.s3c[7:0]', 7, 0)]"
+"138:NS
+start_flag <= start_flag;","[('aes128_table_ecb_bench.dut.start_flag', 0, 0)]"
+"344:IF","[]"
+"170:IF","[]"
+"146:NS
+key_val <= 1'b1;","[('aes128_table_ecb_bench.key_val', 0, 0)]"
+"334:AS
+cipher_text[31:0] = { s_row[0][3], s_row[1][3], s_row[2][3], s_row[3][3] } ^ w[3];","[('aes128_table_ecb_bench.dut.cipher_text[127:0]', 31, 0)]"
+"InvSubBytes.553:AS
+b13 = is_box(a13);","[('aes128_table_ecb_bench.dut.InvSubBytes.b13[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a13[7:0]', 7, 0)]"
+"SubBytes.466:AS
+b13 = s_box(a13);","[('aes128_table_ecb_bench.dut.SubBytes.b13[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a13[7:0]', 7, 0)]"
+"145:IF","[]"
+"252:IF","[]"
+"93:BL","[]"
+"101:IF","[]"
+"349:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey0;","[('aes128_table_ecb_bench.dut.add_iroundkey0[127:0]', 127, 0)]"
+"215:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= next_ikey;","[('aes128_table_ecb_bench.dut.next_ikey[127:0]', 127, 0)]"
+"405:AS
+add_iroundkey[63:32] = { is_box[0][2], is_box[1][2], is_box[2][2], is_box[3][2] } ^ iw[2];","[('aes128_table_ecb_bench.dut.add_iroundkey[127:0]', 63, 32)]"
+"275:AS
+add_roundkey0 = text_in ^ { w[0], w[1], w[2], w[3] };","[('aes128_table_ecb_bench.dut.add_roundkey0[127:0]', 127, 0), ('aes128_table_ecb_bench.text_in[127:0]', 127, 0)]"
+"InvSubBytes.544:AS
+b21 = is_box(a21);","[('aes128_table_ecb_bench.dut.InvSubBytes.b21[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a21[7:0]', 7, 0)]"
+"163:IF","[]"
+"InvSubBytes.547:AS
+b02 = is_box(a02);","[('aes128_table_ecb_bench.dut.InvSubBytes.b02[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a02[7:0]', 7, 0)]"
+"Leaf_118:AL","[]"
+"103:IF","[]"
+"MixColumns3.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns3.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s3c[7:0]', 7, 0)]"
+"169:IF","[]"
+"Leaf_251:AL","[]"
+"327:AS
+add_roundkey[31:0] = { m_col[0][3], m_col[1][3], m_col[2][3], m_col[3][3] } ^ w[3];","[('aes128_table_ecb_bench.dut.add_roundkey[127:0]', 31, 0)]"
+"215:IF","[]"
+"352:IF","[]"
+"230:AS
+next_ikey[95:64] = iw[1] ^ iw[0];","[('aes128_table_ecb_bench.dut.next_ikey[127:0]', 95, 64)]"
+"324:AS
+add_roundkey[127:96] = { m_col[0][0], m_col[1][0], m_col[2][0], m_col[3][0] } ^ w[0];","[('aes128_table_ecb_bench.dut.add_roundkey[127:0]', 127, 96)]"
+"352:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= { im_col[0], im_col[1], im_col[2], im_col[3] };","[]"
+"SubBytes.450:AS
+b00 = s_box(a00);","[('aes128_table_ecb_bench.dut.SubBytes.b00[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a00[7:0]', 7, 0)]"
+"192:AS
+rcon = (round_n == 4'h0)? 8'h01 :
+(8'h00 | (round_n == 4'h1))? 8'h02 :
+(8'h00 | (round_n == 4'h2))? 8'h04 :
+(8'h00 | (round_n == 4'h3))? 8'h08 :
+(8'h00 | (round_n == 4'h4))? 8'h10 :
+(8'h00 | (round_n == 4'h5))? 8'h20 :
+(8'h00 | (round_n == 4'h6))? 8'h40 :
+(8'h00 | (round_n == 4'h7))? 8'h80 :
+(8'h00 | (round_n == 4'h8))? 8'h1b :
+(8'h00 | (round_n == 4'h9))? 8'h36 : 8'h00;","[('aes128_table_ecb_bench.dut.rcon[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.round_n[3:0]', 3, 0)]"
+"150:IF","[]"
+"163:BL
+{ w[0], w[1], w[2], w[3] } <= { 128{ 1'b0 } };
+round10_key <= { 128{ 1'b0 } };","[('aes128_table_ecb_bench.dut.round10_key[127:0]', 127, 0)]"
+"127:BL","[]"
+"174:NS
+round10_key <= { w[0], w[1], w[2], w[3] };","[('aes128_table_ecb_bench.dut.round10_key[127:0]', 127, 0)]"
+"InvMixColumn2.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn2.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s3c[7:0]', 7, 0)]"
+"333:AS
+cipher_text[63:32] = { s_row[0][2], s_row[1][2], s_row[2][2], s_row[3][2] } ^ w[2];","[('aes128_table_ecb_bench.dut.cipher_text[127:0]', 63, 32)]"
+"99:BS
+next_state = 3'h2;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"SubBytes.468:AS
+b33 = s_box(a33);","[('aes128_table_ecb_bench.dut.SubBytes.b33[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a33[7:0]', 7, 0)]"
+"234:AS
+ircon = (round_n == 4'h9)? 8'h01 :
+(8'h00 | (round_n == 4'h8))? 8'h02 :
+(8'h00 | (round_n == 4'h7))? 8'h04 :
+(8'h00 | (round_n == 4'h6))? 8'h08 :
+(8'h00 | (round_n == 4'h5))? 8'h10 :
+(8'h00 | (round_n == 4'h4))? 8'h20 :
+(8'h00 | (round_n == 4'h3))? 8'h40 :
+(8'h00 | (round_n == 4'h2))? 8'h80 :
+(8'h00 | (round_n == 4'h1))? 8'h1b :
+(8'h00 | (round_n == 4'h0))? 8'h36 : 8'h00;","[('aes128_table_ecb_bench.dut.ircon[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.round_n[3:0]', 3, 0)]"
+"MixColumns2.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns2.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s3c[7:0]', 7, 0)]"
+"109:AL","[]"
+"376:AS
+{ is_row_in[0][3], is_row_in[1][3], is_row_in[2][3], is_row_in[3][3] } = istate[3];","[]"
+"101:BS
+next_state = 3'h0;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"367:AS
+add_iroundkey0 = text_in ^ { iw[0], iw[1], iw[2], iw[3] };","[('aes128_table_ecb_bench.dut.add_iroundkey0[127:0]', 127, 0), ('aes128_table_ecb_bench.text_in[127:0]', 127, 0)]"
+"251:BL","[]"
+"212:BL","[]"
+"296:AS
+{ s_row[1][0], s_row[1][1], s_row[1][2], s_row[1][3] } = { s_box[1][1], s_box[1][2], s_box[1][3], s_box[1][0] };","[]"
+"129:NS
+busy <= 1'b0;","[('aes128_table_ecb_bench.busy', 0, 0)]"
+"213:IF","[]"
+"256:IF","[]"
+"348:IF","[]"
+"MixColumns3.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns3.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s3c[7:0]', 7, 0)]"
+"InvMixColumn2.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn2.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s3c[7:0]', 7, 0)]"
+"SubBytes.461:AS
+b12 = s_box(a12);","[('aes128_table_ecb_bench.dut.SubBytes.b12[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a12[7:0]', 7, 0)]"
+"InvSubBytes.550:AS
+b32 = is_box(a32);","[('aes128_table_ecb_bench.dut.InvSubBytes.b32[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a32[7:0]', 7, 0)]"
+"263:IF","[]"
+"iSubWord.618:AS
+b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };","[('aes128_table_ecb_bench.dut.iSubWord.b[31:0]', 31, 0), ('aes128_table_ecb_bench.dut.iSubWord.a[31:0]', 31, 24), ('aes128_table_ecb_bench.dut.iSubWord.a[31:0]', 23, 16), ('aes128_table_ecb_bench.dut.iSubWord.a[31:0]', 15, 8), ('aes128_table_ecb_bench.dut.iSubWord.a[31:0]', 7, 0)]"
+"232:AS
+next_ikey[31:0] = iw[3] ^ iw[2];","[('aes128_table_ecb_bench.dut.next_ikey[127:0]', 31, 0)]"
+"156:AS
+text_out = (enc_dec == 1'b0)? { state[0], state[1], state[2], state[3] } : { istate[0], istate[1], istate[2], istate[3] };","[('aes128_table_ecb_bench.text_out[127:0]', 127, 0), ('aes128_table_ecb_bench.enc_dec', 0, 0)]"
+"181:AS
+rotword = { w[3][23:0], w[3][31:24] };","[('aes128_table_ecb_bench.dut.rotword[31:0]', 31, 0)]"
+"SubBytes.463:AS
+b32 = s_box(a32);","[('aes128_table_ecb_bench.dut.SubBytes.b32[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a32[7:0]', 7, 0)]"
+"298:AS
+{ s_row[3][0], s_row[3][1], s_row[3][2], s_row[3][3] } = { s_box[3][3], s_box[3][0], s_box[3][1], s_box[3][2] };","[]"
+"99:IF","[]"
+"109:BL","[]"
+"Leaf_109:AL","[]"
+"93:AL","[]"
+"209:BL
+{ iw[0], iw[1], iw[2], iw[3] } <= { 128{ 1'b0 } };","[]"
+"InvMixColumn0.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn0.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s3c[7:0]', 7, 0)]"
+"255:BL","[]"
+"SubBytes.458:AS
+b31 = s_box(a31);","[('aes128_table_ecb_bench.dut.SubBytes.b31[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a31[7:0]', 7, 0)]"
+"251:AL","[]"
+"186:AS
+next_key[127:96] = w[0] ^ { temp[31:24] ^ rcon, temp[23:0] };","[('aes128_table_ecb_bench.dut.next_key[127:0]', 127, 96), ('aes128_table_ecb_bench.dut.temp[31:0]', 31, 24), ('aes128_table_ecb_bench.dut.rcon[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.temp[31:0]', 23, 0)]"
+"MixColumns1.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns1.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s3c[7:0]', 7, 0)]"
+"InvSubBytes.537:AS
+b00 = is_box(a00);","[('aes128_table_ecb_bench.dut.InvSubBytes.b00[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a00[7:0]', 7, 0)]"
+"InvMixColumn3.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn3.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn3.s3c[7:0]', 7, 0)]"
+"103:CA","[]"
+"InvSubBytes.538:AS
+b10 = is_box(a10);","[('aes128_table_ecb_bench.dut.InvSubBytes.b10[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a10[7:0]', 7, 0)]"
+"Leaf_343:AL","[]"
+"MixColumns2.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns2.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s3c[7:0]', 7, 0)]"
+"MixColumns3.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns3.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns3.s3c[7:0]', 7, 0)]"
+"100:BS
+next_state = 3'h0;","[('aes128_table_ecb_bench.dut.next_state[2:0]', 2, 0)]"
+"220:AS
+itemp = iw[3] ^ iw[2];","[('aes128_table_ecb_bench.dut.itemp[31:0]', 31, 0)]"
+"Leaf_93:AL","[]"
+"178:AS
+r10_key = round10_key;","[('aes128_table_ecb_bench.r10_key[127:0]', 127, 0), ('aes128_table_ecb_bench.dut.round10_key[127:0]', 127, 0)]"
+"133:NS
+busy <= busy;","[('aes128_table_ecb_bench.busy', 0, 0)]"
+"MixColumns0.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns0.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s3c[7:0]', 7, 0)]"
+"229:AS
+next_ikey[127:96] = { iw[0][31:24] ^ irotword[31:24] ^ ircon, iw[0][23:0] ^ irotword[23:0] };","[('aes128_table_ecb_bench.dut.next_ikey[127:0]', 127, 96), ('aes128_table_ecb_bench.dut.irotword[31:0]', 31, 24), ('aes128_table_ecb_bench.dut.ircon[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.irotword[31:0]', 23, 0)]"
+"406:AS
+add_iroundkey[31:0] = { is_box[0][3], is_box[1][3], is_box[2][3], is_box[3][3] } ^ iw[3];","[('aes128_table_ecb_bench.dut.add_iroundkey[127:0]', 31, 0)]"
+"MixColumns1.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns1.m0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns1.s3c[7:0]', 7, 0)]"
+"SubBytes.467:AS
+b23 = s_box(a23);","[('aes128_table_ecb_bench.dut.SubBytes.b23[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a23[7:0]', 7, 0)]"
+"331:AS
+cipher_text[127:96] = { s_row[0][0], s_row[1][0], s_row[2][0], s_row[3][0] } ^ w[0];","[('aes128_table_ecb_bench.dut.cipher_text[127:0]', 127, 96)]"
+"118:AL","[]"
+"SubWord.618:AS
+b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };","[('aes128_table_ecb_bench.dut.SubWord.b[31:0]', 31, 0), ('aes128_table_ecb_bench.dut.SubWord.a[31:0]', 31, 24), ('aes128_table_ecb_bench.dut.SubWord.a[31:0]', 23, 16), ('aes128_table_ecb_bench.dut.SubWord.a[31:0]', 15, 8), ('aes128_table_ecb_bench.dut.SubWord.a[31:0]', 7, 0)]"
+"InvMixColumn0.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn0.m2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn0.s3c[7:0]', 7, 0)]"
+"137:IF","[]"
+"MixColumns2.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns2.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s3c[7:0]', 7, 0)]"
+"InvMixColumn2.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);","[('aes128_table_ecb_bench.dut.InvMixColumn2.m3c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvMixColumn2.s3c[7:0]', 7, 0)]"
+"InvSubBytes.554:AS
+b23 = is_box(a23);","[('aes128_table_ecb_bench.dut.InvSubBytes.b23[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.InvSubBytes.a23[7:0]', 7, 0)]"
+"380:AS
+{ is_row[2][2], is_row[2][3], is_row[2][0], is_row[2][1] } = { is_row_in[2][0], is_row_in[2][1], is_row_in[2][2], is_row_in[2][3] };","[]"
+"MixColumns0.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns0.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns0.s3c[7:0]', 7, 0)]"
+"Leaf_162:AL","[]"
+"SubBytes.456:AS
+b11 = s_box(a11);","[('aes128_table_ecb_bench.dut.SubBytes.b11[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.SubBytes.a11[7:0]', 7, 0)]"
+"132:NS
+busy <= 1'b0;","[('aes128_table_ecb_bench.busy', 0, 0)]"
+"349:IF","[]"
+"Leaf_208:AL","[]"
+"295:AS
+{ s_row[0][0], s_row[0][1], s_row[0][2], s_row[0][3] } = { s_box[0][0], s_box[0][1], s_box[0][2], s_box[0][3] };","[]"
+"231:AS
+next_ikey[63:32] = iw[2] ^ iw[1];","[('aes128_table_ecb_bench.dut.next_ikey[127:0]', 63, 32)]"
+"MixColumns2.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);","[('aes128_table_ecb_bench.dut.MixColumns2.m1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s0c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s1c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s2c[7:0]', 7, 0), ('aes128_table_ecb_bench.dut.MixColumns2.s3c[7:0]', 7, 0)]"

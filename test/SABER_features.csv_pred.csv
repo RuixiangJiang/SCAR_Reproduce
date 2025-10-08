@@ -68,7 +68,7 @@ bram_address_inc <= 1'b0;
 poly_load <= 0;
 poly_shift <= 0;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 22,"PMULTs.sa112.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -390,7 +390,7 @@ bram_address_inc <= 1'b1;
 poly_load <= 1;
 poly_shift <= 0;
 rst_buffer_counter <= 1;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 139,"PMULTs.sa1.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -425,7 +425,7 @@ bram_address_inc <= 1'b1;
 poly_load <= 0;
 poly_shift <= 1;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 148,"PMULTs.sa19.716:AS
 ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 149,"PMULTs.sa235.729:AS
@@ -532,7 +532,7 @@ a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd3)? ax3 :
 (s[2:0] == 3'd4)? { a[10:0], 2'b0 } : ax5;",3,8064,0,0,1,0,0,1,1
 191,"168:AS
-s_load_happens_now = ((state == 4'd0) || (state == 4'd1))? 1'b1 : 1'b0;",1,38,0,0,1,1,0,0,0
+s_load_happens_now = ((state == 4'd0) || (state == 4'd1))? 1'b1 : 1'b0;",1,38,0,0,1,1,0,0,1
 192,"PMULTs.sa61.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 193,"83:NS
@@ -547,7 +547,7 @@ bram_address_inc <= 1'b1;
 poly_load <= 0;
 poly_shift <= 0;
 rst_buffer_counter <= 1;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 197,"PMULTs.sa23.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -668,14 +668,14 @@ ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 236,"PMULTs.sa86.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 237,"PLC.694:NS
-poly_word_counter <= poly_word_counter;",2,37,0,0,0,0,0,0,0
+poly_word_counter <= poly_word_counter;",2,37,0,0,0,0,0,0,1
 238,"233:BL
 shift_secret <= 1'b0;
 bram_address_inc <= 1'b0;
 poly_load <= 0;
 poly_shift <= 0;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 239,"PMULTs.sa119.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -1023,7 +1023,7 @@ ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 363,"PMULTs.sa84.716:AS
 ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 364,"278:AS
-pol_mul_done = (state == 4'd8)? 1'b1 : 1'b0;",2,38,0,0,1,0,0,0,0
+pol_mul_done = (state == 4'd8)? 1'b1 : 1'b0;",2,38,0,0,1,0,0,0,1
 365,172:IF,3,0,1680,0,0,0,0,0,0
 366,Leaf_156:AL,5,0,560,0,0,0,0,0,0
 367,"PMULTs.sa94.714:AS
@@ -1064,7 +1064,7 @@ result = (s[3])? Ri - a_mul_s : Ri + a_mul_s;",1,3991,0,0,1,0,0,1,1
 377,"PMULTs.sa102.716:AS
 ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 378,"PLC.692:NS
-poly_word_counter <= poly_word_counter + 5'd1;",2,37,0,0,0,0,0,0,0
+poly_word_counter <= poly_word_counter + 5'd1;",2,37,0,0,0,0,0,0,1
 379,"PMULTs.sa86.748:AS
 result = (s[3])? Ri - a_mul_s : Ri + a_mul_s;",1,3949,0,0,1,0,0,1,1
 380,"PMULTs.sa194.714:AS
@@ -1074,7 +1074,7 @@ buffer_counter <= buffer_counter + 4'd1;",2,120,560,0,0,0,0,0,0
 382,"PMULTs.sa43.716:AS
 ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 383,"PLC.682:NS
-poly_load_delayed <= poly_word_counter < 16;",2,39,0,0,0,0,0,0,0
+poly_load_delayed <= poly_word_counter < 16;",2,39,0,0,0,0,0,0,1
 384,"PMULTs.sa16.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 385,"PMULTs.sa91.716:AS
@@ -1481,7 +1481,7 @@ ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 517,"PMULTs.sa250.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 518,"PLC.680:NS
-poly_load_delayed <= 0;",2,2,0,0,0,0,0,0,0
+poly_load_delayed <= 0;",2,2,0,0,0,0,0,0,1
 519,"PMULTs.sa59.716:AS
 ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 520,"PMULTs.sa3.714:AS
@@ -1581,7 +1581,7 @@ a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd4)? { a[10:0], 2'b0 } : ax5;",3,8099,0,0,1,0,0,1,1
 552,"PMULTs.sa124.716:AS
 ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
-553,Leaf_206:AL,17,0,2,0,0,0,0,0,0
+553,Leaf_206:AL,17,0,2,0,0,0,0,0,1
 554,"PMULTs.sa223.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -1898,7 +1898,7 @@ bram_address_inc <= 1'b1;
 poly_load <= 1;
 poly_shift <= 0;
 rst_buffer_counter <= 1;
-rst_mult_counter <= 1;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 1;",2,48,2,0,0,0,0,0,1
 669,"PMULTs.sa76.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 670,"PMULTs.sa200.729:AS
@@ -1982,7 +1982,7 @@ ax5 = a + { a[10:0], 2'b0 };",1,3054,0,0,1,0,0,1,1
 696,"109:BL
 a_buffer <= { pol_64bit_in, a_buffer[675:64] };",2,84018,2,0,1,0,0,0,1
 697,"PLC.697:AS
-poly_load_done = (poly_word_counter == 5'd15)? 1'b1 : 1'b0;",1,39,0,0,1,0,0,0,0
+poly_load_done = (poly_word_counter == 5'd15)? 1'b1 : 1'b0;",1,39,0,0,1,0,0,0,1
 698,"PMULTs.sa6.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -2106,7 +2106,7 @@ bram_address_inc <= 1'b0;
 poly_load <= 0;
 poly_shift <= 0;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 739,"PMULTs.sa79.729:AS
 a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 (s[2:0] == 3'd1)? a :
@@ -2652,7 +2652,7 @@ bram_address_inc <= 1'b0;
 poly_load <= 0;
 poly_shift <= 1;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 936,144:AL,4,0,0,0,0,0,0,0,0
 937,"PMULTs.sa244.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
@@ -2755,7 +2755,7 @@ bram_address_inc <= 1'b1;
 poly_load <= 1;
 poly_shift <= 0;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 966,"PMULTs.sa211.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 967,"PMULTs.sa93.748:AS
@@ -3046,7 +3046,7 @@ a_mul_s = (s[2:0] == 3'd0)? 13'd0 :
 1066,"PMULTs.sa122.714:AS
 ax3 = a + { a[11:0], 1'b0 };",1,3220,0,0,1,0,0,1,1
 1067,"PLC.690:NS
-poly_word_counter <= 5'd0;",2,37,0,0,0,0,0,0,0
+poly_word_counter <= 5'd0;",2,37,0,0,0,0,0,0,1
 1068,"273:NS
 nextstate <= 8;",2,37,40,0,0,0,0,0,0
 1069,"PMULTs.sa27.716:AS
@@ -3212,7 +3212,7 @@ bram_address_inc <= 1'b0;
 poly_load <= 0;
 poly_shift <= 0;
 rst_buffer_counter <= 0;
-rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,0
+rst_mult_counter <= 0;",2,48,2,0,0,0,0,0,1
 1129,"PMULTs.sa200.748:AS
 result = (s[3])? Ri - a_mul_s : Ri + a_mul_s;",1,3977,0,0,1,0,0,1,1
 1130,"PMULTs.sa75.748:AS
