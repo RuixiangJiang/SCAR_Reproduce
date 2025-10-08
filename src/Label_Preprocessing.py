@@ -31,6 +31,9 @@ leaky_module = {
     ],
     "SABER": [
         ("PMULTs",),
+    ],
+    "PRESENT": [
+        ("SBOX",),
     ]
 }
 

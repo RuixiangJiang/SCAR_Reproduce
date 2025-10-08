@@ -1,0 +1,272 @@
+"Node","Matches"
+"UPBOX.145:AS
+odat[17] = idat[5];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 17, 17), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 5, 5)]"
+"UPBOX.154:AS
+odat[35] = idat[14];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 35, 35), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 14, 14)]"
+"96:IF","[]"
+"USBOXKEY.229:BS
+odat = 4'h8;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"USBOX.233:BS
+odat = 4'h2;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"UPBOX.197:AS
+odat[45] = idat[54];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 45, 45), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 54, 54)]"
+"UPBOX.167:AS
+odat[38] = idat[26];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 38, 38), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 26, 26)]"
+"UPBOX.144:AS
+odat[1] = idat[4];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 1, 1), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 4, 4)]"
+"UPBOX.185:AS
+odat[58] = idat[43];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 58, 58), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 43, 43)]"
+"USBOX.221:BS
+odat = 4'hB;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"UPBOX.202:AS
+odat[62] = idat[59];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 62, 62), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 59, 59)]"
+"UPBOX.155:AS
+odat[51] = idat[15];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 51, 51), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 15, 15)]"
+"UPBOX.175:AS
+odat[24] = idat[33];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 24, 24), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 33, 33)]"
+"USBOXKEY.232:CA","[]"
+"USBOX.230:BS
+odat = 4'h4;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"UPBOX.177:AS
+odat[56] = idat[35];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 56, 56), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 35, 35)]"
+"USBOXKEY.228:CA","[]"
+"USBOX.224:CA","[]"
+"USBOXKEY.Leaf_216:AL","[]"
+"UPBOX.187:AS
+odat[27] = idat[45];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 27, 27), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 45, 45)]"
+"47:AS
+odat = dat1;","[('PRESENT_ENCRYPT_TB.odat[63:0]', 63, 0), ('PRESENT_ENCRYPT_TB.dut.dat1[63:0]', 63, 0)]"
+"UPBOX.160:AS
+odat[52] = idat[19];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 52, 52), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 19, 19)]"
+"UPBOX.140:AS
+odat[0] = idat[0];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 0, 0), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 0, 0)]"
+"UPBOX.142:AS
+odat[32] = idat[2];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 32, 32), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 2, 2)]"
+"UPBOX.189:AS
+odat[59] = idat[47];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 59, 59), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 47, 47)]"
+"USBOX.220:CA","[]"
+"USBOXKEY.230:BS
+odat = 4'h4;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"UPBOX.146:AS
+odat[33] = idat[6];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 33, 33), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 6, 6)]"
+"USBOX.223:BS
+odat = 4'h0;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOX.229:CA","[]"
+"53:AS
+kdat2[75:20] = kdat1[75:20];","[('PRESENT_ENCRYPT_TB.dut.kdat2[79:0]', 75, 20), ('PRESENT_ENCRYPT_TB.dut.kdat1[79:0]', 75, 20)]"
+"UPBOX.159:AS
+odat[36] = idat[18];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 36, 36), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 18, 18)]"
+"UPBOX.186:AS
+odat[11] = idat[44];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 11, 11), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 44, 44)]"
+"USBOX.218:CA","[]"
+"USBOXKEY.217:CS","[]"
+"50:AS
+kdat1 = { kreg[18:0], kreg[79:19] };","[('PRESENT_ENCRYPT_TB.dut.kdat1[79:0]', 79, 0), ('PRESENT_ENCRYPT_TB.dut.kreg[79:0]', 18, 0), ('PRESENT_ENCRYPT_TB.dut.kreg[79:0]', 79, 19)]"
+"Leaf_115:AL","[]"
+"UPBOX.162:AS
+odat[21] = idat[21];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 21, 21), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 21, 21)]"
+"76:AL","[]"
+"USBOXKEY.228:BS
+odat = 4'hF;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"UPBOX.170:AS
+odat[23] = idat[29];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 23, 23), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 29, 29)]"
+"Leaf_85:AL","[]"
+"USBOXKEY.225:CA","[]"
+"USBOXKEY.219:BS
+odat = 4'h5;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"79:NS
+dreg <= idat;","[('PRESENT_ENCRYPT_TB.dut.dreg[63:0]', 63, 0), ('PRESENT_ENCRYPT_TB.idat[63:0]', 63, 0)]"
+"USBOX.224:BS
+odat = 4'hA;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOXKEY.220:BS
+odat = 4'h6;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"USBOX.220:BS
+odat = 4'h6;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOX.Leaf_216:AL","[]"
+"UPBOX.157:AS
+odat[4] = idat[16];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 4, 4), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 16, 16)]"
+"UPBOX.181:AS
+odat[57] = idat[39];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 57, 57), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 39, 39)]"
+"UPBOX.172:AS
+odat[55] = idat[31];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 55, 55), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 31, 31)]"
+"USBOXKEY.227:BS
+odat = 4'hE;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"UPBOX.180:AS
+odat[41] = idat[38];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 41, 41), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 38, 38)]"
+"USBOXKEY.219:CA","[]"
+"USBOXKEY.221:CA","[]"
+"51:AS
+kdat2[14:0] = kdat1[14:0];","[('PRESENT_ENCRYPT_TB.dut.kdat2[79:0]', 14, 0), ('PRESENT_ENCRYPT_TB.dut.kdat1[79:0]', 14, 0)]"
+"UPBOX.163:AS
+odat[37] = idat[22];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 37, 37), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 22, 22)]"
+"UPBOX.198:AS
+odat[61] = idat[55];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 61, 61), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 55, 55)]"
+"USBOXKEY.224:BS
+odat = 4'hA;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"USBOX.231:CA","[]"
+"77:BL","[]"
+"UPBOX.184:AS
+odat[42] = idat[42];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 42, 42), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 42, 42)]"
+"UPBOX.158:AS
+odat[20] = idat[17];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 20, 20), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 17, 17)]"
+"UPBOX.169:AS
+odat[7] = idat[28];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 7, 7), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 28, 28)]"
+"UPBOX.176:AS
+odat[40] = idat[34];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 40, 40), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 34, 34)]"
+"UPBOX.193:AS
+odat[44] = idat[50];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 44, 44), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 50, 50)]"
+"USBOX.223:CA","[]"
+"USBOX.222:BS
+odat = 4'h9;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"UPBOX.183:AS
+odat[26] = idat[41];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 26, 26), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 41, 41)]"
+"117:IF","[]"
+"UPBOX.164:AS
+odat[53] = idat[23];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 53, 53), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 23, 23)]"
+"UPBOX.166:AS
+odat[22] = idat[25];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 22, 22), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 25, 25)]"
+"UPBOX.174:AS
+odat[8] = idat[32];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 8, 8), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 32, 32)]"
+"USBOXKEY.233:CA","[]"
+"UPBOX.143:AS
+odat[48] = idat[3];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 48, 48), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 3, 3)]"
+"USBOXKEY.233:BS
+odat = 4'h2;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"UPBOX.171:AS
+odat[39] = idat[30];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 39, 39), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 30, 30)]"
+"UPBOX.200:AS
+odat[30] = idat[57];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 30, 30), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 57, 57)]"
+"97:NS
+round <= 1;","[('PRESENT_ENCRYPT_TB.dut.round[4:0]', 4, 0)]"
+"UPBOX.192:AS
+odat[28] = idat[49];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 28, 28), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 49, 49)]"
+"USBOX.219:BS
+odat = 4'h5;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOXKEY.231:BS
+odat = 4'h7;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"USBOX.217:CS","[]"
+"UPBOX.199:AS
+odat[14] = idat[56];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 14, 14), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 56, 56)]"
+"USBOX.232:BS
+odat = 4'h1;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOXKEY.229:CA","[]"
+"UPBOX.195:AS
+odat[13] = idat[52];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 13, 13), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 52, 52)]"
+"95:BL","[]"
+"USBOXKEY.218:CA","[]"
+"UPBOX.149:AS
+odat[18] = idat[9];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 18, 18), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 9, 9)]"
+"UPBOX.194:AS
+odat[60] = idat[51];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 60, 60), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 51, 51)]"
+"UPBOX.152:AS
+odat[3] = idat[12];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 3, 3), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 12, 12)]"
+"46:AS
+dat1 = dreg ^ kreg[79:16];","[('PRESENT_ENCRYPT_TB.dut.dat1[63:0]', 63, 0), ('PRESENT_ENCRYPT_TB.dut.dreg[63:0]', 63, 0), ('PRESENT_ENCRYPT_TB.dut.kreg[79:0]', 79, 16)]"
+"Leaf_94:AL","[]"
+"USBOX.216:AL","[]"
+"USBOX.218:BS
+odat = 4'hC;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"UPBOX.206:AS
+odat[63] = idat[63];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 63, 63), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 63, 63)]"
+"USBOX.228:CA","[]"
+"USBOXKEY.231:CA","[]"
+"USBOX.231:BS
+odat = 4'h7;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"UPBOX.153:AS
+odat[19] = idat[13];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 19, 19), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 13, 13)]"
+"116:BL","[]"
+"86:BL","[]"
+"USBOX.227:BS
+odat = 4'hE;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOXKEY.226:CA","[]"
+"UPBOX.151:AS
+odat[50] = idat[11];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 50, 50), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 11, 11)]"
+"UPBOX.203:AS
+odat[15] = idat[60];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 15, 15), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 60, 60)]"
+"USBOX.226:CA","[]"
+"UPBOX.178:AS
+odat[9] = idat[36];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 9, 9), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 36, 36)]"
+"UPBOX.182:AS
+odat[10] = idat[40];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 10, 10), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 40, 40)]"
+"94:AL","[]"
+"85:AL","[]"
+"USBOXKEY.230:CA","[]"
+"USBOX.221:CA","[]"
+"USBOX.227:CA","[]"
+"UPBOX.196:AS
+odat[29] = idat[53];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 29, 29), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 53, 53)]"
+"USBOX.230:CA","[]"
+"USBOX.226:BS
+odat = 4'h3;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOXKEY.227:CA","[]"
+"USBOXKEY.224:CA","[]"
+"UPBOX.150:AS
+odat[34] = idat[10];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 34, 34), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 10, 10)]"
+"USBOX.233:CA","[]"
+"UPBOX.205:AS
+odat[47] = idat[62];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 47, 47), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 62, 62)]"
+"USBOXKEY.216:AL","[]"
+"UPBOX.148:AS
+odat[2] = idat[8];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 2, 2), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 8, 8)]"
+"UPBOX.141:AS
+odat[16] = idat[1];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 16, 16), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 1, 1)]"
+"87:IF","[]"
+"USBOXKEY.226:BS
+odat = 4'h3;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"118:SS","[]"
+"USBOXKEY.222:CA","[]"
+"USBOXKEY.223:CA","[]"
+"99:NS
+round <= round + 1;","[('PRESENT_ENCRYPT_TB.dut.round[4:0]', 4, 0)]"
+"UPBOX.201:AS
+odat[46] = idat[58];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 46, 46), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 58, 58)]"
+"52:AS
+kdat2[19:15] = kdat1[19:15] ^ round;","[('PRESENT_ENCRYPT_TB.dut.kdat2[79:0]', 19, 15), ('PRESENT_ENCRYPT_TB.dut.kdat1[79:0]', 19, 15), ('PRESENT_ENCRYPT_TB.dut.round[4:0]', 4, 0)]"
+"USBOX.225:CA","[]"
+"USBOXKEY.223:BS
+odat = 4'h0;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"UPBOX.188:AS
+odat[43] = idat[46];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 43, 43), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 46, 46)]"
+"UPBOX.161:AS
+odat[5] = idat[20];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 5, 5), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 20, 20)]"
+"USBOXKEY.232:BS
+odat = 4'h1;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"115:AL","[]"
+"USBOX.219:CA","[]"
+"88:NS
+kreg <= key;","[('PRESENT_ENCRYPT_TB.dut.kreg[79:0]', 79, 0), ('PRESENT_ENCRYPT_TB.key[79:0]', 79, 0)]"
+"USBOX.225:BS
+odat = 4'hD;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"USBOX.229:BS
+odat = 4'h8;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"81:NS
+dreg <= dat3;","[('PRESENT_ENCRYPT_TB.dut.dreg[63:0]', 63, 0), ('PRESENT_ENCRYPT_TB.dut.dat3[63:0]', 63, 0)]"
+"USBOXKEY.222:BS
+odat = 4'h9;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"USBOX.222:CA","[]"
+"USBOX.232:CA","[]"
+"USBOXKEY.218:BS
+odat = 4'hC;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"UPBOX.168:AS
+odat[54] = idat[27];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 54, 54), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 27, 27)]"
+"USBOXKEY.221:BS
+odat = 4'hB;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"90:NS
+kreg <= kdat2;","[('PRESENT_ENCRYPT_TB.dut.kreg[79:0]', 79, 0), ('PRESENT_ENCRYPT_TB.dut.kdat2[79:0]', 79, 0)]"
+"UPBOX.191:AS
+odat[12] = idat[48];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 12, 12), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 48, 48)]"
+"UPBOX.147:AS
+odat[49] = idat[7];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 49, 49), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 7, 7)]"
+"UPBOX.204:AS
+odat[31] = idat[61];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 31, 31), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 61, 61)]"
+"USBOXKEY.220:CA","[]"
+"UPBOX.165:AS
+odat[6] = idat[24];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 6, 6), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 24, 24)]"
+"USBOX.228:BS
+odat = 4'hF;","[('PRESENT_ENCRYPT_TB.dut.sbox_loop[0].USBOX.odat[3:0]', 3, 0)]"
+"Leaf_76:AL","[]"
+"UPBOX.179:AS
+odat[25] = idat[37];","[('PRESENT_ENCRYPT_TB.dut.UPBOX.odat[63:0]', 25, 25), ('PRESENT_ENCRYPT_TB.dut.UPBOX.idat[63:0]', 37, 37)]"
+"USBOXKEY.225:BS
+odat = 4'hD;","[('PRESENT_ENCRYPT_TB.dut.USBOXKEY.odat[3:0]', 3, 0)]"
+"78:IF","[]"
