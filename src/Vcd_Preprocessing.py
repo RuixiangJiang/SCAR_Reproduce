@@ -5,7 +5,7 @@ import os
 import pydot
 from vcdvcd import VCDVCD
 
-from V_Preprocessing import _normalize_module_path_part, _normalize_variable_name
+from V_Preprocessing import _normalize_module_path_part, _normalize_variable_name, _get_vcd_parts
 
 
 def norm_bits(val: str, width: int):
@@ -114,40 +114,47 @@ def resolve_signal_key(
         The best matching VCD path string (e.g., 'top.dut.mod.var[7:0]') or None.
     """
     norm_base = _normalize_variable_name(base_name)
+    context_parts = [_normalize_module_path_part(p) for p in module_context.split('.')] if module_context else []
 
-    # --- STRATEGY 1: Use the module context for a precise match ---
-    if module_context:
-        norm_module_context = _normalize_module_path_part(module_context)
+    best_match_vcd_path: Optional[str] = None
+    highest_score = -float('inf')
 
-        for hdl_key, _, vcd_full in signal_keys:
-            try:
-                mod_part, var_part = hdl_key.split('.', 1)
-            except ValueError:
-                continue
+    for _, _, vcd_full in signal_keys:
+        if vcd_full is None:
+            continue
 
-            if (_normalize_variable_name(var_part) == norm_base and
-                    _normalize_module_path_part(mod_part) == norm_module_context):
-                # Perfect match found, return the VCD path string.
-                return vcd_full
+        vcd_path_parts, vcd_var_name = _get_vcd_parts(vcd_full)
+        norm_vcd_var = _normalize_variable_name(vcd_var_name)
 
-    # --- STRATEGY 2: Fallback if no module context or no match was found above ---
-    # This is less reliable as it can be ambiguous.
-    candidates = []
-    for hdl_key, _, vcd_full in signal_keys:
-        try:
-            _, var_part = hdl_key.split('.', 1)
-        except ValueError:
-            var_part = hdl_key
+        if norm_vcd_var != norm_base:
+            continue
 
-        if _normalize_variable_name(var_part) == norm_base:
-            candidates.append(vcd_full)
+        score = 0
+        norm_vcd_path = [_normalize_module_path_part(p) for p in vcd_path_parts]
 
-    # If we found exactly one possible candidate across all modules, return it.
-    if len(candidates) == 1:
-        return candidates[0]
+        if context_parts:
+            is_match = False
+            for i in range(len(norm_vcd_path) - len(context_parts) + 1):
+                if norm_vcd_path[i:i + len(context_parts)] == context_parts:
+                    is_match = True
+                    break
 
-    # If there are 0 or >1 candidates, the result is ambiguous. Return None.
-    return None
+            if is_match:
+                score += 10
+            else:
+                continue  # If context is given but sequence not found, this is not a valid candidate.
+
+            # Proximity bonus if the context is the direct parent hierarchy.
+            if norm_vcd_path and norm_vcd_path[-len(context_parts):] == context_parts:
+                score += 5
+
+        score -= len(norm_vcd_path) * 0.1
+
+        if score > highest_score:
+            highest_score = score
+            best_match_vcd_path = vcd_full
+
+    return best_match_vcd_path
 
 def get_module_from_label(label: str) -> str:
     """
@@ -192,13 +199,13 @@ def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
 
         toggles = bit_toggles_per_signal(sig.tv, width)
         per_bit_toggles[sig_key] = toggles
-        # print(f"HD Total for {sig_key}: {toggles}")
+        print(f"HD Total for {sig_key}: {toggles}")
 
     for node in Feature.keys():
         label = node_attrs.get(node, {}).get("label", "") or ""
         specs = parse_label_slices(label)
         module_context = get_module_from_label(label)
-        # print(f"label = {label}, specs = {specs}")
+        # print(f"label = {label}, specs = {specs}, module_context = {module_context}")
 
         total = 0
         components = []
@@ -211,7 +218,7 @@ def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
 
             width = widths.get(sig_key, 1)
             toggles = per_bit_toggles[sig_key]  # MSB..LSB
-            # print(f"width: {width}, toggles: {toggles}")
+            # print(f"sigkey = {sig_key}, width: {width}, toggles: {toggles}")
 
             if hi is None:
                 hi = width - 1
@@ -223,8 +230,6 @@ def extract_vcd_features(Feature, node_attrs, vcd, signal_keys):
             lo_ = max(lo_, 0)
             if lo_ > hi_:
                 continue
-
-            # print(f"base: {base}, hi_: {hi_}, lo_: {lo_}")
 
             for bit in range(lo_, hi_ + 1):
                 idx = width - 1 - bit
