@@ -21,7 +21,7 @@ Kvld_tmp = Kvld_E & ~EncDec | Kvld_D & EncDec;",2,3,0,1,0,1,0,0,0
 9,"AES_PPRM1_ENC.EC.1202:AS
 do = ((Rrg[0] == 1)? sr : mx) ^ ki;",1,5538,0,0,1,0,1,1,1
 10,"64:AS
-Dvld_tmp = Dvld_E & ~EncDec | Dvld_D & EncDec;",2,7,0,1,0,1,0,0,0
+Dvld_tmp = Dvld_E & ~EncDec | Dvld_D & EncDec;",2,7,0,1,0,1,0,0,1
 11,"AES_PPRM1_ENC.EC.MX1.1150:AS
 a2 = x[23:16];",3,168,0,0,1,0,0,1,1
 12,"AES_PPRM1_ENC.EC.MX1.1151:AS
@@ -87,7 +87,7 @@ Dvldrg <= 0;
 BSYrg <= 0;",2,1628,1,0,0,0,0,0,1
 41,AES_PPRM1_ENC.1266:BL,2,0,1,0,0,0,0,0,0
 42,"AES_PPRM1_ENC.1253:AS
-Dvld = Dvldrg;",1,6,0,0,0,0,0,0,0
+Dvld = Dvldrg;",1,6,0,0,0,0,0,0,1
 43,AES_PPRM1_ENC.1266:IF,2,0,1,0,0,0,0,0,0
 44,"AES_PPRM1_ENC.EC.MX0.1150:AS
 a2 = x[23:16];",3,162,0,0,1,0,0,1,1
