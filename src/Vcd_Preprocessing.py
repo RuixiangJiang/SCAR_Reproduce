@@ -158,10 +158,13 @@ def get_mapping_for_node_with_llm(node_line: str, all_vcd_signals_str: str) -> T
         print(f"Error parsing LLM JSON response for node '{node_line}'. Error: {e}")
         return (node_line, [])
 
-def extract_vcd_features(Feature, node_attrs, vcd, design_name, sig_key_str):
+def extract_vcd_features(Feature, node_attrs, vcd, design_name, mode="test"):
     per_bit_toggles = {}
     widths = {}
-    toggle_cache_path = os.path.join(f"../data/{design_name}/{design_name}_toggle.txt")
+    if mode == "test":
+        toggle_cache_path = os.path.join(f"../data/{design_name}/{design_name}_toggle.txt")
+    else:
+        toggle_cache_path = os.path.join(f"../data/aes128_table_ecb/aes128_table_ecb_toggle.txt")
     if os.path.exists(toggle_cache_path):
         print(f"Loading toggle counts from cache: {toggle_cache_path}")
         with open(toggle_cache_path, 'r', newline='') as f_cache:
@@ -203,30 +206,30 @@ def extract_vcd_features(Feature, node_attrs, vcd, design_name, sig_key_str):
     node_match_path = os.path.join('../data', design_name, f'{design_name}_node_matches.csv')
     matches_dict = {}
     if not os.path.exists(node_match_path):
-        raise FileNotFoundError(f"Mapping file not found. Please ensure it exists at: {os.path.abspath(node_match_path)}")
-    else:
-        with open(node_match_path, 'r', newline='') as f:
-            reader = csv.reader(f)
-            next(reader, None)
-            for row in reader:
-                if not row or len(row) < 2:
-                    continue
-                node_str, mappings_str = row
-                try:
-                    mappings_list = eval(mappings_str)
-                except Exception as e:
-                    print(f"Warning: Could not parse mappings for node: {node_str} with value: {mappings_str} because of {e}")
-                    mappings_list = []
-                matches_dict[node_str] = mappings_list
+        print(f"Mapping file not found. Please ensure it exists at: {os.path.abspath(node_match_path)}. Press enter to continue.")
+        input()
+    with open(node_match_path, 'r', newline='') as f:
+        reader = csv.reader(f)
+        next(reader, None)
+        for row in reader:
+            if not row or len(row) < 2:
+                continue
+            node_str, mappings_str = row
+            try:
+                mappings_list = eval(mappings_str)
+            except Exception as e:
+                print(f"Warning: Could not parse mappings for node: {node_str} with value: {mappings_str} because of {e}")
+                mappings_list = []
+            matches_dict[node_str] = mappings_list
 
     for node in Feature.keys():
         label = node_attrs.get(node, {}).get("label", "") or ""
-        print(f"Processing node: {label} with dict {matches_dict[label]}")
+        # print(f"Processing node: {label} with dict {matches_dict[label]}")
         total = 0
         for sig_key, hi, lo in matches_dict[label]:
             width = widths.get(sig_key, 1)
             toggles = per_bit_toggles[sig_key]
-            print(f"    sigkey = {sig_key}, hi = {hi}, lo = {lo}, width: {width}, toggles: {toggles}")
+            # print(f"    sigkey = {sig_key}, hi = {hi}, lo = {lo}, width: {width}, toggles: {toggles}")
             for bit in range(lo, hi + 1):
                 idx = width - 1 - bit
                 if 0 <= idx < len(toggles):

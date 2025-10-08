@@ -48,7 +48,10 @@ if __name__ == "__main__":
             pickle.dump(vcd, f_cache)
         print(f"Saving parsed VCD object to cache: {vcd_pkl_file}")
 
-    Vcd_Preprocessing.extract_vcd_features(Features, node_attrs, vcd, sys.argv[1], sig_key_str)
+    if len(sys.argv) == 4:
+        Vcd_Preprocessing.extract_vcd_features(Features, node_attrs, vcd, sys.argv[1])
+    else:
+        Vcd_Preprocessing.extract_vcd_features(Features, node_attrs, vcd, sys.argv[1], mode="train")
 
     def dump_features_to_csv(Feature, out_csv="../out/features.csv"):
         """
