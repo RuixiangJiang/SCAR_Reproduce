@@ -224,7 +224,11 @@ def extract_vcd_features(Feature, node_attrs, vcd, design_name, mode="test"):
 
     for node in Feature.keys():
         label = node_attrs.get(node, {}).get("label", "") or ""
-        # print(f"Processing node: {label} with dict {matches_dict[label]}")
+        # print(f"Node '{node}' has label '{label}'")
+        if label == "" or label.__contains__("virtual"):
+            Feature[node]["Hamming distance"] = 0
+            continue
+        # print(f"dict: {matches_dict[label]}")
         total = 0
         for sig_key, hi, lo in matches_dict[label]:
             width = widths.get(sig_key, 1)

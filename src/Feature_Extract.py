@@ -21,7 +21,7 @@ if __name__ == "__main__":
     vcd_file = f"../data/{sys.argv[1]}/{sys.argv[1]}.vcd"
     vcd_pkl_file = f"../data/{sys.argv[1]}/{sys.argv[1]}_vcd.pkl"
     v_files = glob.glob(os.path.join("../data/" + sys.argv[1], "*.v"))
-    graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes, edges = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2])
+    graph, roots, nodes, node_attrs, indegree, outdegree, key_nodes, edges = Dot_Preprocess.read_dot_file(dot_file, sys.argv[2], sys.argv[1])
     # signal_keys = V_Preprocessing.extract_signals_with_pyverilog(v_files, vcd_file, sys.argv[1])
 
     # for k, w, full in signal_keys:
@@ -67,6 +67,8 @@ if __name__ == "__main__":
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             for node, feats in Feature.items():
+                # if str(node).__contains__("IN"):
+                #     continue
                 row = {"node": node}
                 row.update(feats)
                 writer.writerow(row)

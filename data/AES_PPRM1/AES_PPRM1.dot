@@ -9408,4 +9408,217 @@ x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', '
 x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', '\
 x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', '\
 x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']"];
+
+	// ---- BEGIN VIRTUAL NODES (concat-aware) ----
+	"AES_PPRM1_ENC.EC.ki[7:0]:IN"	[label="AES_PPRM1_ENC.EC.ki[7:0]:IN\nvirtual port source",
+		def_var="['ki[7:0]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.ki[15:8]:IN"	[label="AES_PPRM1_ENC.EC.ki[15:8]:IN\nvirtual port source",
+		def_var="['ki[15:8]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.ki[23:16]:IN"	[label="AES_PPRM1_ENC.EC.ki[23:16]:IN\nvirtual port source",
+		def_var="['ki[23:16]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.ki[31:24]:IN"	[label="AES_PPRM1_ENC.EC.ki[31:24]:IN\nvirtual port source",
+		def_var="['ki[31:24]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN"	[label="AES_PPRM1_ENC.EC.SBK.x[7:0]:IN\nvirtual port source",
+		def_var="['x[7:0]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN"	[label="AES_PPRM1_ENC.EC.SBK.x[15:8]:IN\nvirtual port source",
+		def_var="['x[15:8]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN"	[label="AES_PPRM1_ENC.EC.SBK.x[23:16]:IN\nvirtual port source",
+		def_var="['x[23:16]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN"	[label="AES_PPRM1_ENC.EC.SBK.x[31:24]:IN\nvirtual port source",
+		def_var="['x[31:24]']",
+		use_var="[]",
+		style=filled,
+		fillcolor=gray90,
+		typ=Virtual];
+	// ---- END VIRTUAL NODES (concat-aware) ----
+
+	// ---- BEGIN PORT-BIND EDGES (concat-aware) ----
+	"AES_PPRM1_ENC.KrgX:IN" -> "AES_PPRM1_ENC.EC.ki[7:0]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[7:0], actual=KrgX[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.KrgX:IN" -> "AES_PPRM1_ENC.EC.ki[15:8]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[15:8], actual=KrgX[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.KrgX:IN" -> "AES_PPRM1_ENC.EC.ki[23:16]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[23:16], actual=KrgX[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.KrgX:IN" -> "AES_PPRM1_ENC.EC.ki[31:24]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[31:24], actual=KrgX[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.ki[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.x[23:16]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=ki[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.ki[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.x[15:8]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=ki[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.ki[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.x[7:0]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=ki[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.ki[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.x[31:24]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=ki[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.96:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.230:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.365:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.512:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.650:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.783:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.899:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[7:0]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox0.1013:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.96:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.230:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.365:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.512:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.650:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.783:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.899:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[15:8]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox1.1013:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.96:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.230:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.365:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.512:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.650:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.783:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.899:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[23:16]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox2.1013:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.96:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.230:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.365:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.512:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.650:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.783:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.899:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.EC.SBK.x[31:24]:IN" -> "AES_PPRM1_ENC.EC.SBK.Sbox3.1013:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=x[31:24])",
+		lineno=None];
+	// ---- END PORT-BIND EDGES (concat-aware) ----
+
+	// ---- BEGIN CONTROL→DATA ALIAS EDGES (for path queries) ----
+	"AES_PPRM1_ENC.1268:BL" -> "AES_PPRM1_ENC.1257:AL"	[cond="[]",
+		label="ctrl_alias(block=1268)",
+		lineno=None];
+	"AES_PPRM1_ENC.1268:BL" -> "AES_PPRM1_ENC.Leaf_1257:AL"	[cond="[]",
+		label="ctrl_alias(block=1268)",
+		lineno=None];
+	// ---- END CONTROL→DATA ALIAS EDGES ----
+
+	// ---- BEGIN AL→EC.ki BRIDGE EDGES ----
+	// ---- END AL→EC.ki BRIDGE EDGES ----
+
+	// ---- BEGIN EXPLICIT AL→EC.ki EDGES ----
+	"AES_PPRM1_ENC.Leaf_1257:AL" -> "AES_PPRM1_ENC.EC.ki[7:0]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[7:0], actual=KrgX[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.Leaf_1257:AL" -> "AES_PPRM1_ENC.EC.ki[15:8]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[15:8], actual=KrgX[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.Leaf_1257:AL" -> "AES_PPRM1_ENC.EC.ki[23:16]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[23:16], actual=KrgX[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.Leaf_1257:AL" -> "AES_PPRM1_ENC.EC.ki[31:24]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[31:24], actual=KrgX[31:24])",
+		lineno=None];
+	"AES_PPRM1_ENC.1257:AL" -> "AES_PPRM1_ENC.EC.ki[7:0]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[7:0], actual=KrgX[7:0])",
+		lineno=None];
+	"AES_PPRM1_ENC.1257:AL" -> "AES_PPRM1_ENC.EC.ki[15:8]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[15:8], actual=KrgX[15:8])",
+		lineno=None];
+	"AES_PPRM1_ENC.1257:AL" -> "AES_PPRM1_ENC.EC.ki[23:16]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[23:16], actual=KrgX[23:16])",
+		lineno=None];
+	"AES_PPRM1_ENC.1257:AL" -> "AES_PPRM1_ENC.EC.ki[31:24]:IN"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=ki[31:24], actual=KrgX[31:24])",
+		lineno=None];
+	// ---- END EXPLICIT AL→EC.ki EDGES ----
 }

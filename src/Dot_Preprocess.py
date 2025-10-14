@@ -1,14 +1,17 @@
+import glob
+import os
 import random
 import re
 from collections import defaultdict
 import pydot
 
 
-def read_dot_file(dot_file, key_register_name):
+def read_dot_file(dot_file, key_register_name, design_name):
     graphs = pydot.graph_from_dot_file(dot_file)
     g = graphs[0]
 
     node_attrs = {}
+    node_files = f"../data/{design_name}/{design_name}_nodes.txt"
     for node in g.get_nodes():
         name = node.get_name().strip('"')
         if name.lower() == "node":
@@ -17,10 +20,12 @@ def read_dot_file(dot_file, key_register_name):
         node_attrs[name] = attrs
 
     key_nodes = set()
-    for node, attrs in node_attrs.items():
-        label = attrs.get("label", "")
-        if label and key_register_name in label:
-            key_nodes.add(node)
+    with open(node_files, "w") as f:
+        for node, attrs in node_attrs.items():
+            label = attrs.get("label", "")
+            f.write("@@" + label + "@@\n")
+            if label and key_register_name in label:
+                key_nodes.add(node)
 
     indegree = defaultdict(int)
     outdegree = defaultdict(int)
@@ -97,33 +102,40 @@ def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_node
             counts[k] = int(counts[k] > 0)
         return counts
 
-    def count_paths_to_targets(graph, key_nodes, u):
-        memo = {}
+    def count_paths_to_targets(graph, starts, target, cap=None):
+        paths = []
+        stack = []
         onstack = set()
 
         def dfs(u):
-            if u in memo:
-                return memo[u]
+            if cap is not None and len(paths) >= cap:
+                return
             if u in onstack:
-                return 0
-
+                return
+            stack.append(u)
             onstack.add(u)
 
-            total = 1 if u in key_nodes else 0
-
-            for v in graph.get(u, []):
-                total += dfs(v)
+            if u == target:
+                paths.append(stack.copy())
+            else:
+                for v in graph.get(u, []):
+                    if v not in onstack:
+                        dfs(v)
 
             onstack.remove(u)
-            memo[u] = total
-            return total
+            stack.pop()
 
-        return dfs(u)
+        for s in starts:
+            dfs(s)
+            if cap is not None and len(paths) >= cap:
+                break
+        return len(paths)
 
     Features = {}
     cnt = 0
     for node in nodes:
         label = node_attrs.get(node, {}).get("label", "")
+        # print(f"Node {cnt}: {label}")
         Features[node] = {
             "node_number": cnt,
             "Node": label,
