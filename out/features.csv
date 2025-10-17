@@ -1,388 +1,230 @@
-node,Degree,Hamming distance,Node,Paths,and,label,mux,node_number,or,xor
-SubBytes.461:AS,4,106,"SubBytes.461:AS
-b12 = s_box(a12);",0,0,1,0,0,0,0
-379:AS,20,0,"379:AS
-{ is_row[1][1], is_row[1][2], is_row[1][3], is_row[1][0] } = { is_row_in[1][0], is_row_in[1][1], is_row_in[1][2], is_row_in[1][3] };",0,0,0,0,1,0,0
-220:AS,2,224,"220:AS
-itemp = iw[3] ^ iw[2];",0,0,0,0,2,0,1
-349:IF,3,0,349:IF,0,0,0,0,3,0,0
-MixColumns2.680:AS,4,209,"MixColumns2.680:AS
-m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,1,0,4,0,1
-295:AS,20,0,"295:AS
-{ s_row[0][0], s_row[0][1], s_row[0][2], s_row[0][3] } = { s_box[0][0], s_box[0][1], s_box[0][2], s_box[0][3] };",0,0,0,0,5,0,0
-InvMixColumn3.728:AS,1,253,"InvMixColumn3.728:AS
-m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,1,0,6,0,1
-256:IF,3,0,256:IF,0,0,0,0,7,0,0
-216:NS,2,0,"216:NS
-{ iw[0], iw[1], iw[2], iw[3] } <= { iw[0], iw[1], iw[2], iw[3] };",0,0,0,0,8,0,0
-334:AS,6,338,"334:AS
-cipher_text[31:0] = { s_row[0][3], s_row[1][3], s_row[2][3], s_row[3][3] } ^ w[3];",0,0,0,1,9,0,1
-InvSubBytes.539:AS,8,0,"InvSubBytes.539:AS
-b20 = is_box(a20);",0,0,1,0,10,0,0
-InvMixColumn2.727:AS,1,312,"InvMixColumn2.727:AS
-m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,1,0,11,0,1
-226:AS,2,456,"226:AS
-irotword = { sword[23:0], sword[31:24] };",0,0,0,1,12,0,0
-SubBytes.450:AS,4,91,"SubBytes.450:AS
-b00 = s_box(a00);",0,0,1,0,13,0,0
-214:IF,3,0,214:IF,0,0,0,0,14,0,0
-iSubWord.618:AS,2,452,"iSubWord.618:AS
-b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };",0,0,1,1,15,0,0
-251:BL,2,0,251:BL,0,0,0,0,16,0,0
-InvMixColumn0.730:AS,1,386,"InvMixColumn0.730:AS
-m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,1,0,17,0,1
-InvSubBytes.547:AS,8,0,"InvSubBytes.547:AS
-b02 = is_box(a02);",0,0,1,0,18,0,0
-InvMixColumn0.728:AS,1,396,"InvMixColumn0.728:AS
-m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,1,0,19,0,1
-95:CA,2,0,95:CA,255,0,0,0,20,0,0
-95:IF,3,0,95:IF,255,0,0,0,21,0,0
-208:BL,2,0,208:BL,0,0,0,0,22,0,0
-SubBytes.452:AS,4,85,"SubBytes.452:AS
-b20 = s_box(a20);",0,0,1,0,23,0,0
-151:NS,2,2,"151:NS
-text_val <= 1'b0;",31,0,0,0,24,0,0
-141:IF,3,0,141:IF,62,0,0,0,25,0,0
-156:AS,2,680,"156:AS
-text_out = (enc_dec == 1'b0)? { state[0], state[1], state[2], state[3] } : { istate[0], istate[1], istate[2], istate[3] };",0,0,0,1,26,0,0
-101:CA,2,0,101:CA,102,0,0,0,27,0,0
-SubBytes.462:AS,4,94,"SubBytes.462:AS
-b22 = s_box(a22);",0,0,1,0,28,0,0
-105:BS,2,8,"105:BS
-next_state = 3'h0;",51,0,0,0,29,0,0
-MixColumns1.681:AS,4,226,"MixColumns1.681:AS
-m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,1,0,30,0,1
-169:NS,2,0,"169:NS
-{ w[0], w[1], w[2], w[3] } <= key_in;",1,0,0,0,31,0,0
-130:IF,3,0,130:IF,124,0,0,0,32,0,0
-358:NS,2,0,"358:NS
-{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };",0,0,0,0,33,0,0
-SubBytes.467:AS,4,78,"SubBytes.467:AS
-b23 = s_box(a23);",0,0,1,0,34,0,0
-332:AS,6,384,"332:AS
-cipher_text[95:64] = { s_row[0][1], s_row[1][1], s_row[2][1], s_row[3][1] } ^ w[1];",0,0,0,1,35,0,1
-175:NS,2,60,"175:NS
-round10_key <= round10_key;",24,0,0,0,36,0,0
-SubBytes.455:AS,4,88,"SubBytes.455:AS
-b01 = s_box(a01);",0,0,1,0,37,0,0
-MixColumns2.678:AS,4,208,"MixColumns2.678:AS
-m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,38,0,1
-101:IF,3,0,101:IF,102,0,0,0,39,0,0
-406:AS,18,205,"406:AS
-add_iroundkey[31:0] = { is_box[0][3], is_box[1][3], is_box[2][3], is_box[3][3] } ^ iw[3];",0,0,0,1,40,0,1
-InvSubBytes.553:AS,8,0,"InvSubBytes.553:AS
-b13 = is_box(a13);",0,0,1,0,41,0,0
-102:BS,2,8,"102:BS
-next_state = 3'h1;",51,0,0,0,42,0,0
-95:BS,2,8,"95:BS
-next_state = 3'h1;",51,0,0,0,43,0,0
-99:BS,2,8,"99:BS
-next_state = 3'h2;",51,0,0,0,44,0,0
-131:IF,3,0,131:IF,93,0,0,0,45,0,0
-138:NS,2,2,"138:NS
-start_flag <= start_flag;",31,0,0,0,46,0,0
-InvSubBytes.542:AS,8,0,"InvSubBytes.542:AS
-b01 = is_box(a01);",0,0,1,0,47,0,0
-343:BL,2,0,343:BL,0,0,0,0,48,0,0
-355:IF,3,0,355:IF,0,0,0,0,49,0,0
-327:AS,18,350,"327:AS
-add_roundkey[31:0] = { m_col[0][3], m_col[1][3], m_col[2][3], m_col[3][3] } ^ w[3];",0,0,0,1,50,0,1
-251:AL,13,0,251:AL,0,0,0,0,51,0,0
-147:NS,2,1,"147:NS
-key_val <= key_val;",31,0,0,0,52,0,0
-SubBytes.466:AS,4,82,"SubBytes.466:AS
-b13 = s_box(a13);",0,0,1,0,53,0,0
-Leaf_118:AL,24,0,Leaf_118:AL,31,0,0,0,54,0,0
-InvSubBytes.545:AS,8,0,"InvSubBytes.545:AS
-b31 = is_box(a31);",0,0,1,0,55,0,0
-SubBytes.460:AS,4,94,"SubBytes.460:AS
-b02 = s_box(a02);",0,0,1,0,56,0,0
-298:AS,20,0,"298:AS
-{ s_row[3][0], s_row[3][1], s_row[3][2], s_row[3][3] } = { s_box[3][3], s_box[3][0], s_box[3][1], s_box[3][2] };",0,0,0,0,57,0,0
-355:BL,2,1034,"355:BL
-{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey;",0,0,0,0,58,0,0
-162:BL,2,0,162:BL,1,0,0,0,59,0,0
-232:AS,2,224,"232:AS
-next_ikey[31:0] = iw[3] ^ iw[2];",0,0,0,1,60,0,1
-MixColumns3.679:AS,4,241,"MixColumns3.679:AS
-m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,61,0,1
-137:NS,2,2,"137:NS
-start_flag <= 1'b0;",31,0,0,0,62,0,0
-InvMixColumn3.730:AS,1,260,"InvMixColumn3.730:AS
-m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,1,0,63,0,1
-230:AS,2,284,"230:AS
-next_ikey[95:64] = iw[1] ^ iw[0];",0,0,0,1,64,0,1
-Leaf_343:AL,12,0,Leaf_343:AL,0,0,0,0,65,0,0
-InvMixColumn2.730:AS,1,310,"InvMixColumn2.730:AS
-m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,1,0,66,0,1
-105:CA,2,0,105:CA,51,0,0,0,67,0,0
-111:NS,2,16,"111:NS
-now_state <= next_state;",187,0,0,0,68,0,0
-348:BL,2,0,348:BL,0,0,0,0,69,0,0
-InvSubBytes.549:AS,8,0,"InvSubBytes.549:AS
-b22 = is_box(a22);",0,0,1,0,70,0,0
-141:NS,2,48,"141:NS
-round_n <= 4'h0;",31,0,0,0,71,0,0
-MixColumns1.679:AS,4,225,"MixColumns1.679:AS
-m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,72,0,1
-186:AS,7,820,"186:AS
-next_key[127:96] = w[0] ^ { temp[31:24] ^ rcon, temp[23:0] };",1,0,0,1,73,0,1
-150:IF,3,0,150:IF,62,0,0,0,74,0,0
-InvMixColumn0.727:AS,1,395,"InvMixColumn0.727:AS
-m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,1,0,75,0,1
-352:BL,2,0,"352:BL
-{ istate[0], istate[1], istate[2], istate[3] } <= { im_col[0], im_col[1], im_col[2], im_col[3] };",0,0,0,0,76,0,0
-163:BL,2,60,"163:BL
-{ w[0], w[1], w[2], w[3] } <= { 128{ 1'b0 } };
-round10_key <= { 128{ 1'b0 } };",24,0,0,0,77,0,0
-118:AL,4,0,118:AL,496,0,0,0,78,0,0
-324:AS,18,361,"324:AS
-add_roundkey[127:96] = { m_col[0][0], m_col[1][0], m_col[2][0], m_col[3][0] } ^ w[0];",0,0,0,1,79,0,1
-145:NS,2,1,"145:NS
-key_val <= 1'b0;",31,0,0,0,80,0,0
-189:AS,9,741,"189:AS
-next_key[31:0] = w[3] ^ next_key[63:32];",1,0,0,1,81,0,1
-174:IF,3,0,174:IF,48,0,0,0,82,0,0
-403:AS,18,318,"403:AS
-add_iroundkey[127:96] = { is_box[0][0], is_box[1][0], is_box[2][0], is_box[3][0] } ^ iw[0];",0,0,0,1,83,0,1
-142:NS,2,48,"142:NS
-round_n <= round_n + 1'b1;",31,0,0,0,84,0,0
-263:BL,2,1471,"263:BL
-{ state[0], state[1], state[2], state[3] } <= cipher_text;",0,0,0,0,85,0,0
-InvSubBytes.552:AS,8,0,"InvSubBytes.552:AS
-b03 = is_box(a03);",0,0,1,0,86,0,0
-SubBytes.458:AS,4,76,"SubBytes.458:AS
-b31 = s_box(a31);",0,0,1,0,87,0,0
-163:IF,3,0,163:IF,1,0,0,0,88,0,0
-MixColumns3.681:AS,4,244,"MixColumns3.681:AS
-m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,1,0,89,0,1
-MixColumns3.678:AS,4,242,"MixColumns3.678:AS
-m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,90,0,1
-405:AS,18,247,"405:AS
-add_iroundkey[63:32] = { is_box[0][2], is_box[1][2], is_box[2][2], is_box[3][2] } ^ iw[2];",0,0,0,1,91,0,1
-349:BL,2,1034,"349:BL
-{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey0;",0,0,0,0,92,0,0
-InvSubBytes.538:AS,8,0,"InvSubBytes.538:AS
-b10 = is_box(a10);",0,0,1,0,93,0,0
-MixColumns1.680:AS,4,221,"MixColumns1.680:AS
-m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,1,0,94,0,1
-InvMixColumn1.727:AS,1,330,"InvMixColumn1.727:AS
-m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,1,0,95,0,1
-167:BL,3,0,167:BL,1,0,0,0,96,0,0
-InvMixColumn1.728:AS,1,333,"InvMixColumn1.728:AS
-m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,1,0,97,0,1
-136:IF,3,0,136:IF,93,0,0,0,98,0,0
-137:IF,3,0,137:IF,62,0,0,0,99,0,0
-367:AS,2,1034,"367:AS
-add_iroundkey0 = text_in ^ { iw[0], iw[1], iw[2], iw[3] };",0,0,0,0,100,0,1
-252:IF,3,0,252:IF,0,0,0,0,101,0,0
-297:AS,20,0,"297:AS
-{ s_row[2][0], s_row[2][1], s_row[2][2], s_row[2][3] } = { s_box[2][2], s_box[2][3], s_box[2][0], s_box[2][1] };",0,0,0,0,102,0,0
-110:IF,3,0,110:IF,374,0,0,0,103,0,0
-145:IF,3,0,145:IF,93,0,0,0,104,0,0
-360:NS,2,0,"360:NS
-{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };",0,0,0,0,105,0,0
-252:BL,2,0,"252:BL
-{ state[0], state[1], state[2], state[3] } <= { 128{ 1'b0 } };",0,0,0,0,106,0,0
-174:NS,2,60,"174:NS
-round10_key <= { w[0], w[1], w[2], w[3] };",24,0,0,0,107,0,0
-234:AS,2,128,"234:AS
-ircon = (round_n == 4'h9)? 8'h01 :
-(8'h00 | (round_n == 4'h8))? 8'h02 :
-(8'h00 | (round_n == 4'h7))? 8'h04 :
-(8'h00 | (round_n == 4'h6))? 8'h08 :
-(8'h00 | (round_n == 4'h5))? 8'h10 :
-(8'h00 | (round_n == 4'h4))? 8'h20 :
-(8'h00 | (round_n == 4'h3))? 8'h40 :
-(8'h00 | (round_n == 4'h2))? 8'h80 :
-(8'h00 | (round_n == 4'h1))? 8'h1b :
-(8'h00 | (round_n == 4'h0))? 8'h36 : 8'h00;",0,0,0,1,108,1,0
-InvMixColumn2.729:AS,1,305,"InvMixColumn2.729:AS
-m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,1,0,109,0,1
-187:AS,9,755,"187:AS
-next_key[95:64] = w[1] ^ next_key[127:96];",1,0,0,1,110,0,1
-347:BL,2,0,347:BL,0,0,0,0,111,0,0
-InvMixColumn0.729:AS,1,393,"InvMixColumn0.729:AS
-m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,1,0,112,0,1
-MixColumns0.678:AS,4,240,"MixColumns0.678:AS
-m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,113,0,1
-MixColumns1.678:AS,4,225,"MixColumns1.678:AS
-m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,114,0,1
-98:BS,2,8,"98:BS
-next_state = 3'h2;",51,0,0,0,115,0,0
-InvMixColumn3.729:AS,1,266,"InvMixColumn3.729:AS
-m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,1,0,116,0,1
-266:NS,2,0,"266:NS
-{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };",0,0,0,0,117,0,0
-SubBytes.456:AS,4,88,"SubBytes.456:AS
-b11 = s_box(a11);",0,0,1,0,118,0,0
-255:BL,2,0,255:BL,0,0,0,0,119,0,0
-326:AS,18,372,"326:AS
-add_roundkey[63:32] = { m_col[0][2], m_col[1][2], m_col[2][2], m_col[3][2] } ^ w[2];",0,0,0,1,120,0,1
-209:IF,3,0,209:IF,0,0,0,0,121,0,0
-150:NS,2,2,"150:NS
-text_val <= 1'b1;",31,0,0,0,122,0,0
-213:IF,3,0,213:IF,0,0,0,0,123,0,0
-Leaf_109:AL,8,0,Leaf_109:AL,187,0,0,0,124,0,0
-InvMixColumn1.729:AS,1,324,"InvMixColumn1.729:AS
-m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",0,0,1,0,125,0,1
-181:AS,2,357,"181:AS
-rotword = { w[3][23:0], w[3][31:24] };",1,0,0,1,126,0,0
-Leaf_162:AL,23,0,Leaf_162:AL,24,0,0,0,127,0,0
-229:AS,4,632,"229:AS
-next_ikey[127:96] = { iw[0][31:24] ^ irotword[31:24] ^ ircon, iw[0][23:0] ^ irotword[23:0] };",0,0,0,1,128,0,1
-209:BL,2,0,"209:BL
-{ iw[0], iw[1], iw[2], iw[3] } <= { 128{ 1'b0 } };",0,0,0,0,129,0,0
-275:AS,2,1493,"275:AS
-add_roundkey0 = text_in ^ { w[0], w[1], w[2], w[3] };",0,0,0,0,130,0,1
-296:AS,20,0,"296:AS
-{ s_row[1][0], s_row[1][1], s_row[1][2], s_row[1][3] } = { s_box[1][1], s_box[1][2], s_box[1][3], s_box[1][0] };",0,0,0,0,131,0,0
-214:NS,2,60,"214:NS
-{ iw[0], iw[1], iw[2], iw[3] } <= round10_key;",0,0,0,0,132,0,0
-170:IF,3,0,170:IF,48,0,0,0,133,0,0
-146:IF,3,0,146:IF,62,0,0,0,134,0,0
-SubBytes.463:AS,4,93,"SubBytes.463:AS
-b32 = s_box(a32);",0,0,1,0,135,0,0
-109:BL,2,0,109:BL,374,0,0,0,136,0,0
-InvSubBytes.554:AS,8,0,"InvSubBytes.554:AS
-b23 = is_box(a23);",0,0,1,0,137,0,0
-381:AS,20,0,"381:AS
-{ is_row[3][3], is_row[3][0], is_row[3][1], is_row[3][2] } = { is_row_in[3][0], is_row_in[3][1], is_row_in[3][2], is_row_in[3][3] };",0,0,0,0,138,0,0
-InvSubBytes.540:AS,8,0,"InvSubBytes.540:AS
-b30 = is_box(a30);",0,0,1,0,139,0,0
-99:IF,3,0,99:IF,102,0,0,0,140,0,0
-101:BS,2,8,"101:BS
-next_state = 3'h0;",51,0,0,0,141,0,0
-110:NS,2,8,"110:NS
-now_state <= 3'h0;",187,0,0,0,142,0,0
-344:IF,3,0,344:IF,0,0,0,0,143,0,0
-SubBytes.453:AS,4,83,"SubBytes.453:AS
-b30 = s_box(a30);",0,0,1,0,144,0,0
-100:BS,2,8,"100:BS
-next_state = 3'h0;",51,0,0,0,145,0,0
-InvMixColumn2.728:AS,1,310,"InvMixColumn2.728:AS
-m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",0,0,1,0,146,0,1
-93:AL,3,0,93:AL,510,0,0,0,147,0,0
-MixColumns2.681:AS,4,205,"MixColumns2.681:AS
-m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,1,0,148,0,1
-103:BS,2,8,"103:BS
-next_state = 3'h0;",51,0,0,0,149,0,0
-170:NS,2,1496,"170:NS
-{ w[0], w[1], w[2], w[3] } <= next_key;",24,0,0,0,150,0,0
-104:BS,2,8,"104:BS
-next_state = 3'h2;",51,0,0,0,151,0,0
-260:IF,3,0,260:IF,0,0,0,0,152,0,0
-130:NS,2,2,"130:NS
-busy <= 1'b0;",31,0,0,0,153,0,0
-208:AL,10,0,208:AL,0,0,0,0,154,0,0
-131:NS,2,2,"131:NS
-busy <= 1'b1;",31,0,0,0,155,0,0
-129:IF,3,0,129:IF,155,0,0,0,156,0,0
-215:IF,3,0,215:IF,0,0,0,0,157,0,0
-133:NS,2,2,"133:NS
-busy <= busy;",31,0,0,0,158,0,0
-171:NS,2,0,"171:NS
-{ w[0], w[1], w[2], w[3] } <= { w[0], w[1], w[2], w[3] };",24,0,0,0,159,0,0
-376:AS,5,0,"376:AS
-{ is_row_in[0][3], is_row_in[1][3], is_row_in[2][3], is_row_in[3][3] } = istate[3];",0,0,0,0,160,0,0
-SubBytes.468:AS,4,88,"SubBytes.468:AS
-b33 = s_box(a33);",0,0,1,0,161,0,0
-MixColumns2.679:AS,4,205,"MixColumns2.679:AS
-m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,162,0,1
-213:NS,2,0,"213:NS
-{ iw[0], iw[1], iw[2], iw[3] } <= { w[0], w[1], w[2], w[3] };",0,0,0,0,163,0,0
-343:AL,25,0,343:AL,0,0,0,0,164,0,0
-SubBytes.457:AS,4,94,"SubBytes.457:AS
-b21 = s_box(a21);",0,0,1,0,165,0,0
-136:NS,2,2,"136:NS
-start_flag <= 1'b1;",31,0,0,0,166,0,0
-215:NS,2,1111,"215:NS
-{ iw[0], iw[1], iw[2], iw[3] } <= next_ikey;",0,0,0,0,167,0,0
-Leaf_93:AL,14,0,Leaf_93:AL,51,0,0,0,168,0,0
-97:IF,3,0,97:IF,102,0,0,0,169,0,0
-373:AS,5,0,"373:AS
-{ is_row_in[0][0], is_row_in[1][0], is_row_in[2][0], is_row_in[3][0] } = istate[0];",0,0,0,0,170,0,0
-MixColumns3.680:AS,4,240,"MixColumns3.680:AS
-m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,1,0,171,0,1
-256:BL,2,0,256:BL,0,0,0,0,172,0,0
-268:NS,2,0,"268:NS
-{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };",0,0,0,0,173,0,0
-103:IF,3,0,103:IF,102,0,0,0,174,0,0
-SubBytes.451:AS,4,88,"SubBytes.451:AS
-b10 = s_box(a10);",0,0,1,0,175,0,0
-132:IF,3,0,132:IF,62,0,0,0,176,0,0
-96:IF,3,0,96:IF,204,0,0,0,177,0,0
-188:AS,9,779,"188:AS
-next_key[63:32] = w[2] ^ next_key[95:64];",1,0,0,1,178,0,1
-93:BL,2,0,93:BL,510,0,0,0,179,0,0
-374:AS,5,0,"374:AS
-{ is_row_in[0][1], is_row_in[1][1], is_row_in[2][1], is_row_in[3][1] } = istate[1];",0,0,0,0,180,0,0
-260:BL,2,1451,"260:BL
-{ state[0], state[1], state[2], state[3] } <= add_roundkey;",0,0,0,0,181,0,0
-MixColumns0.679:AS,4,232,"MixColumns0.679:AS
-m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",0,0,1,0,182,0,1
-InvSubBytes.543:AS,8,0,"InvSubBytes.543:AS
-b11 = is_box(a11);",0,0,1,0,183,0,0
-SubBytes.465:AS,4,82,"SubBytes.465:AS
-b03 = s_box(a03);",0,0,1,0,184,0,0
-InvSubBytes.548:AS,8,0,"InvSubBytes.548:AS
-b12 = is_box(a12);",0,0,1,0,185,0,0
-263:IF,3,0,263:IF,0,0,0,0,186,0,0
-169:IF,3,0,169:IF,1,0,0,0,187,0,0
-231:AS,2,279,"231:AS
-next_ikey[63:32] = iw[2] ^ iw[1];",0,0,0,1,188,0,1
-380:AS,20,0,"380:AS
-{ is_row[2][2], is_row[2][3], is_row[2][0], is_row[2][1] } = { is_row_in[2][0], is_row_in[2][1], is_row_in[2][2], is_row_in[2][3] };",0,0,0,0,189,0,0
-Leaf_251:AL,8,0,Leaf_251:AL,0,0,0,0,190,0,0
-348:IF,3,0,348:IF,0,0,0,0,191,0,0
-119:IF,3,0,119:IF,496,0,0,0,192,0,0
-146:NS,2,1,"146:NS
-key_val <= 1'b1;",31,0,0,0,193,0,0
-344:BL,2,0,"344:BL
-{ istate[0], istate[1], istate[2], istate[3] } <= { 128{ 1'b0 } };",0,0,0,0,194,0,0
-378:AS,20,0,"378:AS
-{ is_row[0][0], is_row[0][1], is_row[0][2], is_row[0][3] } = { is_row_in[0][0], is_row_in[0][1], is_row_in[0][2], is_row_in[0][3] };",0,0,0,0,195,0,0
-103:CA,2,0,103:CA,102,0,0,0,196,0,0
-InvSubBytes.537:AS,8,0,"InvSubBytes.537:AS
-b00 = is_box(a00);",0,0,1,0,197,0,0
-331:AS,6,367,"331:AS
-cipher_text[127:96] = { s_row[0][0], s_row[1][0], s_row[2][0], s_row[3][0] } ^ w[0];",0,0,0,1,198,0,1
-352:IF,3,0,352:IF,0,0,0,0,199,0,0
-InvMixColumn1.730:AS,1,341,"InvMixColumn1.730:AS
-m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",0,0,1,0,200,0,1
-InvSubBytes.550:AS,8,0,"InvSubBytes.550:AS
-b32 = is_box(a32);",0,0,1,0,201,0,0
-404:AS,18,264,"404:AS
-add_iroundkey[95:64] = { is_box[0][1], is_box[1][1], is_box[2][1], is_box[3][1] } ^ iw[1];",0,0,0,1,202,0,1
-Leaf_208:AL,16,0,Leaf_208:AL,0,0,0,0,203,0,0
-MixColumns0.681:AS,4,231,"MixColumns0.681:AS
-m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",0,0,1,0,204,0,1
-MixColumns0.680:AS,4,238,"MixColumns0.680:AS
-m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",0,0,1,0,205,0,1
-162:AL,9,0,162:AL,1,0,0,0,206,0,0
-119:BL,2,56,"119:BL
+node_number,Node,Degree,Hamming distance,Paths,and,mux,or,xor,label
+0,"325:AS
+add_roundkey[95:64] = { m_col[0][1], m_col[1][1], m_col[2][1], m_col[3][1] } ^ w[1];",18,368,97,0,1,0,1,0
+1,"InvMixColumn3.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",2,253,5,0,0,0,1,1
+2,343:AL,25,0,105,0,0,0,0,0
+3,94:CS,5,0,0,0,0,0,0,0
+4,118:BL,2,0,0,0,0,0,0,0
+5,"216:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= { iw[0], iw[1], iw[2], iw[3] };",2,0,1,0,0,0,0,0
+6,"187:AS
+next_key[95:64] = w[1] ^ next_key[127:96];",9,755,15,0,1,0,1,0
+7,110:IF,3,0,0,0,0,0,0,0
+8,"SubWord.618:AS
+b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };",18,729,1,0,1,0,0,1
+9,"InvSubBytes.542:AS
+b01 = is_box(a01);",8,0,10080,0,0,0,0,1
+10,"189:AS
+next_key[31:0] = w[3] ^ next_key[63:32];",9,741,15,0,1,0,1,0
+11,"SubBytes.458:AS
+b31 = s_box(a31);",4,76,0,0,0,0,0,1
+12,"InvSubBytes.544:AS
+b21 = is_box(a21);",8,0,10080,0,0,0,0,1
+13,96:IF,3,0,0,0,0,0,0,0
+14,"266:NS
+{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };",2,0,393,0,0,0,0,0
+15,"129:NS
+busy <= 1'b0;",2,2,0,0,0,0,0,0
+16,347:BL,2,0,105,0,0,0,0,0
+17,"MixColumns3.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",6,240,6,0,0,0,1,1
+18,"131:NS
+busy <= 1'b1;",2,2,0,0,0,0,0,0
+19,"130:NS
+busy <= 1'b0;",2,2,0,0,0,0,0,0
+20,"380:AS
+{ is_row[2][2], is_row[2][3], is_row[2][0], is_row[2][1] } = { is_row_in[2][0], is_row_in[2][1], is_row_in[2][2], is_row_in[2][3] };",20,0,2520,0,0,0,0,0
+21,"175:NS
+round10_key <= round10_key;",2,60,48,0,0,0,0,0
+22,349:IF,3,0,105,0,0,0,0,0
+23,"iSubWord.618:AS
+b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };",34,452,5,0,1,0,0,1
+24,208:BL,2,0,1,0,0,0,0,0
+25,"334:AS
+cipher_text[31:0] = { s_row[0][3], s_row[1][3], s_row[2][3], s_row[3][3] } ^ w[3];",6,338,1,0,1,0,1,0
+26,348:IF,3,0,105,0,0,0,0,0
+27,141:IF,3,0,0,0,0,0,0,0
+28,"260:BL
+{ state[0], state[1], state[2], state[3] } <= add_roundkey;",2,1451,393,0,0,0,0,0
+29,"111:NS
+now_state <= next_state;",2,16,0,0,0,0,0,0
+30,"324:AS
+add_roundkey[127:96] = { m_col[0][0], m_col[1][0], m_col[2][0], m_col[3][0] } ^ w[0];",18,361,97,0,1,0,1,0
+31,"344:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= { 128{ 1'b0 } };",2,0,105,0,0,0,0,0
+32,"InvSubBytes.547:AS
+b02 = is_box(a02);",8,0,10080,0,0,0,0,1
+33,"137:NS
+start_flag <= 1'b0;",2,2,0,0,0,0,0,0
+34,"MixColumns2.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",6,205,6,0,0,0,1,1
+35,"231:AS
+next_ikey[63:32] = iw[2] ^ iw[1];",2,279,5,0,1,0,1,0
+36,"InvSubBytes.538:AS
+b10 = is_box(a10);",8,0,10080,0,0,0,0,1
+37,"327:AS
+add_roundkey[31:0] = { m_col[0][3], m_col[1][3], m_col[2][3], m_col[3][3] } ^ w[3];",18,350,97,0,1,0,1,0
+38,"151:NS
+text_val <= 1'b0;",2,2,0,0,0,0,0,0
+39,"170:NS
+{ w[0], w[1], w[2], w[3] } <= next_key;",2,1496,48,0,0,0,0,0
+40,"375:AS
+{ is_row_in[0][2], is_row_in[1][2], is_row_in[2][2], is_row_in[3][2] } = istate[2];",5,0,630,0,0,0,0,0
+41,"InvMixColumn2.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",2,310,5,0,0,0,1,1
+42,"169:NS
+{ w[0], w[1], w[2], w[3] } <= key_in;",2,0,1,0,0,0,0,0
+43,"105:BS
+next_state = 3'h0;",2,8,0,0,0,0,0,0
+44,162:AL,9,0,48,0,0,0,0,0
+45,"InvMixColumn3.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",2,260,5,0,0,0,1,1
+46,"213:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= { w[0], w[1], w[2], w[3] };",2,0,1,0,0,0,0,0
+47,137:IF,3,0,0,0,0,0,0,0
+48,"220:AS
+itemp = iw[3] ^ iw[2];",2,224,5,0,0,0,1,0
+49,"InvSubBytes.540:AS
+b30 = is_box(a30);",8,0,10080,0,0,0,0,1
+50,Leaf_118:AL,24,0,0,0,0,0,0,0
+51,"174:NS
+round10_key <= { w[0], w[1], w[2], w[3] };",2,60,48,0,0,0,0,0
+52,"InvSubBytes.555:AS
+b33 = is_box(a33);",8,0,10080,0,0,0,0,1
+53,"296:AS
+{ s_row[1][0], s_row[1][1], s_row[1][2], s_row[1][3] } = { s_box[1][1], s_box[1][2], s_box[1][3], s_box[1][0] };",20,0,0,0,0,0,0,0
+54,"SubBytes.468:AS
+b33 = s_box(a33);",4,88,0,0,0,0,0,1
+55,"InvMixColumn2.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",2,310,5,0,0,0,1,1
+56,"SubBytes.452:AS
+b20 = s_box(a20);",4,85,0,0,0,0,0,1
+57,"SubBytes.461:AS
+b12 = s_box(a12);",4,106,0,0,0,0,0,1
+58,"98:BS
+next_state = 3'h2;",2,8,0,0,0,0,0,0
+59,"146:NS
+key_val <= 1'b1;",2,1,0,0,0,0,0,0
+60,132:IF,3,0,0,0,0,0,0,0
+61,209:IF,3,0,1,0,0,0,0,0
+62,214:IF,3,0,1,0,0,0,0,0
+63,Leaf_93:AL,14,0,0,0,0,0,0,0
+64,"374:AS
+{ is_row_in[0][1], is_row_in[1][1], is_row_in[2][1], is_row_in[3][1] } = istate[1];",5,0,630,0,0,0,0,0
+65,109:BL,2,0,0,0,0,0,0,0
+66,"188:AS
+next_key[63:32] = w[2] ^ next_key[95:64];",9,779,15,0,1,0,1,0
+67,"268:NS
+{ state[0], state[1], state[2], state[3] } <= { state[0], state[1], state[2], state[3] };",2,0,393,0,0,0,0,0
+68,"SubBytes.456:AS
+b11 = s_box(a11);",4,88,0,0,0,0,0,1
+69,136:IF,3,0,0,0,0,0,0,0
+70,"MixColumns2.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,205,6,0,0,0,1,1
+71,"103:BS
+next_state = 3'h0;",2,8,0,0,0,0,0,0
+72,103:IF,3,0,0,0,0,0,0,0
+73,167:BL,3,0,48,0,0,0,0,0
+74,255:BL,2,0,393,0,0,0,0,0
+75,"InvMixColumn0.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",2,396,5,0,0,0,1,1
+76,"376:AS
+{ is_row_in[0][3], is_row_in[1][3], is_row_in[2][3], is_row_in[3][3] } = istate[3];",5,0,630,0,0,0,0,0
+77,"InvMixColumn2.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",2,305,5,0,0,0,1,1
+78,119:IF,3,0,0,0,0,0,0,0
+79,"147:NS
+key_val <= key_val;",2,1,0,0,0,0,0,0
+80,"MixColumns0.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,232,6,0,0,0,1,1
+81,"InvSubBytes.553:AS
+b13 = is_box(a13);",8,0,10080,0,0,0,0,1
+82,162:BL,2,0,48,0,0,0,0,0
+83,251:BL,2,0,393,0,0,0,0,0
+84,103:CA,2,0,0,0,0,0,0,0
+85,355:IF,3,0,105,0,0,0,0,0
+86,"181:AS
+rotword = { w[3][23:0], w[3][31:24] };",2,357,1,0,1,0,0,0
+87,"99:BS
+next_state = 3'h2;",2,8,0,0,0,0,0,0
+88,"97:BS
+next_state = 3'h1;",2,8,0,0,0,0,0,0
+89,"SubBytes.467:AS
+b23 = s_box(a23);",4,78,0,0,0,0,0,1
+90,"100:BS
+next_state = 3'h0;",2,8,0,0,0,0,0,0
+91,"252:BL
+{ state[0], state[1], state[2], state[3] } <= { 128{ 1'b0 } };",2,0,393,0,0,0,0,0
+92,"352:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= { im_col[0], im_col[1], im_col[2], im_col[3] };",2,0,105,0,0,0,0,0
+93,212:BL,2,0,1,0,0,0,0,0
+94,"119:BL
 busy <= 1'b0;
 start_flag <= 1'b0;
 key_val <= 1'b0;
 round_n <= 4'h0;
 key_val <= 1'b0;
-text_val <= 1'b0;",31,0,0,0,207,0,0
-132:NS,2,2,"132:NS
-busy <= 1'b0;",31,0,0,0,208,0,0
-257:IF,3,0,257:IF,0,0,0,0,209,0,0
-InvSubBytes.555:AS,8,0,"InvSubBytes.555:AS
-b33 = is_box(a33);",0,0,1,0,210,0,0
-109:AL,2,0,109:AL,374,0,0,0,211,0,0
-257:BL,2,1493,"257:BL
-{ state[0], state[1], state[2], state[3] } <= add_roundkey0;",0,0,0,0,212,0,0
-118:BL,2,0,118:BL,496,0,0,0,213,0,0
-129:NS,2,2,"129:NS
-busy <= 1'b0;",31,0,0,0,214,0,0
-SubWord.618:AS,2,729,"SubWord.618:AS
-b = { s_box(a[31:24]), s_box(a[23:16]), s_box(a[15:8]), s_box(a[7:0]) };",1,0,1,1,215,0,0
-InvSubBytes.544:AS,8,0,"InvSubBytes.544:AS
-b21 = is_box(a21);",0,0,1,0,216,0,0
-192:AS,2,128,"192:AS
+text_val <= 1'b0;",2,56,0,0,0,0,0,0
+95,"229:AS
+next_ikey[127:96] = { iw[0][31:24] ^ irotword[31:24] ^ ircon, iw[0][23:0] ^ irotword[23:0] };",4,632,10,0,1,0,1,0
+96,"InvSubBytes.548:AS
+b12 = is_box(a12);",8,0,10080,0,0,0,0,1
+97,"SubBytes.451:AS
+b10 = s_box(a10);",4,88,0,0,0,0,0,1
+98,"SubBytes.462:AS
+b22 = s_box(a22);",4,94,0,0,0,0,0,1
+99,"SubBytes.465:AS
+b03 = s_box(a03);",4,82,0,0,0,0,0,1
+100,"MixColumns3.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,242,6,0,0,0,1,1
+101,256:BL,2,0,393,0,0,0,0,0
+102,"349:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey0;",2,1034,105,0,0,0,0,0
+103,"326:AS
+add_roundkey[63:32] = { m_col[0][2], m_col[1][2], m_col[2][2], m_col[3][2] } ^ w[2];",18,372,97,0,1,0,1,0
+104,215:IF,3,0,1,0,0,0,0,0
+105,"InvMixColumn3.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",2,256,5,0,0,0,1,1
+106,"104:BS
+next_state = 3'h2;",2,8,0,0,0,0,0,0
+107,"298:AS
+{ s_row[3][0], s_row[3][1], s_row[3][2], s_row[3][3] } = { s_box[3][3], s_box[3][0], s_box[3][1], s_box[3][2] };",20,0,0,0,0,0,0,0
+108,174:IF,3,0,48,0,0,0,0,0
+109,"InvMixColumn0.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",2,393,5,0,0,0,1,1
+110,109:AL,2,0,0,0,0,0,0,0
+111,"SubBytes.453:AS
+b30 = s_box(a30);",4,83,0,0,0,0,0,1
+112,"232:AS
+next_ikey[31:0] = iw[3] ^ iw[2];",2,224,5,0,1,0,1,0
+113,"332:AS
+cipher_text[95:64] = { s_row[0][1], s_row[1][1], s_row[2][1], s_row[3][1] } ^ w[1];",6,384,1,0,1,0,1,0
+114,"215:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= next_ikey;",2,1111,1,0,0,0,0,0
+115,"MixColumns0.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,240,6,0,0,0,1,1
+116,"186:AS
+next_key[127:96] = w[0] ^ { temp[31:24] ^ rcon, temp[23:0] };",7,820,2,0,1,0,1,0
+117,"InvSubBytes.537:AS
+b00 = is_box(a00);",8,0,10080,0,0,0,0,1
+118,145:IF,3,0,0,0,0,0,0,0
+119,"379:AS
+{ is_row[1][1], is_row[1][2], is_row[1][3], is_row[1][0] } = { is_row_in[1][0], is_row_in[1][1], is_row_in[1][2], is_row_in[1][3] };",20,0,2520,0,0,0,0,0
+120,"132:NS
+busy <= 1'b0;",2,2,0,0,0,0,0,0
+121,"214:NS
+{ iw[0], iw[1], iw[2], iw[3] } <= round10_key;",2,60,1,0,0,0,0,0
+122,"InvSubBytes.545:AS
+b31 = is_box(a31);",8,0,10080,0,0,0,0,1
+123,"InvSubBytes.549:AS
+b22 = is_box(a22);",8,0,10080,0,0,0,0,1
+124,"178:AS
+r10_key = round10_key;",1,120,1,0,0,0,0,0
+125,"95:BS
+next_state = 3'h1;",2,8,0,0,0,0,0,0
+126,130:IF,3,0,0,0,0,0,0,0
+127,"192:AS
 rcon = (round_n == 4'h0)? 8'h01 :
 (8'h00 | (round_n == 4'h1))? 8'h02 :
 (8'h00 | (round_n == 4'h2))? 8'h04 :
@@ -392,19 +234,177 @@ rcon = (round_n == 4'h0)? 8'h01 :
 (8'h00 | (round_n == 4'h6))? 8'h40 :
 (8'h00 | (round_n == 4'h7))? 8'h80 :
 (8'h00 | (round_n == 4'h8))? 8'h1b :
-(8'h00 | (round_n == 4'h9))? 8'h36 : 8'h00;",1,0,0,1,217,1,0
-325:AS,18,368,"325:AS
-add_roundkey[95:64] = { m_col[0][1], m_col[1][1], m_col[2][1], m_col[3][1] } ^ w[1];",0,0,0,1,218,0,1
-333:AS,6,382,"333:AS
-cipher_text[63:32] = { s_row[0][2], s_row[1][2], s_row[2][2], s_row[3][2] } ^ w[2];",0,0,0,1,219,0,1
-212:BL,2,0,212:BL,0,0,0,0,220,0,0
-InvMixColumn3.727:AS,1,256,"InvMixColumn3.727:AS
-m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",0,0,1,0,221,0,1
-127:BL,6,0,127:BL,465,0,0,0,222,0,0
-178:AS,1,120,"178:AS
-r10_key = round10_key;",0,0,0,0,223,0,0
-94:CS,5,0,94:CS,510,0,0,0,224,0,0
-97:BS,2,8,"97:BS
-next_state = 3'h1;",51,0,0,0,225,0,0
-375:AS,5,0,"375:AS
-{ is_row_in[0][2], is_row_in[1][2], is_row_in[2][2], is_row_in[3][2] } = istate[2];",0,0,0,0,226,0,0
+(8'h00 | (round_n == 4'h9))? 8'h36 : 8'h00;",2,128,0,0,1,1,0,0
+128,252:IF,3,0,393,0,0,0,0,0
+129,"101:BS
+next_state = 3'h0;",2,8,0,0,0,0,0,0
+130,"381:AS
+{ is_row[3][3], is_row[3][0], is_row[3][1], is_row[3][2] } = { is_row_in[3][0], is_row_in[3][1], is_row_in[3][2], is_row_in[3][3] };",20,0,2520,0,0,0,0,0
+131,150:IF,3,0,0,0,0,0,0,0
+132,"406:AS
+add_iroundkey[31:0] = { is_box[0][3], is_box[1][3], is_box[2][3], is_box[3][3] } ^ iw[3];",18,205,153605,0,1,0,1,0
+133,"SubBytes.455:AS
+b01 = s_box(a01);",4,88,0,0,0,0,0,1
+134,"263:BL
+{ state[0], state[1], state[2], state[3] } <= cipher_text;",2,1471,393,0,0,0,0,0
+135,"156:AS
+text_out = (enc_dec == 1'b0)? { state[0], state[1], state[2], state[3] } : { istate[0], istate[1], istate[2], istate[3] };",2,680,2988,0,1,0,0,0
+136,Leaf_162:AL,23,0,1,0,0,0,0,0
+137,"275:AS
+add_roundkey0 = text_in ^ { w[0], w[1], w[2], w[3] };",2,1493,1,0,0,0,1,0
+138,"102:BS
+next_state = 3'h1;",2,8,0,0,0,0,0,0
+139,"141:NS
+round_n <= 4'h0;",2,48,0,0,0,0,0,0
+140,97:IF,3,0,0,0,0,0,0,0
+141,"133:NS
+busy <= busy;",2,2,0,0,0,0,0,0
+142,Leaf_251:AL,8,0,2358,0,0,0,0,0
+143,163:IF,3,0,48,0,0,0,0,0
+144,251:AL,13,0,393,0,0,0,0,0
+145,343:BL,2,0,105,0,0,0,0,0
+146,"360:NS
+{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };",2,0,105,0,0,0,0,0
+147,101:IF,3,0,0,0,0,0,0,0
+148,"142:NS
+round_n <= round_n + 1'b1;",2,48,0,0,0,0,0,0
+149,"MixColumns3.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",6,244,6,0,0,0,1,1
+150,"MixColumns1.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,225,6,0,0,0,1,1
+151,208:AL,10,0,1,0,0,0,0,0
+152,"InvMixColumn1.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",2,330,5,0,0,0,1,1
+153,"331:AS
+cipher_text[127:96] = { s_row[0][0], s_row[1][0], s_row[2][0], s_row[3][0] } ^ w[0];",6,367,1,0,1,0,1,0
+154,"297:AS
+{ s_row[2][0], s_row[2][1], s_row[2][2], s_row[2][3] } = { s_box[2][2], s_box[2][3], s_box[2][0], s_box[2][1] };",20,0,0,0,0,0,0,0
+155,"404:AS
+add_iroundkey[95:64] = { is_box[0][1], is_box[1][1], is_box[2][1], is_box[3][1] } ^ iw[1];",18,264,153605,0,1,0,1,0
+156,"SubBytes.450:AS
+b00 = s_box(a00);",4,91,0,0,0,0,0,1
+157,"InvMixColumn0.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",2,386,5,0,0,0,1,1
+158,146:IF,3,0,0,0,0,0,0,0
+159,"InvSubBytes.539:AS
+b20 = is_box(a20);",8,0,10080,0,0,0,0,1
+160,"MixColumns0.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",6,231,6,0,0,0,1,1
+161,"355:BL
+{ istate[0], istate[1], istate[2], istate[3] } <= add_iroundkey;",2,1034,105,0,0,0,0,0
+162,"171:NS
+{ w[0], w[1], w[2], w[3] } <= { w[0], w[1], w[2], w[3] };",2,0,48,0,0,0,0,0
+163,"SubBytes.457:AS
+b21 = s_box(a21);",4,94,0,0,0,0,0,1
+164,"230:AS
+next_ikey[95:64] = iw[1] ^ iw[0];",2,284,5,0,1,0,1,0
+165,213:IF,3,0,1,0,0,0,0,0
+166,"InvMixColumn3.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",2,266,5,0,0,0,1,1
+167,"136:NS
+start_flag <= 1'b1;",2,2,0,0,0,0,0,0
+168,"SubBytes.466:AS
+b13 = s_box(a13);",4,82,0,0,0,0,0,1
+169,131:IF,3,0,0,0,0,0,0,0
+170,99:IF,3,0,0,0,0,0,0,0
+171,"209:BL
+{ iw[0], iw[1], iw[2], iw[3] } <= { 128{ 1'b0 } };",2,0,1,0,0,0,0,0
+172,260:IF,3,0,393,0,0,0,0,0
+173,"MixColumns1.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",6,221,6,0,0,0,1,1
+174,95:CA,2,0,0,0,0,0,0,0
+175,118:AL,4,0,0,0,0,0,0,0
+176,"InvMixColumn1.730:AS
+m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mul4x8({ 4'he }, s3c);",2,341,5,0,0,0,1,1
+177,"163:BL
+{ w[0], w[1], w[2], w[3] } <= { 128{ 1'b0 } };
+round10_key <= { 128{ 1'b0 } };",2,60,48,0,0,0,0,0
+178,"InvMixColumn0.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",2,395,5,0,0,0,1,1
+179,"295:AS
+{ s_row[0][0], s_row[0][1], s_row[0][2], s_row[0][3] } = { s_box[0][0], s_box[0][1], s_box[0][2], s_box[0][3] };",20,0,0,0,0,0,0,0
+180,129:IF,3,0,0,0,0,0,0,0
+181,93:BL,2,0,0,0,0,0,0,0
+182,"InvSubBytes.543:AS
+b11 = is_box(a11);",8,0,10080,0,0,0,0,1
+183,101:CA,2,0,0,0,0,0,0,0
+184,"373:AS
+{ is_row_in[0][0], is_row_in[1][0], is_row_in[2][0], is_row_in[3][0] } = istate[0];",5,0,630,0,0,0,0,0
+185,93:AL,3,0,0,0,0,0,0,0
+186,95:IF,3,0,0,0,0,0,0,0
+187,"MixColumns2.678:AS
+m0c = mul4x8({ 4'h2 }, s0c) ^ mul4x8({ 4'h3 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,208,6,0,0,0,1,1
+188,"SubBytes.460:AS
+b02 = s_box(a02);",4,94,0,0,0,0,0,1
+189,"367:AS
+add_iroundkey0 = text_in ^ { iw[0], iw[1], iw[2], iw[3] };",2,1034,5,0,0,0,1,0
+190,"403:AS
+add_iroundkey[127:96] = { is_box[0][0], is_box[1][0], is_box[2][0], is_box[3][0] } ^ iw[0];",18,318,153605,0,1,0,1,0
+191,170:IF,3,0,48,0,0,0,0,0
+192,257:IF,3,0,393,0,0,0,0,0
+193,"InvSubBytes.552:AS
+b03 = is_box(a03);",8,0,10080,0,0,0,0,1
+194,"InvSubBytes.554:AS
+b23 = is_box(a23);",8,0,10080,0,0,0,0,1
+195,"MixColumns0.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",6,238,6,0,0,0,1,1
+196,"234:AS
+ircon = (round_n == 4'h9)? 8'h01 :
+(8'h00 | (round_n == 4'h8))? 8'h02 :
+(8'h00 | (round_n == 4'h7))? 8'h04 :
+(8'h00 | (round_n == 4'h6))? 8'h08 :
+(8'h00 | (round_n == 4'h5))? 8'h10 :
+(8'h00 | (round_n == 4'h4))? 8'h20 :
+(8'h00 | (round_n == 4'h3))? 8'h40 :
+(8'h00 | (round_n == 4'h2))? 8'h80 :
+(8'h00 | (round_n == 4'h1))? 8'h1b :
+(8'h00 | (round_n == 4'h0))? 8'h36 : 8'h00;",2,128,0,0,1,1,0,0
+197,"378:AS
+{ is_row[0][0], is_row[0][1], is_row[0][2], is_row[0][3] } = { is_row_in[0][0], is_row_in[0][1], is_row_in[0][2], is_row_in[0][3] };",20,0,2520,0,0,0,0,0
+198,"MixColumns1.681:AS
+m3c = mul4x8({ 4'h3 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h1 }, s2c) ^ mul4x8({ 4'h2 }, s3c);",6,226,6,0,0,0,1,1
+199,"138:NS
+start_flag <= start_flag;",2,2,0,0,0,0,0,0
+200,"226:AS
+irotword = { sword[23:0], sword[31:24] };",2,456,5,0,1,0,0,0
+201,"InvSubBytes.550:AS
+b32 = is_box(a32);",8,0,10080,0,0,0,0,1
+202,"358:NS
+{ istate[0], istate[1], istate[2], istate[3] } <= { istate[0], istate[1], istate[2], istate[3] };",2,0,105,0,0,0,0,0
+203,"MixColumns3.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,241,6,0,0,0,1,1
+204,"405:AS
+add_iroundkey[63:32] = { is_box[0][2], is_box[1][2], is_box[2][2], is_box[3][2] } ^ iw[2];",18,247,153605,0,1,0,1,0
+205,"MixColumns1.679:AS
+m1c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h2 }, s1c) ^ mul4x8({ 4'h3 }, s2c) ^ mul4x8({ 4'h1 }, s3c);",6,225,6,0,0,0,1,1
+206,263:IF,3,0,393,0,0,0,0,0
+207,"257:BL
+{ state[0], state[1], state[2], state[3] } <= add_roundkey0;",2,1493,393,0,0,0,0,0
+208,348:BL,2,0,105,0,0,0,0,0
+209,169:IF,3,0,48,0,0,0,0,0
+210,"SubBytes.463:AS
+b32 = s_box(a32);",4,93,0,0,0,0,0,1
+211,105:CA,2,0,0,0,0,0,0,0
+212,Leaf_109:AL,8,0,0,0,0,0,0,0
+213,"145:NS
+key_val <= 1'b0;",2,1,0,0,0,0,0,0
+214,"InvMixColumn2.727:AS
+m0c = mul4x8({ 4'he }, s0c) ^ mul4x8({ 4'hb }, s1c) ^ mul4x8({ 4'hd }, s2c) ^ mul4x8({ 4'h9 }, s3c);",2,312,5,0,0,0,1,1
+215,Leaf_343:AL,12,0,630,0,0,0,0,0
+216,344:IF,3,0,105,0,0,0,0,0
+217,"333:AS
+cipher_text[63:32] = { s_row[0][2], s_row[1][2], s_row[2][2], s_row[3][2] } ^ w[2];",6,382,1,0,1,0,1,0
+218,352:IF,3,0,105,0,0,0,0,0
+219,"MixColumns2.680:AS
+m2c = mul4x8({ 4'h1 }, s0c) ^ mul4x8({ 4'h1 }, s1c) ^ mul4x8({ 4'h2 }, s2c) ^ mul4x8({ 4'h3 }, s3c);",6,209,6,0,0,0,1,1
+220,127:BL,6,0,0,0,0,0,0,0
+221,"150:NS
+text_val <= 1'b1;",2,2,0,0,0,0,0,0
+222,Leaf_208:AL,16,0,5,0,0,0,0,0
+223,"InvMixColumn1.728:AS
+m1c = mul4x8({ 4'h9 }, s0c) ^ mul4x8({ 4'he }, s1c) ^ mul4x8({ 4'hb }, s2c) ^ mul4x8({ 4'hd }, s3c);",2,333,5,0,0,0,1,1
+224,"110:NS
+now_state <= 3'h0;",2,8,0,0,0,0,0,0
+225,256:IF,3,0,393,0,0,0,0,0
+226,"InvMixColumn1.729:AS
+m2c = mul4x8({ 4'hd }, s0c) ^ mul4x8({ 4'h9 }, s1c) ^ mul4x8({ 4'he }, s2c) ^ mul4x8({ 4'hb }, s3c);",2,324,5,0,0,0,1,1

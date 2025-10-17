@@ -2552,4 +2552,151 @@ m3c = mul4x8({ 4'hb }, s0c) ^ mul4x8({ 4'hd }, s1c) ^ mul4x8({ 4'h9 }, s2c) ^ mu
 		typ=Assign,
 		use_var="['mul4x8', 's0c', 'mul4x8', 's1c', 'mul4x8', 's2c', 'mul4x8', 's3c']"];
 	"InvMixColumn3.730:AS" -> "343:AL";
+
+	// ---- BEGIN EDGES-ONLY BRIDGES (S-Box & MixColumns) ----
+	"SubWord.618:AS" -> "MixColumns0.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"SubWord.618:AS" -> "MixColumns0.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"SubWord.618:AS" -> "MixColumns0.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"SubWord.618:AS" -> "MixColumns0.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"SubWord.618:AS" -> "MixColumns1.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"SubWord.618:AS" -> "MixColumns1.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"SubWord.618:AS" -> "MixColumns1.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"SubWord.618:AS" -> "MixColumns1.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"SubWord.618:AS" -> "MixColumns2.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"SubWord.618:AS" -> "MixColumns2.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"SubWord.618:AS" -> "MixColumns2.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"SubWord.618:AS" -> "MixColumns2.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"SubWord.618:AS" -> "MixColumns3.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"SubWord.618:AS" -> "MixColumns3.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"SubWord.618:AS" -> "MixColumns3.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"SubWord.618:AS" -> "MixColumns3.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"iSubWord.618:AS" -> "MixColumns0.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"iSubWord.618:AS" -> "MixColumns0.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"iSubWord.618:AS" -> "MixColumns0.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"iSubWord.618:AS" -> "MixColumns0.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"iSubWord.618:AS" -> "MixColumns1.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"iSubWord.618:AS" -> "MixColumns1.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"iSubWord.618:AS" -> "MixColumns1.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"iSubWord.618:AS" -> "MixColumns1.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"iSubWord.618:AS" -> "MixColumns2.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"iSubWord.618:AS" -> "MixColumns2.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"iSubWord.618:AS" -> "MixColumns2.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"iSubWord.618:AS" -> "MixColumns2.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"iSubWord.618:AS" -> "MixColumns3.678:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=678];
+	"iSubWord.618:AS" -> "MixColumns3.679:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=679];
+	"iSubWord.618:AS" -> "MixColumns3.680:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=680];
+	"iSubWord.618:AS" -> "MixColumns3.681:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=sr)",
+		lineno=681];
+	"iSubWord.618:AS" -> "InvMixColumn0.727:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=727];
+	"iSubWord.618:AS" -> "InvMixColumn0.728:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=728];
+	"iSubWord.618:AS" -> "InvMixColumn0.729:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=729];
+	"iSubWord.618:AS" -> "InvMixColumn0.730:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=730];
+	"iSubWord.618:AS" -> "InvMixColumn1.727:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=727];
+	"iSubWord.618:AS" -> "InvMixColumn1.728:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=728];
+	"iSubWord.618:AS" -> "InvMixColumn1.729:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=729];
+	"iSubWord.618:AS" -> "InvMixColumn1.730:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=730];
+	"iSubWord.618:AS" -> "InvMixColumn2.727:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=727];
+	"iSubWord.618:AS" -> "InvMixColumn2.728:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=728];
+	"iSubWord.618:AS" -> "InvMixColumn2.729:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=729];
+	"iSubWord.618:AS" -> "InvMixColumn2.730:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=730];
+	"iSubWord.618:AS" -> "InvMixColumn3.727:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=727];
+	"iSubWord.618:AS" -> "InvMixColumn3.728:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=728];
+	"iSubWord.618:AS" -> "InvMixColumn3.729:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=729];
+	"iSubWord.618:AS" -> "InvMixColumn3.730:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=in, actual=isr)",
+		lineno=730];
+	// ---- END EDGES-ONLY BRIDGES ----
 }

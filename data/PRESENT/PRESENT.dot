@@ -1576,4 +1576,1105 @@ odat = 4'h2;",
 		lineno=None];
 	"USBOXKEY.218:BS" -> "USBOXKEY.Leaf_216:AL"	[cond="[]",
 		lineno=None];
+
+	// ---- BEGIN EDGES-ONLY BRIDGES (Key→USBOXKEY) ----
+	"77:BL" -> "50:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"77:BL" -> "51:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"77:BL" -> "52:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"77:BL" -> "53:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"77:BL" -> "Leaf_85:AL"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"86:BL" -> "50:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"86:BL" -> "51:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"86:BL" -> "52:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"86:BL" -> "53:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"86:BL" -> "Leaf_85:AL"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"95:BL" -> "50:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"95:BL" -> "51:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"95:BL" -> "52:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"95:BL" -> "53:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"95:BL" -> "Leaf_85:AL"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"116:BL" -> "50:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"116:BL" -> "51:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"116:BL" -> "52:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"116:BL" -> "53:AS"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"116:BL" -> "Leaf_85:AL"	[cond="[]",
+		label="ctrl_alias(block=start)",
+		lineno=None];
+	"50:AS" -> "USBOXKEY.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=216];
+	"50:AS" -> "USBOXKEY.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=217];
+	"50:AS" -> "USBOXKEY.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=218];
+	"50:AS" -> "USBOXKEY.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=219];
+	"50:AS" -> "USBOXKEY.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=220];
+	"50:AS" -> "USBOXKEY.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=221];
+	"50:AS" -> "USBOXKEY.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=222];
+	"50:AS" -> "USBOXKEY.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=223];
+	"50:AS" -> "USBOXKEY.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=224];
+	"50:AS" -> "USBOXKEY.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=225];
+	"50:AS" -> "USBOXKEY.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=226];
+	"50:AS" -> "USBOXKEY.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=227];
+	"50:AS" -> "USBOXKEY.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=228];
+	"50:AS" -> "USBOXKEY.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=229];
+	"50:AS" -> "USBOXKEY.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=230];
+	"50:AS" -> "USBOXKEY.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=231];
+	"50:AS" -> "USBOXKEY.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=232];
+	"50:AS" -> "USBOXKEY.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=233];
+	"50:AS" -> "USBOXKEY.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=218];
+	"50:AS" -> "USBOXKEY.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=219];
+	"50:AS" -> "USBOXKEY.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=220];
+	"50:AS" -> "USBOXKEY.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=221];
+	"50:AS" -> "USBOXKEY.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=222];
+	"50:AS" -> "USBOXKEY.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=223];
+	"50:AS" -> "USBOXKEY.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=224];
+	"50:AS" -> "USBOXKEY.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=225];
+	"50:AS" -> "USBOXKEY.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=226];
+	"50:AS" -> "USBOXKEY.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=227];
+	"50:AS" -> "USBOXKEY.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=228];
+	"50:AS" -> "USBOXKEY.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=229];
+	"50:AS" -> "USBOXKEY.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=230];
+	"50:AS" -> "USBOXKEY.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=231];
+	"50:AS" -> "USBOXKEY.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=232];
+	"50:AS" -> "USBOXKEY.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=233];
+	"50:AS" -> "USBOXKEY.Leaf_216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=None];
+	"51:AS" -> "USBOXKEY.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=216];
+	"51:AS" -> "USBOXKEY.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=217];
+	"51:AS" -> "USBOXKEY.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"51:AS" -> "USBOXKEY.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"51:AS" -> "USBOXKEY.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"51:AS" -> "USBOXKEY.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"51:AS" -> "USBOXKEY.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"51:AS" -> "USBOXKEY.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"51:AS" -> "USBOXKEY.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"51:AS" -> "USBOXKEY.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"51:AS" -> "USBOXKEY.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"51:AS" -> "USBOXKEY.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"51:AS" -> "USBOXKEY.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"51:AS" -> "USBOXKEY.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"51:AS" -> "USBOXKEY.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"51:AS" -> "USBOXKEY.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"51:AS" -> "USBOXKEY.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"51:AS" -> "USBOXKEY.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"51:AS" -> "USBOXKEY.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"51:AS" -> "USBOXKEY.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"51:AS" -> "USBOXKEY.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"51:AS" -> "USBOXKEY.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"51:AS" -> "USBOXKEY.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"51:AS" -> "USBOXKEY.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"51:AS" -> "USBOXKEY.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"51:AS" -> "USBOXKEY.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"51:AS" -> "USBOXKEY.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"51:AS" -> "USBOXKEY.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"51:AS" -> "USBOXKEY.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"51:AS" -> "USBOXKEY.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"51:AS" -> "USBOXKEY.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"51:AS" -> "USBOXKEY.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"51:AS" -> "USBOXKEY.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"51:AS" -> "USBOXKEY.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"51:AS" -> "USBOXKEY.Leaf_216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=None];
+	"52:AS" -> "USBOXKEY.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=216];
+	"52:AS" -> "USBOXKEY.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=217];
+	"52:AS" -> "USBOXKEY.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"52:AS" -> "USBOXKEY.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"52:AS" -> "USBOXKEY.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"52:AS" -> "USBOXKEY.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"52:AS" -> "USBOXKEY.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"52:AS" -> "USBOXKEY.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"52:AS" -> "USBOXKEY.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"52:AS" -> "USBOXKEY.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"52:AS" -> "USBOXKEY.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"52:AS" -> "USBOXKEY.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"52:AS" -> "USBOXKEY.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"52:AS" -> "USBOXKEY.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"52:AS" -> "USBOXKEY.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"52:AS" -> "USBOXKEY.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"52:AS" -> "USBOXKEY.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"52:AS" -> "USBOXKEY.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"52:AS" -> "USBOXKEY.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"52:AS" -> "USBOXKEY.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"52:AS" -> "USBOXKEY.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"52:AS" -> "USBOXKEY.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"52:AS" -> "USBOXKEY.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"52:AS" -> "USBOXKEY.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"52:AS" -> "USBOXKEY.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"52:AS" -> "USBOXKEY.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"52:AS" -> "USBOXKEY.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"52:AS" -> "USBOXKEY.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"52:AS" -> "USBOXKEY.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"52:AS" -> "USBOXKEY.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"52:AS" -> "USBOXKEY.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"52:AS" -> "USBOXKEY.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"52:AS" -> "USBOXKEY.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"52:AS" -> "USBOXKEY.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"52:AS" -> "USBOXKEY.Leaf_216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=None];
+	"53:AS" -> "USBOXKEY.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=216];
+	"53:AS" -> "USBOXKEY.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=217];
+	"53:AS" -> "USBOXKEY.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"53:AS" -> "USBOXKEY.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"53:AS" -> "USBOXKEY.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"53:AS" -> "USBOXKEY.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"53:AS" -> "USBOXKEY.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"53:AS" -> "USBOXKEY.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"53:AS" -> "USBOXKEY.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"53:AS" -> "USBOXKEY.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"53:AS" -> "USBOXKEY.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"53:AS" -> "USBOXKEY.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"53:AS" -> "USBOXKEY.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"53:AS" -> "USBOXKEY.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"53:AS" -> "USBOXKEY.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"53:AS" -> "USBOXKEY.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"53:AS" -> "USBOXKEY.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"53:AS" -> "USBOXKEY.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"53:AS" -> "USBOXKEY.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"53:AS" -> "USBOXKEY.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"53:AS" -> "USBOXKEY.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"53:AS" -> "USBOXKEY.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"53:AS" -> "USBOXKEY.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"53:AS" -> "USBOXKEY.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"53:AS" -> "USBOXKEY.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"53:AS" -> "USBOXKEY.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"53:AS" -> "USBOXKEY.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"53:AS" -> "USBOXKEY.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"53:AS" -> "USBOXKEY.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"53:AS" -> "USBOXKEY.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"53:AS" -> "USBOXKEY.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"53:AS" -> "USBOXKEY.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"53:AS" -> "USBOXKEY.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"53:AS" -> "USBOXKEY.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"53:AS" -> "USBOXKEY.Leaf_216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=None];
+	"Leaf_85:AL" -> "USBOXKEY.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=216];
+	"Leaf_85:AL" -> "USBOXKEY.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=217];
+	"Leaf_85:AL" -> "USBOXKEY.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=218];
+	"Leaf_85:AL" -> "USBOXKEY.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=219];
+	"Leaf_85:AL" -> "USBOXKEY.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=220];
+	"Leaf_85:AL" -> "USBOXKEY.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=221];
+	"Leaf_85:AL" -> "USBOXKEY.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=222];
+	"Leaf_85:AL" -> "USBOXKEY.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=223];
+	"Leaf_85:AL" -> "USBOXKEY.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=224];
+	"Leaf_85:AL" -> "USBOXKEY.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=225];
+	"Leaf_85:AL" -> "USBOXKEY.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=226];
+	"Leaf_85:AL" -> "USBOXKEY.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=227];
+	"Leaf_85:AL" -> "USBOXKEY.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=228];
+	"Leaf_85:AL" -> "USBOXKEY.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=229];
+	"Leaf_85:AL" -> "USBOXKEY.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=230];
+	"Leaf_85:AL" -> "USBOXKEY.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=231];
+	"Leaf_85:AL" -> "USBOXKEY.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=232];
+	"Leaf_85:AL" -> "USBOXKEY.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=233];
+	"Leaf_85:AL" -> "USBOXKEY.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=218];
+	"Leaf_85:AL" -> "USBOXKEY.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=219];
+	"Leaf_85:AL" -> "USBOXKEY.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=220];
+	"Leaf_85:AL" -> "USBOXKEY.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=221];
+	"Leaf_85:AL" -> "USBOXKEY.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=222];
+	"Leaf_85:AL" -> "USBOXKEY.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=223];
+	"Leaf_85:AL" -> "USBOXKEY.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=224];
+	"Leaf_85:AL" -> "USBOXKEY.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=225];
+	"Leaf_85:AL" -> "USBOXKEY.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=226];
+	"Leaf_85:AL" -> "USBOXKEY.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=227];
+	"Leaf_85:AL" -> "USBOXKEY.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=228];
+	"Leaf_85:AL" -> "USBOXKEY.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=229];
+	"Leaf_85:AL" -> "USBOXKEY.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=230];
+	"Leaf_85:AL" -> "USBOXKEY.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=231];
+	"Leaf_85:AL" -> "USBOXKEY.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=232];
+	"Leaf_85:AL" -> "USBOXKEY.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=233];
+	"Leaf_85:AL" -> "USBOXKEY.Leaf_216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=None];
+	// ---- END EDGES-ONLY BRIDGES ----
+
+	// ---- BEGIN EDGES-ONLY BRIDGES (Key→USBOX/USBOXKEY + BL→Key) ----
+	"50:AS" -> "USBOX.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=216];
+	"50:AS" -> "USBOX.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=217];
+	"50:AS" -> "USBOX.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=218];
+	"50:AS" -> "USBOX.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=219];
+	"50:AS" -> "USBOX.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=220];
+	"50:AS" -> "USBOX.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=221];
+	"50:AS" -> "USBOX.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=222];
+	"50:AS" -> "USBOX.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=223];
+	"50:AS" -> "USBOX.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=224];
+	"50:AS" -> "USBOX.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=225];
+	"50:AS" -> "USBOX.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=226];
+	"50:AS" -> "USBOX.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=227];
+	"50:AS" -> "USBOX.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=228];
+	"50:AS" -> "USBOX.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=229];
+	"50:AS" -> "USBOX.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=230];
+	"50:AS" -> "USBOX.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=231];
+	"50:AS" -> "USBOX.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=232];
+	"50:AS" -> "USBOX.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=233];
+	"50:AS" -> "USBOX.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=218];
+	"50:AS" -> "USBOX.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=219];
+	"50:AS" -> "USBOX.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=220];
+	"50:AS" -> "USBOX.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=221];
+	"50:AS" -> "USBOX.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=222];
+	"50:AS" -> "USBOX.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=223];
+	"50:AS" -> "USBOX.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=224];
+	"50:AS" -> "USBOX.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=225];
+	"50:AS" -> "USBOX.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=226];
+	"50:AS" -> "USBOX.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=227];
+	"50:AS" -> "USBOX.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=228];
+	"50:AS" -> "USBOX.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=229];
+	"50:AS" -> "USBOX.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=230];
+	"50:AS" -> "USBOX.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=231];
+	"50:AS" -> "USBOX.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=232];
+	"50:AS" -> "USBOX.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat1)",
+		lineno=233];
+	"51:AS" -> "USBOX.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=216];
+	"51:AS" -> "USBOX.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=217];
+	"51:AS" -> "USBOX.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"51:AS" -> "USBOX.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"51:AS" -> "USBOX.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"51:AS" -> "USBOX.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"51:AS" -> "USBOX.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"51:AS" -> "USBOX.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"51:AS" -> "USBOX.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"51:AS" -> "USBOX.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"51:AS" -> "USBOX.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"51:AS" -> "USBOX.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"51:AS" -> "USBOX.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"51:AS" -> "USBOX.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"51:AS" -> "USBOX.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"51:AS" -> "USBOX.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"51:AS" -> "USBOX.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"51:AS" -> "USBOX.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"51:AS" -> "USBOX.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"51:AS" -> "USBOX.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"51:AS" -> "USBOX.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"51:AS" -> "USBOX.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"51:AS" -> "USBOX.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"51:AS" -> "USBOX.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"51:AS" -> "USBOX.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"51:AS" -> "USBOX.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"51:AS" -> "USBOX.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"51:AS" -> "USBOX.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"51:AS" -> "USBOX.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"51:AS" -> "USBOX.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"51:AS" -> "USBOX.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"51:AS" -> "USBOX.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"51:AS" -> "USBOX.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"51:AS" -> "USBOX.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"52:AS" -> "USBOX.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=216];
+	"52:AS" -> "USBOX.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=217];
+	"52:AS" -> "USBOX.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"52:AS" -> "USBOX.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"52:AS" -> "USBOX.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"52:AS" -> "USBOX.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"52:AS" -> "USBOX.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"52:AS" -> "USBOX.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"52:AS" -> "USBOX.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"52:AS" -> "USBOX.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"52:AS" -> "USBOX.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"52:AS" -> "USBOX.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"52:AS" -> "USBOX.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"52:AS" -> "USBOX.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"52:AS" -> "USBOX.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"52:AS" -> "USBOX.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"52:AS" -> "USBOX.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"52:AS" -> "USBOX.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"52:AS" -> "USBOX.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"52:AS" -> "USBOX.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"52:AS" -> "USBOX.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"52:AS" -> "USBOX.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"52:AS" -> "USBOX.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"52:AS" -> "USBOX.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"52:AS" -> "USBOX.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"52:AS" -> "USBOX.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"52:AS" -> "USBOX.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"52:AS" -> "USBOX.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"52:AS" -> "USBOX.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"52:AS" -> "USBOX.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"52:AS" -> "USBOX.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"52:AS" -> "USBOX.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"52:AS" -> "USBOX.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"52:AS" -> "USBOX.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"53:AS" -> "USBOX.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=216];
+	"53:AS" -> "USBOX.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=217];
+	"53:AS" -> "USBOX.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"53:AS" -> "USBOX.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"53:AS" -> "USBOX.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"53:AS" -> "USBOX.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"53:AS" -> "USBOX.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"53:AS" -> "USBOX.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"53:AS" -> "USBOX.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"53:AS" -> "USBOX.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"53:AS" -> "USBOX.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"53:AS" -> "USBOX.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"53:AS" -> "USBOX.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"53:AS" -> "USBOX.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"53:AS" -> "USBOX.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"53:AS" -> "USBOX.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"53:AS" -> "USBOX.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"53:AS" -> "USBOX.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"53:AS" -> "USBOX.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=218];
+	"53:AS" -> "USBOX.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=219];
+	"53:AS" -> "USBOX.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=220];
+	"53:AS" -> "USBOX.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=221];
+	"53:AS" -> "USBOX.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=222];
+	"53:AS" -> "USBOX.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=223];
+	"53:AS" -> "USBOX.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=224];
+	"53:AS" -> "USBOX.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=225];
+	"53:AS" -> "USBOX.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=226];
+	"53:AS" -> "USBOX.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=227];
+	"53:AS" -> "USBOX.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=228];
+	"53:AS" -> "USBOX.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=229];
+	"53:AS" -> "USBOX.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=230];
+	"53:AS" -> "USBOX.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=231];
+	"53:AS" -> "USBOX.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=232];
+	"53:AS" -> "USBOX.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kdat2)",
+		lineno=233];
+	"Leaf_85:AL" -> "USBOX.216:AL"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=216];
+	"Leaf_85:AL" -> "USBOX.217:CS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=217];
+	"Leaf_85:AL" -> "USBOX.218:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=218];
+	"Leaf_85:AL" -> "USBOX.219:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=219];
+	"Leaf_85:AL" -> "USBOX.220:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=220];
+	"Leaf_85:AL" -> "USBOX.221:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=221];
+	"Leaf_85:AL" -> "USBOX.222:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=222];
+	"Leaf_85:AL" -> "USBOX.223:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=223];
+	"Leaf_85:AL" -> "USBOX.224:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=224];
+	"Leaf_85:AL" -> "USBOX.225:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=225];
+	"Leaf_85:AL" -> "USBOX.226:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=226];
+	"Leaf_85:AL" -> "USBOX.227:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=227];
+	"Leaf_85:AL" -> "USBOX.228:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=228];
+	"Leaf_85:AL" -> "USBOX.229:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=229];
+	"Leaf_85:AL" -> "USBOX.230:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=230];
+	"Leaf_85:AL" -> "USBOX.231:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=231];
+	"Leaf_85:AL" -> "USBOX.232:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=232];
+	"Leaf_85:AL" -> "USBOX.233:CA"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=233];
+	"Leaf_85:AL" -> "USBOX.218:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=218];
+	"Leaf_85:AL" -> "USBOX.219:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=219];
+	"Leaf_85:AL" -> "USBOX.220:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=220];
+	"Leaf_85:AL" -> "USBOX.221:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=221];
+	"Leaf_85:AL" -> "USBOX.222:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=222];
+	"Leaf_85:AL" -> "USBOX.223:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=223];
+	"Leaf_85:AL" -> "USBOX.224:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=224];
+	"Leaf_85:AL" -> "USBOX.225:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=225];
+	"Leaf_85:AL" -> "USBOX.226:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=226];
+	"Leaf_85:AL" -> "USBOX.227:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=227];
+	"Leaf_85:AL" -> "USBOX.228:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=228];
+	"Leaf_85:AL" -> "USBOX.229:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=229];
+	"Leaf_85:AL" -> "USBOX.230:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=230];
+	"Leaf_85:AL" -> "USBOX.231:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=231];
+	"Leaf_85:AL" -> "USBOX.232:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=232];
+	"Leaf_85:AL" -> "USBOX.233:BS"	[cond="[]",
+		label="portbind(direction=producer_to_consumer, formal=idat, actual=kreg)",
+		lineno=233];
+	// ---- END EDGES-ONLY BRIDGES ----
 }

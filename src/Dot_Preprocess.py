@@ -102,34 +102,56 @@ def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_node
             counts[k] = int(counts[k] > 0)
         return counts
 
-    def count_paths_to_targets(graph, starts, target, cap=None):
-        paths = []
-        stack = []
-        onstack = set()
+    def count_all_paths_from_starts(graph, key_nodes, nodes):
+        """
+        Calculates the number of simple paths from a list of key_nodes to every other node
+        in the graph using dynamic programming and memoization.
 
-        def dfs(u):
-            if cap is not None and len(paths) >= cap:
-                return
-            if u in onstack:
-                return
-            stack.append(u)
-            onstack.add(u)
+        Args:
+            graph (dict): The graph represented as an adjacency list.
+                          Example: {'A': ['B', 'C'], 'B': ['D']}
+            key_nodes (list or set): A list of starting nodes.
 
-            if u == target:
-                paths.append(stack.copy())
-            else:
-                for v in graph.get(u, []):
-                    if v not in onstack:
-                        dfs(v)
+        Returns:
+            dict: A dictionary mapping each node to the number of simple paths
+                  originating from any of the key_nodes.
+        """
+        memo = {}  # Cache for storing results of computed nodes
+        visiting = set()  # For detecting cycles in the current DFS path
+        starts = set(key_nodes)  # Use a set for O(1) lookups
 
-            onstack.remove(u)
-            stack.pop()
+        def _count_paths_to(u):
+            # If result is already cached, return it
+            if u in memo:
+                return memo[u]
+            # If we are currently visiting this node in this path, we've found a cycle
+            if u in visiting:
+                return 0  # This path is invalid
 
-        for s in starts:
-            dfs(s)
-            if cap is not None and len(paths) >= cap:
-                break
-        return len(paths)
+            visiting.add(u)
+
+            # A start node has one path to itself (of length 0)
+            count = 1 if u in starts else 0
+
+            # Sum the paths from all its predecessors
+            for predecessor in graph.get(u, []):
+                count += _count_paths_to(predecessor)
+
+            visiting.remove(u)
+
+            # Cache the result before returning
+            memo[u] = count
+            return count
+
+        # Trigger the calculation for every node in the graph
+        # The memoization ensures each node is only computed once
+        path_counts = {node: _count_paths_to(node) for node in nodes}
+
+        return path_counts
+
+    all_path_counts = count_all_paths_from_starts(graph, key_nodes, nodes)
+    # for node, count in all_path_counts.items():
+    #     print(f"node: {node}, count: {count}")
 
     Features = {}
     cnt = 0
@@ -141,7 +163,7 @@ def extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_node
             "Node": label,
             "Degree": indegree[node] + outdegree[node],
             **count_ops_in_label(label),
-            "Paths": count_paths_to_targets(graph, key_nodes, node),
+            "Paths": all_path_counts[node],
         }
         cnt += 1
 

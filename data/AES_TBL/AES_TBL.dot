@@ -693,4 +693,49 @@ a0 = x[7:0];",
 	"AES_TBL_ENC.EC.MX0.148:AS" -> "AES_TBL_ENC.EC.MX0.153:AS";
 	"AES_TBL_ENC.EC.MX0.150:AS" -> "AES_TBL_ENC.EC.MX0.153:AS";
 	"AES_TBL_ENC.EC.MX0.151:AS" -> "AES_TBL_ENC.EC.MX0.153:AS";
+
+	// ---- BEGIN EDGES-ONLY BRIDGES (Key→SBK, S-Boxes→sr, sr→MixColumns) ----
+	"AES_TBL_ENC.Leaf_254:AL" -> "AES_TBL_ENC.EC.SBK.134:AS"	[cond="[]",
+		label="portbind(direction=parent_to_child, formal=x, actual=KrgX)",
+		lineno=134];
+	"AES_TBL_ENC.EC.SB3.134:AS" -> "AES_TBL_ENC.EC.189:AS"	[cond="[]",
+		label="portbind(direction=child_to_parent, formal=sb, actual=y)",
+		lineno=189];
+	"AES_TBL_ENC.EC.SB2.134:AS" -> "AES_TBL_ENC.EC.189:AS"	[cond="[]",
+		label="portbind(direction=child_to_parent, formal=sb, actual=y)",
+		lineno=189];
+	"AES_TBL_ENC.EC.SB1.134:AS" -> "AES_TBL_ENC.EC.189:AS"	[cond="[]",
+		label="portbind(direction=child_to_parent, formal=sb, actual=y)",
+		lineno=189];
+	"AES_TBL_ENC.EC.SB0.134:AS" -> "AES_TBL_ENC.EC.189:AS"	[cond="[]",
+		label="portbind(direction=child_to_parent, formal=sb, actual=y)",
+		lineno=189];
+	"AES_TBL_ENC.EC.SBK.134:AS" -> "AES_TBL_ENC.EC.189:AS"	[cond="[]",
+		label="portbind(direction=child_to_parent, formal=sb, actual=y)",
+		lineno=189];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX3.147:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=147];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX3.148:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=148];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX2.147:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=147];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX2.148:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=148];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX1.147:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=147];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX1.148:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=148];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX0.147:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=147];
+	"AES_TBL_ENC.EC.189:AS" -> "AES_TBL_ENC.EC.MX0.148:AS"	[cond="[]",
+		label="portbind(direction=dataflow, formal=x, actual=sr)",
+		lineno=148];
+	// ---- END EDGES-ONLY BRIDGES ----
 }

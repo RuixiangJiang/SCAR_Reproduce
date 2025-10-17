@@ -27,9 +27,6 @@ if __name__ == "__main__":
     # for k, w, full in signal_keys:
     #     print(f"{k:<24} width={w:<4}  ->  {full}")
 
-    for root in roots:
-        paths = Dot_Preprocess.find_paths(graph, root)
-
     Features = Dot_Preprocess.extract_dot_features(graph, nodes, indegree, outdegree, node_attrs, key_nodes)
 
     sig_key_str = ''
