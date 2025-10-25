@@ -223,7 +223,7 @@ def extract_vcd_features(Feature, node_attrs, vcd, design_name, mode="test"):
             matches_dict[node_str] = mappings_list
 
     for node in Feature.keys():
-        label = node_attrs.get(node, {}).get("label", "") or ""
+        label = (node_attrs.get(node, {}).get("label", "") or "").replace("\r\n", "\n").replace("\n", "\r\n")
         # print(f"Node '{node}' has label '{label}'")
         if label == "" or label.__contains__("virtual"):
             Feature[node]["Hamming distance"] = 0
